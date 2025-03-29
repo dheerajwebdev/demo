@@ -1,0 +1,76 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  63a90571-ebc8-43ae-bbb4-f79b9dd6cb21:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebd2ac6d-c86f-4d63-9c3d-228bcf89e00c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a800f91-2d35-4f85-b489-490c6d28be5c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d7c73d9-6079-4ac7-8bbd-ff0303cc79f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12708f73-15fe-4b53-9426-3be0ee269d68
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ebad673d-4035-46cb-995c-3f87ecb5e161
+        userCondition: null
+group: eff29af1-aaf3-4256-8e64-0f798c451638 # Relations
+groupChildBlockTypes: true
+handle: strategyGrid
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Strategy Grid'
+topLevel: true

@@ -1,0 +1,26 @@
+{% set pageInfo = pageInfo ?? null %}
+{% set light = light ?? false %}
+
+{% set colorClass = light
+  ? 'text-blue-200 border-blue-200 hover:bg-blue-200 hover:text-white'
+  : 'text-white border-white hover:bg-white hover:text-blue-200' %}
+
+{# If the total entry count is greater than the number that has been displayed #}
+{% if page < pageInfo.totalPages %}
+  <a
+    sprig
+    id="load-more-oob"
+    s-val:page="{{ page + 1 }}"
+    s-select="#results article" s-target="#results" s-swap="beforeend"
+    s-trigger="revealed"
+
+    href="{{ url(craft.app.request.fullPath, { page: page + 1 }) }}"
+    {{ sprig.trigger == 'load-more-oob' ? 's-swap-oob="true"' }}
+    class="mt-8 py-2.5 px-5 rounded-full inline-flex relative items-center gap-4 border {{ colorClass }}"
+  >
+    Load more
+  </a>
+{% else %}
+  {# Swaps the button out-of-band with a dummy button that is hidden #}
+    <button id="load-more-oob" s-swap-oob="true" style="display: none"></button>
+{% endif %}

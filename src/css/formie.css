@@ -1,0 +1,26 @@
+.fui-label {
+  @apply font-bold;
+}
+.fui-input[type=text],
+.fui-input[type=email],
+textarea.fui-input {
+  @apply bg-gray-800 border-none;
+}
+textarea.fui-input {
+  @apply h-32;
+}
+.fui-submit {
+  @apply btn rounded-full inline-flex items-center gap-4 border !text-black !border-black !bg-white leading-7;
+  padding: .5rem .75rem 0.5rem 1rem !important;
+}
+.fui-submit::after {
+  display: inline-block;
+  content: url('/static/img/icons/chevron-round-black.svg');
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.fui-submit:hover::after {
+  content: url('/static/img/icons/chevron-round-blue.svg');
+}

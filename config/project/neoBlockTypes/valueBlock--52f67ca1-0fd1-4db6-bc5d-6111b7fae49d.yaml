@@ -1,0 +1,64 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  68ea4f20-d86c-44f7-99a5-8f09cc250041:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d14adc61-8a59-47fd-9cf7-f55b12d8df98
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee226725-2f2f-4cea-a53b-a0f584c7292e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b46bb60-e3a1-4290-b620-a518ba80ceb5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: db60b738-47c9-4890-b320-bff07f4fac88
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: valueBlock
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Value Block'
+topLevel: false

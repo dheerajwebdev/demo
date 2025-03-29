@@ -1,0 +1,140 @@
+{% extends '_layout' %}
+{% import "_macros/image" as _image %}
+
+{% macro row(label, value) %}
+  <div class="border-b border-gray-500 grid grid-cols-1 sm:grid-cols-2 items-center gap-2 py-3">
+    <div>
+      <strong>{{ label }}</strong>
+    </div>
+    <div class="sm:text-right">
+      {{ value|nl2br }}
+    </div>
+  </div>
+{% endmacro %}
+
+{% block content %}
+  <section class="container pt-[164px]">
+    {# Back button #}
+    <div>
+      {% include "_components/button" with {
+        href: url('portfolio'),
+        label: 'Full portfolio',
+        arrow: 'left'
+      } %}
+    </div>
+
+    <article class="layout-grid mt-8 mb-16">
+      {# Sidebar #}
+      <div class="col-span-full order-2 lg:order-1 lg:col-span-4">
+        {{ _image.tag(
+          entry.image.one() ?? null,
+          null,
+          { width: 400, height: 400 },
+          "w-full hidden lg:block mb-[30px]"
+        ) }}
+
+
+        {# Box #}
+        {% set boxHeading = entry.label ?? null %}
+        {% set boxCopy = entry.copy ?? null %}
+        {% set stat = entry.heading ?? null %}
+        {% set statDescription = entry.subheading ?? null %}
+
+        {% if boxCopy or stat %}
+          <div class="bg-blue-700 py-16 px-10">
+            {% if boxHeading %}
+              <h4 class="t-h3 mb-3">{{ boxHeading }}</h4>
+            {% endif %}
+
+            {% if boxCopy %}
+              <p>{{ boxCopy|nl2br }}</p>
+            {% endif %}
+
+            {% if stat %}
+              <div class="{{ boxCopy ? 'mt-6 pt-6 border-t' }}">
+                <div class="t-h1">{{ stat }}</div>
+                {{ statDescription }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="mb-16 col-span-full order-1 lg:order-2 lg:col-start-6 lg:col-span-7
+        flex flex-col gap-y-[30px]">
+        {{ _image.tag(
+          entry.image.one() ?? null,
+          null,
+          { width: 400, height: 400 },
+          "w-full lg:hidden"
+        ) }}
+
+        {{ _image.tag(
+          entry.logo.one() ?? null,
+          entry.title,
+          { height: 80 },
+          "object-contain"
+        ) }}
+
+        <div class="flex flex-col gap-3">
+          <h1 class="t-h2">{{ entry.title }}</h1>
+
+          {# Sectors #}
+          <div class="flex flex-wrap gap-2">
+            {% for sector in entry.sectors.all() %}
+              <div class="border rounded-full py-1.5 px-[10px] text-xs font-semibold whitespace-nowrap">
+                {{ sector.title }}
+              </div>
+            {% endfor %}
+          </div>
+
+          {# Themes #}
+          <div class="flex flex-wrap gap-2">
+            {% for theme in entry.themes.all() %}
+              {% set icon = theme.icon.one() ?? null %}
+              {% if icon and icon.extension == 'svg' %}
+                <div class="bg-blue-200 w-[35px] p-0.5 aspect-square rounded-full">
+                  {{ svg(icon)|attr({ class: 'text-white' }) }}
+                </div>
+              {% elseif icon %}
+                <img src="{{ icon.url }}" alt="{{ theme.title }}" class="">
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if entry.bodySimpleLink|striptags|trim|length %}
+          <div>
+            <h3 class="t-h3">Overview</h3>
+            <div class="prose max-w-none prose-a:text-blue-500 hover:prose-a:text-blue-300">
+              {{ entry.bodySimpleLink }}
+            </div>
+          </div>
+        {% endif %}
+
+        {# Table #}
+        <div class="border-t border-gray-500">
+          {% if entry.transactionDate %}
+            {{ _self.row('Date of Transaction', entry.transactionDate|date('mm Y')) }}
+          {% endif %}
+
+          {% for row in entry.companyInformation %}
+            {{ _self.row(row.heading, row.detail) }}
+          {% endfor %}
+
+          {% if entry.themes.count() %}
+            {{ _self.row('Investment Themes', entry.themes.all()|map(t => t.title)|join('\n')) }}
+          {% endif %}
+
+          {% if entry.sectors.count() %}
+            {{ _self.row('Investment Sectors', entry.sectors.all()|map(t => t.title)|join('\n')) }}
+          {% endif %}
+
+          {% if entry.dealStatus.count() %}
+            {{ _self.row('Status', entry.dealStatus.all()|map(t => t.title)|join('\n')) }}
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  </section>
+{% endblock %}

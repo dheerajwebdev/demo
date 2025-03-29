@@ -1,0 +1,20 @@
+{# Pagination controls #}
+{% set limit = 48 %}
+{% set page = page ?? 1 %}
+
+{% set entryQuery = craft.entries.section('articles').limit(limit) %}
+
+{% set pageInfo = sprig.paginate(entryQuery, page) %}
+{% set articles = pageInfo.pageResults %}
+
+<div class="container pb-20">
+  <div id="results" class="layout-grid gap-y-10 lg:gap-y-20 reveal-items-container">
+    {% for article in articles %}
+      <article class="col-span-full lg:col-span-4 reveal-items-item">
+        {% include "_components/card/article" with { article } only %}
+      </article>
+    {% endfor %}
+  </div>
+
+  {% include "_sprig/components/pagination" with { pageInfo, light: true } %}
+</div>

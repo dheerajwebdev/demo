@@ -1,0 +1,17 @@
+columnSuffix: njqnnrhq
+contentColumnType: datetime
+fieldGroup: baf5e3a1-8726-4232-8636-73fee17f5107 # Portfolio
+handle: transactionDate
+instructions: null
+name: 'Transaction Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

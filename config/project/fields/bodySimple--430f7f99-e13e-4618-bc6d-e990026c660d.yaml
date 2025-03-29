@@ -1,0 +1,22 @@
+columnSuffix: lzgnplmz
+contentColumnType: text
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: bodySimple
+instructions: null
+name: 'Body Simple'
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: f843f4f4-4cf3-4c19-95bf-b535238a14c5 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

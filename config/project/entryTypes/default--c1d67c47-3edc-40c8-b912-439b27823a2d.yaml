@@ -1,0 +1,46 @@
+fieldLayouts:
+  dee02bc4-8053-4cd1-8fbc-1b9c90877b6f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4c6704ce-a492-4474-80bb-f5bf47246094
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0cb78982-bfa1-4c1f-b2dd-ea2d62cea043
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 4d08b07e-5a19-4645-bdcc-5e65ae4f97c1 # Teams
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,10 @@
+@layer components {
+  .container {
+    @apply max-w-screen-2xl;
+  }
+
+  /* Narrower container for e.g. contact page */
+  .container--sm {
+    @apply max-w-5xl;
+  }
+}

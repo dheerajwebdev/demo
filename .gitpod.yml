@@ -1,0 +1,46 @@
+image: simplygoodwork/gitpod-8.0
+
+ports:
+  # MySQL server
+  - port: 3306
+    onOpen: ignore
+  # Web server
+  - port: 8000
+    onOpen: notify
+  # Vite server
+  - port: 3002
+    onOpen: ignore
+    visibility: public
+  # Gitpod
+  - port: 3002
+    onOpen: ignore
+  - port: 8828
+    onOpen: ignore
+
+tasks:
+  - name: npm
+    init: npm install
+    command: npm run dev
+  - name: Web Server
+    init: |
+      gp ports await 3306
+      mysql -u root -e "create database craft"
+      gunzip < ./db.sql.gz | mysql -u root -p craft
+      cp .env.gitpod .env
+      composer install
+      php craft setup/app-id
+      php craft setup/security-key
+      php craft up --interactive=0
+    command: >
+      php -d max_execution_time=120  -S 0.0.0.0:8000 -t web
+    openMode: tab-after
+
+vscode:
+  extensions:
+    - bradlc.vscode-tailwindcss
+    - editorconfig.editorconfig
+    - esbenp.prettier-vscode
+    - github.github-vscode-theme
+    - mblode.twig-language-2
+    - pkief.material-icon-theme
+    - eamodio.gitlens

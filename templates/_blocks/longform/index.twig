@@ -1,0 +1,7 @@
+{% set children = children ?? block.children.all() %}
+{% set class = class ?? 'container py-12' %}
+<section class="flex flex-col gap-5 {{ class }}">
+  {% for block in children %}
+    {% include _self ~ "/" ~ block.type %}
+  {% endfor %}
+</section>

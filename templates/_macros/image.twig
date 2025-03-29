@@ -1,0 +1,37 @@
+{% macro tag(image, alt = null, transform = [], classes = '') %}{% apply spaceless %}
+  {% if image %}
+    {# Set default transform options #}
+    {% set defaultTransform = {
+      quality: 85,
+      format: 'jpg'
+    } %}
+
+    {# Merge supplied transform, including dimensions #}
+    {% set transform = defaultTransform|merge(transform) %}
+
+    {% do image.setTransform(transform) %}
+    <img
+      src="{{ image.url }}"
+      alt="{{ alt ?? image.title }}"
+      width="{{ image.width }}"
+      height="{{ image.height }}"
+      srcset="{{ image.srcset(['1.5x','2x','3x']) }}"
+      class="{{ classes }}"
+      loading="lazy"
+    />
+  {% endif %}
+{% endapply %}{% endmacro %}
+
+
+{% macro background(image) %}{% apply spaceless %}
+  {% set bg = '' %}
+  {% if image %}
+    {% set bg = "background-image: url('#{ image.url({width: 1200}) }');" %}
+    {% if image.focalPoint %}
+      {% set bg = bg ~ " background-position: #{ image.focalPoint.x * 100 }% #{ image.focalPoint.y * 100 }%;" %}
+    {% else %}
+      {% set bg = bg ~ " background-position: center;" %}
+    {% endif %}
+  {% endif %}
+  {{ bg|raw }}
+{% endapply %}{% endmacro %}

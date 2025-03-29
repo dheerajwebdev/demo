@@ -1,0 +1,72 @@
+{# Themes #}
+{% import "_macros/image" as _image %}
+{% set themes = craft.entries.section('themes').with(['backgroundImage','icon']).all() %}
+
+
+<div
+  class="block-{{ block.id }}"
+>
+  {% for theme in themes %}
+    {% set backgroundImage = theme.backgroundImage.one() ?? null %}
+    <div
+      x-data="{
+        isOpen: false,
+        init() {
+          if (window.location.hash.substring(1) == '{{ theme.slug }}') {
+            console.log('yay')
+            this.isOpen = true
+            document.getElementById('{{ theme.slug }}').scrollIntoView(true)
+          }
+        }
+      }"
+      x-bind:class="{ 'is-open': isOpen }"
+      role="region"
+      class="relative group/item bg-cover border-t border-white"
+      style="{{ _image.background(backgroundImage) }}"
+    >
+      <div class="bg-blue-200 group-hover/item:bg-opacity-90 group-[.is-open]/item:bg-opacity-90">
+        <div
+          id="{{ theme.slug }}"
+          class="container"
+          :open="isOpen === true"
+        >
+          <button
+            @click="isOpen = !isOpen"
+            :aria-expanded="isOpen"
+            class="flex items-center w-full gap-5 text-left justify-between group py-[30px]"
+          >
+            <div class="flex gap-5 items-center">
+              <div class="bg-white w-[40px] p-0.5 aspect-square rounded-full text-blue-300">
+                {% set icon = theme.icon[0] ?? null %}
+                {% if icon %}
+                  <img src="{{ icon.url }}" alt="{{ icon.alt }}">
+                {% endif %}
+              </div>
+              <div class="flex-1 pt-1">
+                <h3 class="t-h3 leading-none">{{ theme.title }}</h3>
+              </div>
+            </div>
+            <div class="bg-white rounded-full w-8 h-8 flex items-center transition-colors group-[.is-open]/item:bg-blue-500 justify-center">
+              {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[28px] ml-px rotate-90 group-[.is-open]/item:scale-x-[-1] transition-all text-black" }) }}
+            </div>
+          </button>
+          <div x-collapse x-show="isOpen">
+            <div class="pb-[30px] px-[60px]">
+              <p>
+                {{ theme.copy|nl2br }}
+              </p>
+              <div class="py-[30px]">
+                {% include "_components/button" with {
+                  href: url('/portfolio', { theme: theme.id }) ~ '#companies',
+                  label: 'See investments',
+                  arrow: 'right',
+                  color: 'white'
+                } %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

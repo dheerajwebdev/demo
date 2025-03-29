@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+@import './css/btn';
+@import './css/cookieconsent';
+@import './css/container';
+@import './css/fonts';
+@import './css/formie';
+@import './css/layout-grid';
+@import './css/main-nav';
+@import './css/search-input';
+@import './css/theme-styles';
+@import './css/type';
+
+@import 'tailwindcss/utilities';
+
+.\? {
+  outline: 1px solid red;
+}
+
+* {
+  scroll-margin-top: 100px;
+
+  @screen md {
+    scroll-margin-top: 124px;
+  }
+}
+
+ul.small-print-nav li:not(:last-child):after {
+  content: '|';
+  padding-left: 6px;
+}
+
+details summary {
+  cursor: pointer;
+  transition: margin 300ms ease-in;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(-10px)}
+  100%  {opacity: 1; transform: translateY(0)}
+}
+
+.blue-overlay::before {
+  content: "";
+  @apply absolute block inset-0 bg-blue-200/90 mix-blend-multiply;
+}
+
+@media print {
+  .reveal-items-item {
+    opacity: 1!important;
+  }
+}

@@ -1,0 +1,9 @@
+/* Disable Tailwind base to prevent resetting Craft's CSS in the Craft Control Panel */
+/*@import "tailwindcss/base";*/
+
+@import "tailwindcss/components";
+
+/* Custom imports go here */
+/*@import './css/typography';*/
+
+@import "tailwindcss/utilities";

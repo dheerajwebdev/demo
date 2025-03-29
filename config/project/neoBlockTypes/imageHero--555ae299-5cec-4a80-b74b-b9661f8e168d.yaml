@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  b32a2633-d03b-4e63-9409-16eaec7ee9c1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9bb8c724-955c-4b77-b22c-2126afafd4a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4f8f821-de5b-4bdf-a454-91f744d15e9a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f278ee85-67b2-4400-818b-37bc5cbdfd33
+        userCondition: null
+group: 955b2e74-1b28-49e1-b32c-eb2e51b1d613 # Hero
+groupChildBlockTypes: true
+handle: imageHero
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Image Hero'
+topLevel: true

@@ -1,0 +1,264 @@
+description: ''
+handle: client
+name: Client
+permissions:
+  - accesscp
+  - accessplugin-navigation
+  - accessplugin-seomatic
+  - administrateusers
+  - 'assignusergroup:681d4abc-c9bb-42da-82ac-756d609fe88a' # Client
+  - assignuserpermissions
+  - 'createentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'createentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'createentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'createentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'createentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'createentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'createentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'createentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'createentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'createfolders:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'createfolders:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'deleteassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'deleteassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'deleteentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'deleteentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'deleteentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'deleteentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'deleteentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'deleteentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'deleteentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'deleteentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'deleteentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'deletepeerassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'deletepeerassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'deletepeerentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'deletepeerentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'deletepeerentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'deletepeerentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'deletepeerentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'deletepeerentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'deletepeerentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'deletepeerentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'deletepeerentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'deletepeerentrydrafts:0b096431-4e56-4bb4-a2f2-9a69e020f8aa' # Team
+  - 'deletepeerentrydrafts:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'deletepeerentrydrafts:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'deletepeerentrydrafts:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'deletepeerentrydrafts:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'deletepeerentrydrafts:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'deletepeerentrydrafts:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'deletepeerentrydrafts:6f1e6e98-d91b-4609-8039-d914efa4f46d' # 404
+  - 'deletepeerentrydrafts:87858620-d2d5-4d5e-8be5-4be25b06b61e' # News
+  - 'deletepeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'deletepeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'deletepeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
+  - 'deletepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'deletepeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'deletepeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
+  - 'deletepeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
+  - deleteusers
+  - 'editglobalset:cfddf556-8aa4-4367-82a7-486c44e8d462' # Contact
+  - 'editimages:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'editimages:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'editpeerimages:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'editpeerimages:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - editusers
+  - moderateusers
+  - navigation-createnavs
+  - 'navigation-deletenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-deletenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-deletenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'navigation-editnav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-editnav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-editnav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'navigation-managenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-managenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-managenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'neo-createblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
+  - 'neo-createblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
+  - 'neo-createblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
+  - 'neo-createblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
+  - 'neo-createblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
+  - 'neo-createblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
+  - 'neo-createblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
+  - 'neo-createblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
+  - 'neo-createblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
+  - 'neo-createblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
+  - 'neo-createblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
+  - 'neo-createblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
+  - 'neo-createblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
+  - 'neo-createblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
+  - 'neo-createblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
+  - 'neo-createblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
+  - 'neo-createblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
+  - 'neo-createblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
+  - 'neo-createblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
+  - 'neo-deleteblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
+  - 'neo-deleteblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
+  - 'neo-deleteblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
+  - 'neo-deleteblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
+  - 'neo-deleteblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
+  - 'neo-deleteblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
+  - 'neo-deleteblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
+  - 'neo-deleteblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
+  - 'neo-deleteblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
+  - 'neo-deleteblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
+  - 'neo-deleteblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
+  - 'neo-deleteblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
+  - 'neo-deleteblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
+  - 'neo-deleteblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
+  - 'neo-deleteblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
+  - 'neo-deleteblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
+  - 'neo-deleteblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
+  - 'neo-deleteblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
+  - 'neo-deleteblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
+  - 'neo-editblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
+  - 'neo-editblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
+  - 'neo-editblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
+  - 'neo-editblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
+  - 'neo-editblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
+  - 'neo-editblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
+  - 'neo-editblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
+  - 'neo-editblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
+  - 'neo-editblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
+  - 'neo-editblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
+  - 'neo-editblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
+  - 'neo-editblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
+  - 'neo-editblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
+  - 'neo-editblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
+  - 'neo-editblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
+  - 'neo-editblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
+  - 'neo-editblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
+  - 'neo-editblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
+  - 'neo-editblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
+  - registerusers
+  - 'replacefiles:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'replacefiles:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'replacepeerfiles:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'replacepeerfiles:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'retour:dashboard'
+  - 'retour:redirects'
+  - 'retour:shortlinks'
+  - 'saveassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'saveassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'saveentries:0b096431-4e56-4bb4-a2f2-9a69e020f8aa' # Team
+  - 'saveentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'saveentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'saveentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'saveentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'saveentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'saveentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'saveentries:6f1e6e98-d91b-4609-8039-d914efa4f46d' # 404
+  - 'saveentries:87858620-d2d5-4d5e-8be5-4be25b06b61e' # News
+  - 'saveentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'saveentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'saveentries:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
+  - 'saveentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'saveentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'saveentries:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
+  - 'saveentries:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
+  - 'savepeerassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'savepeerassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'savepeerentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'savepeerentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'savepeerentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'savepeerentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'savepeerentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'savepeerentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'savepeerentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'savepeerentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'savepeerentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'savepeerentrydrafts:0b096431-4e56-4bb4-a2f2-9a69e020f8aa' # Team
+  - 'savepeerentrydrafts:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'savepeerentrydrafts:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'savepeerentrydrafts:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'savepeerentrydrafts:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'savepeerentrydrafts:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'savepeerentrydrafts:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'savepeerentrydrafts:6f1e6e98-d91b-4609-8039-d914efa4f46d' # 404
+  - 'savepeerentrydrafts:87858620-d2d5-4d5e-8be5-4be25b06b61e' # News
+  - 'savepeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'savepeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'savepeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
+  - 'savepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'savepeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'savepeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
+  - 'savepeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
+  - 'seomatic:content-meta'
+  - 'seomatic:content-meta:facebook'
+  - 'seomatic:content-meta:general'
+  - 'seomatic:content-meta:sitemap'
+  - 'seomatic:content-meta:twitter'
+  - 'seomatic:dashboard'
+  - 'seomatic:global-meta'
+  - 'seomatic:global-meta:ads'
+  - 'seomatic:global-meta:facebook'
+  - 'seomatic:global-meta:general'
+  - 'seomatic:global-meta:humans'
+  - 'seomatic:global-meta:robots'
+  - 'seomatic:global-meta:security'
+  - 'seomatic:global-meta:twitter'
+  - 'seomatic:site-settings'
+  - 'seomatic:site-settings:creator'
+  - 'seomatic:site-settings:identity'
+  - 'seomatic:site-settings:miscellaneous'
+  - 'seomatic:site-settings:sitemap'
+  - 'seomatic:site-settings:social'
+  - 'seomatic:tracking-scripts'
+  - 'seomatic:tracking-scripts:facebookpixel'
+  - 'seomatic:tracking-scripts:fathom'
+  - 'seomatic:tracking-scripts:googleanalytics'
+  - 'seomatic:tracking-scripts:googletagmanager'
+  - 'seomatic:tracking-scripts:gtag'
+  - 'seomatic:tracking-scripts:hubspot'
+  - 'seomatic:tracking-scripts:linkedininsight'
+  - 'seomatic:tracking-scripts:matomo'
+  - 'seomatic:tracking-scripts:pinteresttag'
+  - 'seomatic:tracking-scripts:plausible'
+  - 'utility:queue-manager'
+  - 'viewassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'viewassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'viewentries:0b096431-4e56-4bb4-a2f2-9a69e020f8aa' # Team
+  - 'viewentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'viewentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'viewentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'viewentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'viewentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'viewentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'viewentries:6f1e6e98-d91b-4609-8039-d914efa4f46d' # 404
+  - 'viewentries:87858620-d2d5-4d5e-8be5-4be25b06b61e' # News
+  - 'viewentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'viewentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'viewentries:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
+  - 'viewentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'viewentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'viewentries:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
+  - 'viewentries:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
+  - 'viewpeerassets:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
+  - 'viewpeerassets:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+  - 'viewpeerentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'viewpeerentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'viewpeerentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'viewpeerentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'viewpeerentries:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'viewpeerentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'viewpeerentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'viewpeerentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'viewpeerentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'viewpeerentrydrafts:0b096431-4e56-4bb4-a2f2-9a69e020f8aa' # Team
+  - 'viewpeerentrydrafts:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'viewpeerentrydrafts:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'viewpeerentrydrafts:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'viewpeerentrydrafts:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'viewpeerentrydrafts:60fd6d24-6488-456d-bb7d-138b048e1a6b'
+  - 'viewpeerentrydrafts:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
+  - 'viewpeerentrydrafts:6f1e6e98-d91b-4609-8039-d914efa4f46d' # 404
+  - 'viewpeerentrydrafts:87858620-d2d5-4d5e-8be5-4be25b06b61e' # News
+  - 'viewpeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'viewpeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'viewpeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
+  - 'viewpeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'viewpeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'viewpeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
+  - 'viewpeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio

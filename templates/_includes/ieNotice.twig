@@ -1,0 +1,32 @@
+<div class="ie-notice">
+  <div class="container">
+    <p>
+      Your web browser is out of date. Update your browser for more security, speed and the best experience on this site.
+    </p>
+    <a class="btn" href="http://outdatedbrowser.com">Update your browser</a>
+  </div>
+</div>
+
+{% css %}
+  .ie-notice {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+    padding: 2rem;
+    background: #FFFF99;
+    text-align: center;
+  }
+
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    .ie-notice {
+      display: block;
+    }
+  }
+
+  .ie-notice p {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+{% endcss %}

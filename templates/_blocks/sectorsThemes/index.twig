@@ -1,0 +1,30 @@
+{# Optional #}
+{% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
+{% set heading = block.heading ?? '' %} {# Plain Text #}
+{% set copy = block.copy ?? '' %} {# Plain Text #}
+
+<section class="bg-blue-200 text-white pt-24">
+  <div class="container">
+    {% if eyebrow %}
+      <div class="mb-[18px]">
+        <span class="t-eyebrow">{{ eyebrow }}</span>
+      </div>
+    {% endif %}
+
+    <div class="layout-grid mb-20 gap-y-[18px]">
+      <div class="col-span-full lg:col-span-6">
+        <h2 class="t-h2">{{ heading }}</h2>
+      </div>
+
+      {% if copy %}
+        <div class="col-span-full lg:col-span-6 text-white text-xl prose max-w-none">
+          {{ copy|nl2br }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% include _self ~ "/sectors" %}
+  </div>
+
+  {% include _self ~ "/themes" %}
+</section>

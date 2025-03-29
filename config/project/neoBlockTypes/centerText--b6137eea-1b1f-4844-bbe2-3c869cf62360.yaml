@@ -1,0 +1,100 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  ddd8ed2b-b3fe-4760-b0ba-8a686798e7a1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94e75f23-09bb-44f6-beb3-30481ede9a3f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6c6dae9-99cb-4967-ad70-fc9200a4362b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 310f6035-2383-4e4d-89c3-bc63e5c73018
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac8524a9-3045-4ddb-a87b-e01e903930e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2c03548-97ad-4148-b2a0-b45fda2b5d7e # Background Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e704267-1ad2-41e2-a23b-cd89d1f5fcc7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            instructions: 'Adding a background image will automatically produce a navy overlay and use white text'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73ea94d0-08fa-4d8c-a94d-13f0010315c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0cb412e8-4e29-4a7c-86a8-10d39a944321
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: centerText
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Center Text'
+topLevel: true

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: error
+name: '404'
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

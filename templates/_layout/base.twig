@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js antialiased scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="{{ craft.vite.entry("main.css") }}">
+  {# Cookie consent #}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
+
+  {% include '_includes/favicons' %}
+  <style>[x-cloak] { display: none !important; }</style>
+
+  {% if getenv('BUGHERD_ID') %}
+    <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey={{ getenv('BUGHERD_ID') }}" async="true"></script>
+  {% endif %}
+</head>
+<body id="top">
+  {% block body %}{% endblock %}
+
+  {{ craft.vite.script("src/main.js") }}
+  <script type="module" src="/static/js/cookieconsent-config.js"></script>
+</body>
+</html>

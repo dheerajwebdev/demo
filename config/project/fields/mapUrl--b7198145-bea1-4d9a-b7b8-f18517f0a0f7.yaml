@@ -1,0 +1,14 @@
+columnSuffix: esmqnkhk
+contentColumnType: string(512)
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: mapUrl
+instructions: 'Paste a Maps link `https://www.google.com/maps/place...`'
+name: 'Map URL'
+searchable: false
+settings:
+  maxLength: 512
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

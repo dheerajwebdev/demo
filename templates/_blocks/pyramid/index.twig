@@ -1,0 +1,26 @@
+{# Optional #}
+{% set heading = block.heading ?? '' %} {# Plain Text #}
+
+<section class="container mb-16">
+  <div class="py-14 px-[30px] flex flex-col items-center gap-14 bg-gray-800">
+    {% if heading %}
+      <h2 class="t-h2 max-w-3xl mx-auto text-center">{{ heading }}</h2>
+    {% endif %}
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-14 gap-x-11 reveal-items-container">
+      {% for block in block.children.all() %}
+        {% if loop.first %}
+          <div class="col-span-full w-full flex justify-center reveal-items-item">
+            <div class="w-full lg:w-1/2">
+              {% include _self ~ "/" ~ block.type %}
+            </div>
+          </div>
+        {% else %}
+          <div class="col-span-full lg:col-span-4 reveal-items-item">
+            {% include _self ~ "/" ~ block.type %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

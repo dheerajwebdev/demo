@@ -1,0 +1,8 @@
+{# Required #}
+{% set body = block.body %} {# Redactor #}
+
+{% if body %}
+  <div class="prose max-w-none prose-a:text-blue-500 hover:prose-a:text-blue-300">
+    {{ body }}
+  </div>
+{% endif %}

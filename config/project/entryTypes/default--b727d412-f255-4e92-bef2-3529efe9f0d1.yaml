@@ -1,0 +1,94 @@
+fieldLayouts:
+  8f6dccfe-f498-4998-a0b9-f67ce493d5a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0b12ee58-fb6f-41bf-ae18-9379a3cb949e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0faee6eb-276a-4ce1-91ea-02b07075d09d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9dc1c7a-3dae-4677-8a7d-09ce89ffdb59
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b # Icon
+            instructions: 'Preferably an SVG image'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0646d67-4eb9-46a5-a2e6-326d9642c03d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfab0dc6-fc7c-46d3-b96d-653766abbc20
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1b89a05f-b7a8-4289-8d3b-729ad99f8ef5
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 657a530c-6716-46e3-8822-75eb19c5dea5 # Themes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

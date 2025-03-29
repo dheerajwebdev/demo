@@ -1,0 +1,44 @@
+{# Show selected filters #}
+{% for item in dealStatus|filter(i => i.id in status) %}
+    <button
+        sprig
+        s-val:removeStatus="{{ item.id }}"
+        class="border border-white bg-blue-300 hover:bg-blue-500 text-white py-2.5 px-5 rounded-full inline-flex items-center gap-4"
+    >
+        <div>{{ item.title }}</div>
+        <div class="text-xl">&times;</div>
+    </button>
+{% endfor %}
+
+{% for item in sectors|filter(i => i.id in sector) %}
+    <button
+        sprig
+        s-val:removeSector="{{ item.id }}"
+        class="border border-white bg-blue-300 hover:bg-blue-500 text-white py-2.5 px-5 rounded-full inline-flex items-center gap-4"
+    >
+        <div>{{ item.title }}</div>
+        <div class="text-xl">&times;</div>
+    </button>
+{% endfor %}
+
+{% for item in themes|filter(i => i.id in theme) %}
+    <button
+        sprig
+        s-val:removeTheme="{{ item.id }}"
+        class="border border-white bg-blue-300 hover:bg-blue-500 text-white py-2.5 px-5 rounded-full inline-flex items-center gap-4"
+    >
+        <div>{{ item.title }}</div>
+        <div class="text-xl">&times;</div>
+    </button>
+{% endfor %}
+
+{% for item in funds|filter(i => i.id in fund) %}
+    <button
+        sprig
+        s-val:removeFund="{{ item.id }}"
+        class="border border-white bg-blue-300 hover:bg-blue-500 text-white py-2.5 px-5 rounded-full inline-flex items-center gap-4"
+    >
+        <div>{{ item.title }}</div>
+        <div class="text-xl">&times;</div>
+    </button>
+{% endfor %}

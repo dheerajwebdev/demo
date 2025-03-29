@@ -1,0 +1,134 @@
+fieldLayouts:
+  3245c549-3d81-42f3-a9d0-9c30de6b53f8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 451e6227-091f-4f0a-9f93-8dfee4ff40e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 210fa9a3-0a42-44b8-bfbc-c55d2cf0ed05
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 503e91e1-7f74-436f-8bb1-f5643d7a7688
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: bcdc3a33-b0f0-4b7b-b619-1770e7d56573
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9d8acc9e-e08b-4850-9a7c-dc53b2e82a94 # Featured Companies
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df6d6ec4-537d-4a9f-84fa-f00288eaf73f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b766e994-3b1b-4d4d-b477-32f47ade2dd3
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32d673c1-56ce-4716-b51b-41c2285a8827
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            instructions: null
+            label: 'Grid Heading'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f10220b1-6e9f-4309-a180-f58f326f0a33
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ed470f9e-bf08-4f08-a1bc-54ecf3397e45
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cc341a0-6cd4-47a7-b999-ed92c6c9c62d
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: e9027688-3792-4a0a-aed3-d62265069858
+        userCondition: null
+handle: portfolio
+hasTitleField: false
+name: Portfolio
+section: f5e30ee2-1a17-4d9f-a868-9539ab3544d0 # Portfolio
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

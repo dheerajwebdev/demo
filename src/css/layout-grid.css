@@ -1,0 +1,7 @@
+@layer components {
+  .layout-grid {
+    @apply grid grid-cols-4 gap-x-6
+    sm:grid-cols-6 sm:gap-x-8
+    lg:grid-cols-12;
+  }
+}

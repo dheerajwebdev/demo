@@ -1,0 +1,81 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  58821723-ece3-41cd-ae2b-5a33de08696c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9674648-b4dc-4168-91d8-b952dc5e4583
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: Introduction
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e36b4537-0643-49cd-a2cc-023085f40c19
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c7961fe2-5f1b-41d7-9f2f-8c757840b7e1
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 038da28c-c66f-4434-877a-c9945368a390 # Video URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5a1a0c9-40c9-436f-8323-6b7295ce888f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            instructions: 'Overlays on player'
+            label: 'Video Tag'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67e7692b-a133-4197-b26a-b874cac4c4aa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bff3ee18-2613-4581-afb0-2a39873bb2d8
+        userCondition: null
+group: 955b2e74-1b28-49e1-b32c-eb2e51b1d613 # Hero
+groupChildBlockTypes: true
+handle: videoHero
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Video Hero'
+topLevel: true

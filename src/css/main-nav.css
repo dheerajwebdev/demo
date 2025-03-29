@@ -1,0 +1,45 @@
+/* When JS disabled, show dropdown on group-focus */
+.no-js .main-nav__item:focus-within .main-nav__dropdown {
+  @apply visible opacity-100 pointer-events-auto;
+}
+
+#main-nav {
+  li > div > a:not([class=^='btn']) {
+    transition: color 200ms ease-in-out;
+    position: relative;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    &::before {
+      display: block;
+      content: " ";
+      opacity: 0;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      bottom: 0px;
+      @apply bg-blue-500;
+      transition: width 200ms ease-in-out, opacity 200ms ease-in-out;
+    }
+
+    &.active::before {
+      width: 100%;
+      opacity: 1;
+      @apply bg-blue-200;
+    }
+
+    &:hover:not(.active)::before {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  li > div > span {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
+header.dark #main-nav li > div > a:not(.btn).active::before {
+  width: 100%;
+  opacity: 1;
+  @apply bg-white;
+}

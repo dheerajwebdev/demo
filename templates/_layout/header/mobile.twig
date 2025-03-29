@@ -1,0 +1,134 @@
+<div
+  x-data="{ mobileNavOpen: false }"
+  class="container"
+>
+
+  <div class="lg:hidden flex items-center justify-between py-6">
+
+    <a href="/" class="block h-11" aria-label="{{ siteName }} Homepage">
+      {{ svg('static/img/branding.svg')|attr({
+        class: 'h-full',
+      }) }}
+    </a>
+
+    {# Open Button #}
+    <button
+      class="p-1 flex items-center justify-center"
+      @click="mobileNavOpen = true"
+      aria-haspopup="true"
+      aria-controls="mobile-nav"
+      :aria-expanded="mobileNavOpen ? 'true' : 'false'"
+    >
+      {{ svg('static/img/icons/menu.svg')|attr({ class: 'w-8' }) }}
+      <span class="sr-only">Open main navigation</span>
+    </button>
+  </div>
+
+  {# Overlay #}
+  <div
+    x-cloak
+    x-show="mobileNavOpen"
+    class="lg:hidden fixed inset-0 bg-black/90 transition-opacity"
+  >
+  </div>
+
+  {# Nav on RH side #}
+  <div
+    id="mobile-nav"
+    class="fixed inset-y-0 right-0 lg:hidden bg-blue-500 text-white overflow-auto min-w-[300px] p-8 z-10"
+    x-cloak
+    x-show="mobileNavOpen"
+    x-trap.inert.noscroll="mobileNavOpen"
+    @keyup.esc="mobileNavOpen = false"
+    @click.outside="mobileNavOpen = false"
+  >
+    {# Close Button #}
+    <div class="flex justify-end">
+      <button
+        class="flex items-center justify-center"
+        @click="mobileNavOpen = false"
+        aria-controls="mobile-nav"
+      >
+        {{ svg('static/img/icons/close.svg')|attr({ class: 'w-8' }) }}
+        <span class="sr-only">Close main navigation</span>
+      </button>
+    </div>
+
+        {# Nav #}
+    <div class="pt-8 t-h4">
+      <ul class="flex flex-col gap-y-12">
+        {% for node in nav %}
+          {% set classes = [
+            "block",
+            node.url ? "hover:text-blue-700 focus:text-blue-700",
+            node.active ? 'border-b-2 border-white'
+          ] %}
+          {% set customAttributes = {} %}
+          {% for cA in node.customAttributes %}
+            {% set customAttributes = customAttributes|merge({(cA.attribute): (cA.value)}) %}
+          {% endfor %}
+          <li
+            x-data="{ open: false }"
+            class=""
+          >
+            <div class="flex items-center gap-3 justify-end">
+              {% switch node.getTypeLabel %}
+                {% case "Passive" %}
+                  {{ tag('span', {
+                    text: node.title,
+                    class: classes
+                  }|merge(customAttributes)) }}
+                {% default %}
+                  {{ node.link({ class: classes }) }}
+              {% endswitch %}
+              {% if node.hasDescendants %}
+                <button
+                  class="flex items-center justify-center aspect-square px-1.5 pt-0.5"
+                  @click="open =! open"
+                  aria-haspopup="true"
+                  aria-controls="mobile-nav-child-{{ node.id }}"
+                  :aria-expanded="open ? 'true' : 'false'"
+                >
+                  {{ svg('static/img/icons/chevron-down.svg')|attr({
+                    class: 'w-4',
+                    ':class': "open && 'rotate-180'"
+                  }) }}
+                </button>
+              {% endif %}
+            </div>
+            {% if node.hasDescendants %}
+              <div
+                id="mobile-nav-child-{{ node.id }}"
+                x-show="open"
+              >
+                <ul class="pt-3 flex flex-col gap-3">
+                  {% for childNode in node.children.all() %}
+                    {% set classes = [
+                      "block",
+                      childNode.url ? "hover:underline focus:underline",
+                    ] %}
+                    {% set customAttributes = {} %}
+                    {% for cA in childNode.customAttributes %}
+                      {% set customAttributes = customAttributes|merge({(cA.attribute): (cA.value)}) %}
+                    {% endfor %}
+                    <li class="text-right text-xl font-bold">
+                      {% switch childNode.getTypeLabel %}
+                        {% case "Passive" %}
+                          {{ tag('span', {
+                            text: childNode.title,
+                            class: classes
+                          }|merge(customAttributes)) }}
+                        {% default %}
+                          {{ childNode.link({ class: classes }) }}
+                      {% endswitch %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

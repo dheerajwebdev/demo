@@ -1,0 +1,94 @@
+fieldLayouts:
+  952f6d13-09e6-4d4b-bb59-e0c4da48a53c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 741730c0-b74e-46ff-b643-339d8efa58a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59fe9802-b173-48d5-a339-f43e91a926a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67913d09-f1cf-48b4-adfe-4d3cc883cd49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1d7ed94-406c-48f2-bd2f-abb97ff16bd3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af76f48d-511b-4998-9ea5-9841d5e479af
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 194f2cdb-4986-4ef0-a079-379be98b767d
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 3eb14607-1124-49e8-b48d-72e0e0335334 # Funds
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

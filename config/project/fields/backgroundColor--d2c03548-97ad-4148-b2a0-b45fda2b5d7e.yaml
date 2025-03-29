@@ -1,0 +1,35 @@
+columnSuffix: mmecerrf
+contentColumnType: string(5)
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: backgroundColor
+instructions: null
+name: 'Background Color'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - white
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Gray
+        -
+          - value
+          - gray
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

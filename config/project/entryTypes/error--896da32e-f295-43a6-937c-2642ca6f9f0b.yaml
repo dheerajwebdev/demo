@@ -1,0 +1,82 @@
+fieldLayouts:
+  df25e4e6-a5db-4de5-839b-ba9f34c802c4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 654968b3-d86d-4361-aae0-b4937019aaef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e530f5d1-0d8c-4cc9-8b90-cd49daa54ada
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e5eb396-4df4-4046-ad5f-10f98a0f368a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adf69612-e69f-4045-b582-ca240d66c9ed
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dfd94269-b1b3-46ab-87a9-934e12a6fb3a
+        userCondition: null
+handle: error
+hasTitleField: false
+name: '404'
+section: 6f1e6e98-d91b-4609-8039-d914efa4f46d # 404
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

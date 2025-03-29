@@ -1,0 +1,14 @@
+columnSuffix: pusvvksb
+contentColumnType: string(255)
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: videoUrl
+instructions: 'Vimeo sharing link e.g. `https://vimeo.com/173365667`'
+name: 'Video URL'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,60 @@
+fieldLayouts:
+  a33801a2-f506-47c6-9a8a-9691df1a5425:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4779ed3e-d9d7-444b-85e1-2e9d5630465f # Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e345b3cd-acd9-47bf-be8b-a05a5a56ec09
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b7198145-bea1-4d9a-b7b8-f18517f0a0f7 # Map URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8ab22fa4-f079-44a3-abe4-3742cc959a83
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 32384c26-7ca3-413d-b86b-3a31eff9e0ba # Telephone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bba1afaf-025c-4ef6-a557-d42b2229e121
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9c272a6-f21f-4cb9-b41c-f5ae57197ea4 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f924c31e-a12d-46cc-a4d6-82f2fae99689
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 30dfdb35-b40a-4a56-9311-2e913f7caf90
+        userCondition: null
+handle: contact
+name: Contact
+sortOrder: 1

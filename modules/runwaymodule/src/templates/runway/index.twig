@@ -1,0 +1,57 @@
+{% extends "runway/runway/_layout.twig" %}
+
+{% block content %}
+
+  {{ craft.runwayModule.script('web/src/frontend/main.js') }}
+
+  {% set devFolders = craft.runwayModule.templateFolders() %}
+  <div id="runway">
+
+    <section class="content-pane mb-8">
+      <progress-tracker></progress-tracker>
+    </section>
+
+  <div class="content-pane p-0 pb-10">
+    <table class="data w-full b-12">
+      <thead>
+      <tr>
+        <th class="!w-3/12 !pl-5">Name</th>
+        <th class="!w-3/12">Assigned</th>
+        <th class="!w-1/12">Images</th>
+        <th class="!w-1/12">Estimate</th>
+        <th class="!w-1/12">Notes</th>
+        <th class="!w-4/12">Status</th>
+      </tr>
+      </thead>
+    </table>
+    {% for folder in devFolders %}
+      {% set modules = craft.runwayModule.list(folder.folder) %}
+      {% if modules %}
+        <div class="w-full pt-5 mb-5">
+          <h3 class="ml-5 flex items-center">
+            <span>
+              {{ folder.title }}
+            </span>
+            <span class="bg-[#e6edf5] text-[#414d59] py-0.5 px-1.5 ml-1 text-[11px] rounded-lg">{{ modules|length }}</span>
+          </h3>
+          <table class="data w-full">
+            {% for module in modules %}
+              {# Browser doesn't like vue component markup inside table element. #}
+              {# see more here https://vuejs.org/api/built-in-special-attributes.html#is #}
+              <tbody
+                class=""
+                is="vue:task"
+                :module="{{ module|json_encode }}"
+                folder="{{ folder.folder }}"
+              >
+              </tbody>
+            {% endfor %}
+          </table>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+
+{% endblock %}

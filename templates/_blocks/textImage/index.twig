@@ -1,0 +1,43 @@
+{% import "_macros/image" as _image %}
+
+{# Required #}
+{% set heading = block.heading %} {# Plain Text #}
+{% set copy = block.copy %} {# Plain Text #}
+{% set image = block.image %} {# Assets #}
+
+{# Optional #}
+{% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
+{% set subheading = block.subheading ?? '' %} {# Plain Text #}
+
+<section class="bg-gray-800 py-24">
+  <div class="container">
+    <div class="layout-grid items-center gap-y-12">
+      <div class="col-span-full lg:col-span-6 order-2 lg:order-none flex flex-col items-start gap-[18px]">
+        {% if eyebrow %}
+          <div class="t-eyebrow">{{ eyebrow }}</div>
+        {% endif %}
+
+        {% if heading %}
+          <h2 class="t-h2">{{ heading }}</h2>
+        {% endif %}
+
+        {% if copy %}
+          <div class="text-xl">{{ copy|nl2br }}</div>
+        {% endif %}
+      </div>
+      {% if image %}
+        <div class="col-span-full lg:col-span-5 lg:col-start-8 order-1 lg:order-none animate-image-container">
+          <div class="wrapper aspect-[450/484] overflow-hidden">
+            {{ _image.tag( image.one ?? null, null,
+              { width: 450, height: 484, mode: 'crop' },
+              "w-full h-full object-cover" ) }}
+          </div>
+
+          {% if subheading %}
+            <div class="mt-2.5 text-sm text-gray-200 font-semibold image-caption">{{ subheading }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

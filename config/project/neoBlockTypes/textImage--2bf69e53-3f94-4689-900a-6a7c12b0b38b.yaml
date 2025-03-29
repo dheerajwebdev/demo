@@ -1,0 +1,88 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  450eb005-302e-4237-9ae6-71a2e5e70297:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 711fa6ae-fdd7-4e1c-86e7-d32482080883
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 575778ce-5821-4e2f-9728-84ea9f065f38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1faf09c0-39a2-425f-8963-b92fe14b77ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e30ac93-3914-4d54-a50d-bb3614f9d5d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            instructions: null
+            label: 'Image Caption'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5718756-cb04-4a52-a8a2-378a973ee86e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b604307e-44fd-456f-9f8a-0ce260ab87da
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: textImage
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Text + Image'
+topLevel: true

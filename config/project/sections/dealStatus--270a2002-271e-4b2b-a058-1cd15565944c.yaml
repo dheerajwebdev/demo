@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: false
+handle: dealStatus
+name: 'Deal Status'
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 0c4453b2-6755-46f8-8695-213d033e2df3
+type: structure

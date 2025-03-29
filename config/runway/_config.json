@@ -1,0 +1,24 @@
+{
+  "totalEstimatedHours": 100,
+  "timeline": {
+    "end": "2022-12-25"
+  },
+  "folders": [
+    {
+      "title": "Chrome",
+      "folder": "_layout"
+    },
+    {
+      "title": "Blocks",
+      "folder": "_blocks"
+    },
+    {
+      "title": "Components",
+      "folder": "_components"
+    },
+    {
+      "title": "Style Guide",
+      "folder": "_styleguide"
+    }
+  ]
+}

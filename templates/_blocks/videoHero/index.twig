@@ -1,0 +1,87 @@
+{# Required #}
+{% set heading = block.heading %} {# Plain Text #}
+
+{# Optional #}
+{% set copy = block.copy ?? '' %} {# Plain Text #}
+{% set videoUrl = block.videoUrl ?? null %} {# URL #}
+{% set subheading = block.subheading ?? '' %} {# Plain Text #}
+
+<section class="text-white pt-[152px] lg:pt-[230px]
+  bg-gradient-to-t from-white to-blue-200
+  from-[64px] to-[64px] lg:from-[166px] lg:to-[166px]"
+  x-data="{
+    isPlaying: true,
+    player: null,
+    togglePlay(){
+      this.isPlaying = Alpine.raw(this.player).getPaused().then((paused) => {
+        paused ? Alpine.raw(this.player).play() : Alpine.raw(this.player).pause()
+        this.isPlaying = paused
+      })
+
+    },
+    init(){
+      this.player = new Vimeo.Player(this.$refs.vimeoIframe)
+      this.player.on('play', () => {
+        this.isPlaying = true
+      })
+      this.player.on('pause', () => {
+        this.isPlaying = false
+      })
+    }
+  }"
+>
+  <div class="container">
+    <div class="layout-grid pb-14 lg:pb-[90px] items-baseline">
+      <h1 class="col-span-4 lg:col-span-5 t-h1">
+        {{ heading }}
+      </h1>
+
+      {% if copy %}
+        <div class="mt-[30px] text-xl lg:m-0 col-span-full lg:col-span-5 lg:col-start-8">
+          {{ copy|nl2br }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if videoUrl %}
+      <div class="relative bg-black group/videohero">
+        {% if videoUrl|isYoutube %}
+          <div class="w-full">
+            {# Check whether this is a YouTube video #}
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ videoUrl|getYoutubeId }}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              width="1280" height="720" frameborder="0"
+              class="w-full h-auto aspect-video"
+              allowfullscreen></iframe>
+          </div>
+        {% elseif videoUrl|isVimeo %}
+          {# For Vimeo, embed a video with custom play button #}
+          {# Consider https://plyr.io/ for further customisation #}
+          <iframe
+            x-ref="vimeoIframe"
+            src="{{ url( videoUrl|generateVimeoEmbedUrl, {
+                background: 1,
+            }) }}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            width="1280" height="720" frameborder="0"
+            class="relative w-full h-auto aspect-video"
+            allowfullscreen></iframe>
+          {# overlay #}
+          <button
+            @click="await togglePlay()"
+            class="bg-black/25 absolute inset-0 w-full opacity-0 group-hover/videohero:opacity-100 transition-opacity flex items-center justify-center"
+          >
+              <div class="play w-12 h-12 lg:w-[85px] lg:h-[85px] bg-white rounded-full flex items-center justify-center text-sm lg:text-xl text-black">
+                <span x-text="isPlaying ? 'Pause' : 'Play'"></span>
+              </div>
+          </button>
+          {% js 'https://player.vimeo.com/api/player.js' %}
+          {% if subheading %}
+            <div class="absolute bottom-5 left-5 bg-white rounded-full px-3 pt-1 pb-1.5 text-blue-500 text-sm font-semibold transition-opacity">{{ subheading }}</div>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{% import "_macros/image" as _image %}
+
+<a
+  href="{{ url('strategy') }}#{{ theme.slug }}"
+  class="group relative flex overflow-hidden"
+>
+  {{ _image.tag(
+    theme.backgroundImage.one() ?? null,
+    theme.title,
+    { width: 356, height: 272 },
+    "group-hover:scale-105 transition-transform w-full h-full object-cover"
+  ) }}
+
+  {% set icon = theme.icon[0] ?? null %}
+  {% if icon %}
+    <div class="absolute top-5 left-6 bg-white w-[50px] p-0.5 aspect-square rounded-full text-blue-200">
+        <img src="{{ icon.url }}" alt="{{ icon.alt }}">
+    </div>
+  {% endif %}
+
+  <div class="absolute inset-x-0 bottom-0 p-2.5 md:px-6 md:py-[18px] text-white bg-blue-200">
+    <h4 class="font-serif leading-none sm:text-xl lg:text-base 2xl:text-xl">{{ theme.title }}</h4>
+  </div>
+</a>

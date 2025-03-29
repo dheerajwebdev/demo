@@ -1,0 +1,76 @@
+fieldLayouts:
+  9ec9bef1-1d13-4dad-bc39-c55b6d1af763:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 62d5caf8-13db-4ac5-a267-4682df32f78d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f904b728-951f-4cbd-bb1a-984f00b2d9ea # Longform
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d82afacb-b1ed-485c-bff9-304c87ace25a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 06e99691-7c26-40c5-88fc-26a727bccd73
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a75c99d7-802e-4c2f-abbc-e4cb7f582fb8
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 1be5e249-7f49-4ad6-b02f-b917580a41ba
+        userCondition: null
+handle: text
+hasTitleField: true
+name: Text
+section: 44339fe6-1c99-46f8-875d-9fbd1bcf5719 # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

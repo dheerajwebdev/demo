@@ -1,0 +1,14 @@
+columnSuffix: jmvfzknf
+contentColumnType: boolean
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: lightswitch
+instructions: null
+name: Lightswitch
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

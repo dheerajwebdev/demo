@@ -1,0 +1,32 @@
+{% extends '_layout' %}
+{% set darkMode = true %}
+
+{% import "_macros/image" as _image %}
+
+{% set people = craft.entries.section('people').all() %}
+
+{% block content %}
+  {# Heading with background #}
+  {% include "_blocks/imageHero" with {
+    block: {
+      heading: entry.heading,
+      backgroundImage: entry.backgroundImage ?? null
+    }
+  } %}
+
+  <div class="bg-white">
+    {# Introduction #}
+    {% include "_components/centerText" with {
+      heading: entry.subheading,
+      copy: entry.copy
+    } %}
+
+    <div class="container pb-16">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-20">
+        {% for person in people %}
+          {% include "_components/card/person" with { person } only %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

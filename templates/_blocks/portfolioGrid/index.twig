@@ -1,0 +1,36 @@
+{# Optional #}
+{% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
+{% set heading = block.heading ?? '' %} {# Plain Text #}
+{% set linkField = block.linkField ?? null %} {# Hyper #}
+{% set companies = block.companies ?? null %} {# Entries #}
+
+<section class="bg-gray-800 pb-28">
+  <div class="container">
+    {% include "_components/centerText" with {
+      eyebrow: eyebrow,
+      heading: heading,
+      linkField: linkField
+    } %}
+
+    {# Get related Companies #}
+    {% set relations = block.companies.with(['logo','sectors']) %}
+    {% set excludeIds = ['not']|merge(relations.ids()) %}
+
+    {# Make the number up to 3 from the listing #}
+    {% set limit = 3 - relations.count() %}
+    {% set companies = craft.entries.section('companies')
+      .with(['logo','sectors'])
+      .limit(limit)
+      .id(excludeIds)
+      .all() %}
+
+    {% set companies = relations.all()|merge(companies) %}
+    <div class="mx-auto max-w-[280px] xs:max-w-none grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-y-6 gap-6 reveal-items-container">
+      {% for company in companies %}
+        <div class="reveal-items-item">
+          {% include "_components/card/company" with { company } only %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

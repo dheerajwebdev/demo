@@ -1,0 +1,9 @@
+.checklist-section.light {
+    background-color: white;
+    color: #001D3F;
+}
+
+.checklist-section.dark {
+    background-color: #001D3F;
+    color: white;
+}

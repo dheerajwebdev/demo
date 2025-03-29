@@ -1,0 +1,39 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: f904b728-951f-4cbd-bb1a-984f00b2d9ea # Longform
+fieldLayouts:
+  6d255004-69b2-4768-ac98-16d861c06e1c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd8fd81d-1443-4cf4-b102-f1ea0930140f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aabccce4-4324-47e6-8343-26715996a21a
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: link
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Link
+topLevel: true

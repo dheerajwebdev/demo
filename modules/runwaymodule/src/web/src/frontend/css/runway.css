@@ -1,0 +1,6 @@
+.todo {
+  @apply bg-[#ccc] hover:bg-[#bbb];
+}
+.done {
+  @apply bg-[#27ab83] hover:bg-[#199473];
+}

@@ -1,0 +1,28 @@
+{% set heading = heading %} {# Plain Text #}
+{% set color = color ?? 'black' %}
+
+{# Optional #}
+{% set eyebrow = eyebrow ?? '' %} {# Plain Text #}
+{% set copy = copy ?? '' %} {# Plain Text #}
+{% set linkField = linkField ?? null %} {# Hyper #}
+
+<div class="py-14 lg:py-24 flex flex-col items-center gap-[18px]">
+  {% if eyebrow %}
+    <div class="t-eyebrow">{{ eyebrow }}</div>
+  {% endif %}
+
+  <h2 class="t-h2 max-w-[736px] mx-auto text-center">{{ heading }}</h2>
+
+  {% if copy %}
+    <div class=" max-w-xl mx-auto text-xl text-center">{{ copy }}</div>
+  {% endif %}
+
+  {% if linkField and linkField.url|length %}
+    {% include "_components/button" with {
+      href: linkField.url,
+      label: linkField.text,
+      arrow: 'right',
+      color: color
+    } %}
+  {% endif %}
+</div>

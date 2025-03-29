@@ -1,0 +1,59 @@
+columnSuffix: ghwxrmoh
+contentColumnType: text
+fieldGroup: baf5e3a1-8726-4232-8636-73fee17f5107 # Portfolio
+handle: companyInformation
+instructions: null
+name: 'Company Information'
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Heading
+            -
+              - handle
+              - heading
+            -
+              - width
+              - 30%
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Detail
+            -
+              - handle
+              - detail
+            -
+              - width
+              - 70%
+            -
+              - type
+              - multiline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - Contact
+        -
+          - col2
+          - ''
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

@@ -1,0 +1,68 @@
+{% extends '_layout' %}
+
+{% do seomatic.meta.seoTitle("Search Results") %}
+
+{% set q = craft.app.request.getParam('q') ?? '' %}
+{% set excludedSections = ['dev'] %}
+
+{% set query = craft.entries()
+  .section(['not', excludedSections])
+  .search(q)
+  .orderBy('score')
+  .limit(1)
+%}
+
+{% paginate query as pageInfo, pageEntries %}
+
+{% block content %}
+  <section class="container py-12">
+
+    <h1 class="t-h1 mb-4">Search</h1>
+
+    <form class="flex mb-10"  action="{{ url('search') }}">
+      <input class="rounded-none" type="search" name="q" placeholder="Search..." value="{{ q }}">
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    {% if q %}
+
+      <div class="mb-10">
+        <h2 class="t-h2">Search results for “{{ q }}”</h2>
+        <p>{{ pageInfo.total }} {{ pageInfo.total == 1 ? 'page' : 'pages' }} found</p>
+      </div>
+
+      {% if pageEntries %}
+        <ol class="space-y-2 mb-10">
+          {% for entry in pageEntries %}
+
+            {% switch entry.type %}
+              {% case "anotherSection" %}
+                {% set extract = null %}
+              {% default %}
+                {% set extract = entry.blocks.type('body').one().body %}
+            {% endswitch %}
+
+            <li>
+              <article>
+                <h3 class="t-h3">
+                  <a class="hover:underline text-[DarkOrange]" href="{{ entry.url }}">
+                    {{ entry.title }}
+                  </a>
+                </h3>
+                <div>
+                  {{ extract|striptags|truncate(100) }}
+                </div>
+              </article>
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <p>No results</p>
+      {% endif %}
+
+      {% include "_components/pagination" %}
+    
+    {% endif %}
+
+  </section>
+{% endblock %}

@@ -1,0 +1,6 @@
+
+{% set folder = craft.app.request.getSegment(2) %}
+{% set item = craft.app.request.getSegment(3) %}
+
+{% redirect "/runway/" ~ folder ~ "/" ~ item %}
+

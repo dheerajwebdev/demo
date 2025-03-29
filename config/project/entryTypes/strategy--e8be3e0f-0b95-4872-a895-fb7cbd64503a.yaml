@@ -1,0 +1,76 @@
+fieldLayouts:
+  8826a8ee-ea00-4aaa-b8ab-8ae5194bbccf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8639b9a0-815a-4803-bf31-aed24f595634
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0ca6618-d336-40ff-b35a-9c331734cd30
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e4d00dca-e7de-4cde-a930-907e370e26c0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 247e58b1-c12c-4796-bb7d-3836a6b490e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 5890212d-357e-4b6f-9ce8-701edd8db6b1
+        userCondition: null
+handle: strategy
+hasTitleField: false
+name: Strategy
+section: bedeb21b-0ffb-4a50-8e63-d01d50850661 # Strategy
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

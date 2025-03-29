@@ -1,0 +1,22 @@
+{# Required #}
+{% set copy = block.copy %}
+
+{# Optional #}
+{% set heading = block.heading ?? null %}
+{% set subheading = block.subheading ?? null %}
+
+{% if copy %}
+  <blockquote class="my-6 py-[30px] border-t border-b border-blue-200">
+    <p class="t-h4">
+      {{ copy }}
+    </p>
+    {% if heading %}
+      <footer class="mt-3">
+        {{ heading }}
+        {% if subheading %}
+          <cite class="block font-bold not-italic">{{ subheading }}</cite>
+        {% endif %}
+      </footer>
+    {% endif %}
+  </blockquote>
+{% endif %}

@@ -1,0 +1,18 @@
+{# Optional #}
+{% set icon = block.icon ?? [] %} {# Assets #}
+{% set heading = block.heading ?? '' %} {# Plain Text #}
+{% set copy = block.copy ?? '' %} {# Plain Text #}
+
+<article class="bg-blue-300 px-6 py-7 h-full flex flex-col gap-10">
+    {% if icon %}
+      <div class="bg-white w-[70px] p-2 aspect-square rounded-full text-blue-300">
+        <img src="{{ icon.one.url }}" alt="{{ icon.one.alt }}">
+      </div>
+    {% endif %}
+
+    <div>
+      <h3 class="t-h3 mb-2">{{ heading }}</h3>
+
+      <p>{{ copy|nl2br }}</p>
+    </div>
+</article>

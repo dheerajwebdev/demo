@@ -1,0 +1,89 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  64cfe97a-0327-4c3e-8ba5-b5f7fcabf519:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72400799-0158-4f17-97b7-ef5f247b043b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64a21256-34f5-432d-a3f7-b10bf77d2e0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5185e158-75fc-41a1-b529-d38d4cf39a40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 40216c19-2e03-4f70-bef3-0c4615a613cd
+            userCondition: null
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'If no companies are selected, 3 will be added from the Companies list'
+            type: craft\fieldlayoutelements\Tip
+            uid: 032a2955-fcf3-4720-87fd-ab85765ee047
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 64e5f47e-5e44-4bea-849c-7cfe57829aa5 # Companies
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06065c34-9f47-47dd-aefa-03518863bad5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b577a069-b1e0-46de-a81c-589a755a3017
+        userCondition: null
+group: eff29af1-aaf3-4256-8e64-0f798c451638 # Relations
+groupChildBlockTypes: true
+handle: portfolioGrid
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Portfolio Grid'
+topLevel: true

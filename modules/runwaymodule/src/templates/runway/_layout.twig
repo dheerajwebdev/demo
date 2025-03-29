@@ -1,0 +1,34 @@
+{% extends '_layouts/cp' %}
+{% set title = "Runway" %}
+
+{% block main %}
+  <div id="content">
+    {% if contentNotice or tabs %}
+      <header id="content-header" class="pane-header">
+        {{ contentNotice ? tag('div', {
+          id: 'content-notice',
+          html: contentNotice,
+          role: 'status',
+        }) }}
+        {% if tabs %}
+          {% include "_includes/tabs" with {
+            containerAttributes: {
+              id: 'tabs',
+            },
+          } %}
+        {% endif %}
+      </header>
+    {% endif %}
+
+    {% block content %}
+      {{ content is defined ? content|raw }}
+    {% endblock %}
+
+    {# footer #}
+    {% if footer %}
+      <div id="footer" class="flex">
+        {{ footer|raw }}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

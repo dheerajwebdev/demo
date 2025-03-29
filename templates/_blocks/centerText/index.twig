@@ -1,0 +1,32 @@
+{% import "_macros/image" as _image %}
+
+{# Required #}
+{% set heading = block.heading %} {# Plain Text #}
+
+{# Optional #}
+{% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
+{% set copy = block.copy ?? '' %} {# Plain Text #}
+{% set linkField = block.linkField ?? null %} {# Hyper #}
+{% set backgroundColor = block.backgroundColor ?? 'white' %} {# Dropdown #}
+{% set backgroundImage = block.backgroundImage.one() ?? null %} {# Asset #}
+
+{% set color = backgroundImage ? 'white' : 'black' %}
+{% if backgroundImage %}
+  <div
+    class="min-h-[620px] flex items-center bg-cover text-white blue-overlay relative"
+    style="{{ _image.background(backgroundImage) }}"
+  >
+{% else %}
+  <div class="bg-white">
+{% endif %}
+    <section class="relative container">
+      <div class="{{ backgroundColor == 'gray' ? 'bg-gray-800 mt-8 md:mt-20 lg:mt-[72px]' }}">
+        {% include "_components/centerText" with {
+          eyebrow: eyebrow,
+          heading: heading,
+          linkField: linkField,
+          color: color
+        } %}
+      </div>
+    </section>
+</div>

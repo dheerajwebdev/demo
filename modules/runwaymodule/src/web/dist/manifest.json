@@ -1,0 +1,26 @@
+{
+  "web/src/frontend/main.js": {
+    "file": "assets/frontend.5506734e.js",
+    "src": "web/src/frontend/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main.712b4c23.css"
+    ]
+  },
+  "web/src/backend/main.js": {
+    "file": "assets/backend.fab6a1e3.js",
+    "src": "web/src/backend/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main.805deb16.css"
+    ]
+  },
+  "web/src/frontend/main.css": {
+    "file": "assets/main.712b4c23.css",
+    "src": "web/src/frontend/main.css"
+  },
+  "web/src/backend/main.css": {
+    "file": "assets/main.805deb16.css",
+    "src": "web/src/backend/main.css"
+  }
+}

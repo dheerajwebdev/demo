@@ -1,0 +1,63 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: f904b728-951f-4cbd-bb1a-984f00b2d9ea # Longform
+fieldLayouts:
+  c127f954-8f65-4c6e-b291-db1e3f2b256b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: Quote
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 623e574c-a50c-4d56-bac6-485cb6649e64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: null
+            label: Name
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c46c8e04-b05d-4dd1-a274-06ff7e4b5b69
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            instructions: null
+            label: Company
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17a7dba2-811c-4af6-b151-5e772d27034f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c95a00a7-e6d4-41db-91d8-d26cc157a641
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: quote
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Quote
+topLevel: true

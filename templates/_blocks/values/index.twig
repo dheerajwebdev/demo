@@ -1,0 +1,22 @@
+{% set eyebrow = block.eyebrow ?? '' %}
+{% set heading = block.heading ?? '' %}
+
+<section class="bg-blue-200 text-white">
+  <div class="container">
+    <div class="py-14 lg:py-24 flex flex-col items-center gap-[18px]">
+      {% if eyebrow %}
+        <div class="t-eyebrow">{{ eyebrow }}</div>
+      {% endif %}
+
+      <h2 class="t-h2 max-w-3xl mx-auto text-center">{{ heading }}</h2>
+
+      <div class="mt-10 mx-auto max-w-[280px] sm:max-w-none layout-grid gap-y-8 reveal-items-container">
+        {% for block in block.children.all() %}
+          <div class="col-span-full sm:col-span-3 reveal-items-item">
+            {% include _self ~ "/" ~ block.type %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

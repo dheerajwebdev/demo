@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: themes
+name: Themes
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 71c8d015-a9b3-4763-aff2-cdf2f6650e20
+type: structure

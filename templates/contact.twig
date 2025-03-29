@@ -1,0 +1,47 @@
+{% extends '_layout' %}
+{% set darkMode = true %}
+
+{% block content %}
+  {# Heading with background #}
+  {% include "_blocks/imageHero" with {
+    block: {
+      heading: entry.heading,
+      backgroundImage: entry.backgroundImage ?? null
+    }
+  } %}
+
+  <div class="bg-white py-16">
+    <section class="container container--sm">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:order-2 md:col-span-2">
+          {{ craft.formie.renderForm('contact') }}
+
+        </div>
+        <div class="flex flex-col gap-12 sm-only:justify-between sm:flex-row md:flex-col text-blue-200">
+          <div>
+            <h3 class="t-h3">Address</h3>
+            <div class="prose">
+              {{ contact.address|nl2br }}
+
+              {% if contact.mapUrl|length %}
+                <a href="{{ contact.mapUrl }}" target="_blank"rel="noopener noreferrer">
+                  <span class="sr-only">View address on a map</span>
+                  {{ svg('static/img/icons/marker.svg')|attr({
+                    class: 'inline-block h-5 mb-1 fill-blue-200 active:fill-blue-500 hover:fill-blue-500',
+                  }) }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <h3 class="t-h3">Contact</h3>
+            <div class="text-blue-200 prose hover:prose-a:text-blue-300">
+              {{ entry.bodySimpleLink }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+columnSuffix: dkcxpefh
+contentColumnType: text
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: bodySimpleLink
+instructions: null
+name: 'Body Simple Link'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: 2ba5d709-2894-4970-9b9f-15c32d972487 # Simple Link
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

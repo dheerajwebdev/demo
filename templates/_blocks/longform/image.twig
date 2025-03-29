@@ -1,0 +1,15 @@
+{% import "_macros/image" as _image %}
+
+{# Required #}
+{% set image = block.image %} {# Assets #}
+
+{% if image %}
+  <figure>
+    {{ _image.tag(
+      image.one() ?? null,
+      image.one().alt,
+      { width: 830 },
+      "w-full"
+    ) }}
+  </figure>
+{% endif %}

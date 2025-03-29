@@ -1,0 +1,20 @@
+{# Sectors #}
+{% set sectors = craft.entries.section('sectors').with('icon').all() %}
+<div class="layout-grid gap-y-8 pb-20 reveal-items-container">
+  {% for sector in sectors %}
+    <div class="col-span-2 sm:col-span-3 bg-blue-300 p-6 pb-3 h-full flex flex-col items-center reveal-items-item">
+      {% set icon = sector.icon[0] ?? null %}
+      {% if icon %}
+        <div class="bg-white w-[70px] p-2 mb-4 aspect-square rounded-full text-blue-300">
+          <img src="{{ icon.url }}" alt="{{ icon.alt }}">
+        </div>
+      {% endif %}
+
+      <div class="h-full flex items-center">
+        <h3 class="t-h3 text-center">
+          {{ sector.title }}
+        </h3>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: strategy
+name: Strategy
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/default
+    uriFormat: strategy
+type: single

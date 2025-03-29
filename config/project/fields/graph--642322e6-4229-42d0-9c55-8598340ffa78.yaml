@@ -1,0 +1,59 @@
+columnSuffix: paqkmcxe
+contentColumnType: text
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: graph
+instructions: null
+name: Graph
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Number
+            -
+              - handle
+              - number
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Detail
+            -
+              - handle
+              - detail
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: 3
+  minRows: 1
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

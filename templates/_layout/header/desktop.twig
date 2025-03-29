@@ -1,0 +1,95 @@
+  <div class="container hidden lg:block">
+    <nav class="flex items-center justify-between py-8">
+      <a href="/" class="block h-[2.4rem]" aria-label="{{ siteName }} Homepage">
+        {{ svg('static/img/branding.svg')|attr({
+          class: 'h-full',
+        }) }}
+      </a>
+      <ul id="main-nav" class="flex gap-12 items-center">
+        {% for node in nav %}
+          {% set classes = [
+            'block font-bold',
+            node.active
+              or node.hasActiveChild
+              or craft.app.request.getSegments()|first == node.nodeUri|split('/')|first
+              ? 'active',
+            node.hasDescendants ? 'parent',
+            node.classes
+          ] %}
+
+          {% set customAttributes = {} %}
+          {% for cA in node.customAttributes %}
+            {% set customAttributes = customAttributes|merge({(cA.attribute): (cA.value)}) %}
+          {% endfor %}
+          <li
+            class="group relative"
+            x-on:mouseenter="open = true"
+            x-on:mouseleave="open = false"
+            x-data="{ open: false }"
+          >
+            <div class="flex items-center gap-2">
+              {% switch node.getTypeLabel %}
+                {% case "Passive" %}
+                  {{ tag('span', {
+                    text: node.title,
+                    class: classes
+                  }|merge(customAttributes)) }}
+                {% default %}
+                  {{ node.link({ class: classes }) }}
+              {% endswitch %}
+              {% if node.hasDescendants %}
+                <button
+                  @click="open = !open"
+                  aria-haspopup="true"
+                  aria-controls="desktop-nav-child-{{ node.id }}"
+                  :aria-expanded="open ? 'true' : 'false'"
+                >
+                  {{ svg('static/img/icons/chevron-down.svg')|attr({
+                    class: 'w-2.5 group-hover:rotate-180',
+                    ':class': "open && 'rotate-180'"
+                  }) }}
+                </button>
+              {% endif %}
+            </div>
+            {% if node.hasDescendants %}
+              <div
+                x-cloak
+                x-show="open"
+                x-on:keyup.esc="open = false"
+                x-transition.opacity.duration.400ms
+                id="desktop-nav-child-{{ node.id }}"
+                :aria-hidden="open ? 'false' : 'true'"
+                class="block -mt-0.5 -ml-5 absolute bg-white p-3 min-w-[175px] text-blue-200 rounded-lg shadow-lg transition-opacity"
+              >
+                <ul>
+                  {% for childNode in node.children.all() %}
+                    {% set classes = [
+                      "block font-bold p-2 lg:whitespace-nowrap",
+                      childNode.url ? "hover:underline focus:underline",
+                      childNode.active ? 'text-blue-200',
+                      childNode.classes
+                    ] %}
+                    {% set customAttributes = {} %}
+                    {% for cA in childNode.customAttributes %}
+                      {% set customAttributes = customAttributes|merge({(cA.attribute): (cA.value)}) %}
+                    {% endfor %}
+                    <li>
+                      {% switch childNode.getTypeLabel %}
+                        {% case "Passive" %}
+                          {{ tag('span', {
+                            text: childNode.title,
+                            class: classes
+                          }|merge(customAttributes)) }}
+                        {% default %}
+                          {{ childNode.link({ class: classes }) }}
+                      {% endswitch %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+  </nav>
+</div>

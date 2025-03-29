@@ -1,0 +1,29 @@
+{% import "_macros/image" as _image %}
+{% set company = company ?? null %}
+{% set position = postion ?? 0 %}
+
+{% if company %}
+  {% set logo = company.logo[0] ?? company.logo.one() ?? null %}
+  <a
+    href="{{ company.url }}"
+    class="group flex flex-col gap-5 h-full justify-between bg-white p-5"
+  >
+    <div>
+      <div class="h-[78px] w-full mb-5 flex justify-center">
+        {% if logo %}
+          {{ _image.tag(
+            logo,
+            company.title,
+            { height: 78 },
+            "object-contain"
+          ) }}
+        {% endif %}
+      </div>
+      <h4 class="text-xl" id="company-name-{{ company.id }}">{{ company.title }}</h4>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="font-bold text-blue-200 group-hover:underline">Read more</span>
+      {{ svg('static/img/icons/chevron.svg')|attr({ class: 'h-3 rotate-180'}) }}
+    </div>
+  </a>
+{% endif %}

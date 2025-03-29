@@ -1,0 +1,27 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: companies
+name: Companies
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: portfolio/entry
+    uriFormat: 'portfolio/{slug}'
+structure:
+  maxLevels: 1
+  uid: 76b07ad5-626c-4d88-bb0d-1a86ebb7e75b
+type: structure

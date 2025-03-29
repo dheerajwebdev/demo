@@ -1,0 +1,62 @@
+{
+    "name": "simplygoodwork/start",
+    "description": "Craft CMS, Alpine.js and Tailwind CSS",
+    "license": "MIT",
+    "homepage": "https://simplygoodwork.com/",
+    "type": "project",
+    "support": {
+        "email": "dev@simplygoodwork.com",
+        "issues": "https://github.com/simplygoodwork/start/issues"
+    },
+    "require": {
+        "php": "^8.0.0",
+        "aodihis/video-utils": "^2.0",
+        "craftcms/ckeditor": "3.8.0",
+        "craftcms/cms": "4.7.3",
+        "nystudio107/craft-plugin-vite": "^4.0",
+        "nystudio107/craft-retour": "4.1.15",
+        "nystudio107/craft-seomatic": "4.0.42",
+        "nystudio107/craft-vite": "4.0.8",
+        "putyourlightson/craft-dashboard-begone": "^2.0",
+        "putyourlightson/craft-sprig": "2.7.3",
+        "servd/craft-asset-storage": "3.5.10",
+        "simplygoodwork/craft-remote": "4.0.2",
+        "spicyweb/craft-neo": "4.0.5",
+        "verbb/formie": "^2.1",
+        "verbb/hyper": "1.1.20",
+        "verbb/navigation": "2.0.25",
+        "vlucas/phpdotenv": "^5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\runwaymodule\\": "modules/runwaymodule/src/",
+            "modules\\expansion\\": "modules/expansion/src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-install-cmd": [
+            "@composer dump-autoload -o"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
+        }
+    ]
+}

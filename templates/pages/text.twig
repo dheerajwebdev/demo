@@ -1,0 +1,15 @@
+{% extends '_layout' %}
+
+{% block content %}
+<div class="container">
+  <article class="layout-grid pt-[178px] pb-[110px]">
+    <div class="col-span-full lg:col-span-8">
+      <h1 class="t-h1 mb-4">{{ entry.title }}</h1>
+
+      {% include "_blocks/longform" with {
+        children: entry.longform.level(1).all(),
+        class: '' } %}
+    </div>
+  </article>
+</div>
+{% endblock %}

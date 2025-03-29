@@ -1,0 +1,41 @@
+{% set nav = craft.navigation.nodes()
+  .handle('main')
+  .level(1)
+  .all()
+%}
+
+{% set class = 'text-navy-200' %}
+{% set solidBg = 'bg-white' %}
+{% if darkMode ?? false %}
+  {% set class = 'dark text-white' %}
+  {% set solidBg = 'bg-blue-200' %}
+{% endif %}
+<header
+  x-data="{
+    oldTop: 0,
+    offset: 70,
+    showNav: true,
+    scrollUp: false,
+    navClass: 'absolute',
+    trackScroll() {
+      this.scrollUp = window.pageYOffset < this.oldTop
+      this.showNav = window.pageYOffset < this.offset || this.scrollUp
+        ? true : false
+
+      let background = window.pageYOffset > this.offset ? '{{ solidBg }}' : ''
+      let position = this.scrollUp ? 'fixed' : 'absolute'
+
+      this.navClass = [position, background]
+      this.oldTop = window.pageYOffset
+    },
+  }"
+  x-on:scroll.window="trackScroll()"
+  x-show="showNav"
+  x-bind:class="navClass"
+  x-transition.opacity.duration.800ms
+  class="z-20 w-full {{ class }} transition-all"
+>
+  {% include _self ~ "/mobile" %}
+  {% include _self ~ "/desktop" %}
+</header>
+

@@ -1,0 +1,13 @@
+{# Optional #}
+{% set linkField = block.linkField ?? null %} {# Hyper #}
+
+<div>
+  {% if linkField and linkField.url|length %}
+    {% include "_components/button" with {
+      href: linkField.url,
+      label: linkField.text,
+      arrow: 'right',
+      newWindow: linkField.newWindow
+    } %}
+  {% endif %}
+</div>

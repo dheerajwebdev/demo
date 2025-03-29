@@ -1,0 +1,43 @@
+.t-h1 {
+  @apply font-serif;
+  font-size: 2.625rem;
+  line-height: 2.875rem;
+  @screen md {
+    font-size: 3.375rem;
+    line-height: 3.625rem;
+    }
+}
+
+.t-h2 {
+  @apply font-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  @screen md {
+    font-size: 2.625rem;
+    line-height: 2.875rem;
+  }
+}
+
+.t-h3 {
+  @apply font-serif;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.t-h4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.t-body-1 {
+  @apply text-xl;
+}
+
+.t-body-3 {
+  @apply text-sm;
+}
+
+.t-eyebrow {
+  @apply bg-blue-500 text-white pt-1 pb-1.5 px-3 text-sm font-semibold rounded-full;
+}

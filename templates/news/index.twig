@@ -1,0 +1,23 @@
+{% extends '_layout' %}
+{% set darkMode = true %}
+
+{% import "_macros/image" as _image %}
+
+{% block content %}
+  {# Heading with background #}
+  {% include "_blocks/imageHero" with {
+    block: {
+      heading: entry.heading,
+      backgroundImage: entry.backgroundImage ?? null
+    }
+  } %}
+
+  <div class="bg-white">
+    {# Introduction #}
+    {% include "_components/centerText" with {
+      heading: entry.subheading,
+    } %}
+
+    {{ sprig('_sprig/news')}}
+  </div>
+{% endblock %}

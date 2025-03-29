@@ -1,0 +1,259 @@
+fieldLayouts:
+  b21b0385-2635-4760-b0f3-5e3e6740f332:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 15511a03-51c9-4aeb-9a0a-a890028b6b25
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c50ac359-39cd-423c-8432-33ed3039c777 # Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82589a46-6d6d-43b8-9c63-49bcc90a45b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4964e71e-f35f-41e2-944d-7b7a8b62ee51 # Transaction Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb0b9962-42e6-4d79-809a-2eb6299cdaf8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b5bdc76c-6230-425e-a3e8-ea23e1254b37
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 3fecd575-c059-4136-aa0e-062258f74179 # Sectors
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d4e97e1-5700-42f1-92dd-7a9b875d2189
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 30943985-9d9d-42f1-8500-ef991ad1ff77 # Themes
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7401021f-022b-4b58-9b94-0b8d72e9e5ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5c5eecac-3238-4305-ac64-c7a951c9818e # Funds
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b071b18d-6e66-4c30-ad0e-26acabe7a38d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 31fabf56-092d-4e39-970b-20a5bbb82310
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 8245ebf7-23eb-4db0-8605-e02a4fdffe51 # Deal Status
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 679cd97d-a873-465d-b8d3-7a8aa93bb9fa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Detail
+        uid: 61c01ebf-3313-4349-95ee-d6796eaf7ad3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fdf3a110-c29e-48e8-91cc-736a4d274fc4 # Body Simple Link
+            instructions: null
+            label: Overview
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c941b820-9705-4dea-b736-929c1014eee9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cab61f8b-1de5-4bab-bf9e-75303764700f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d5de1a0-919b-4ff8-96bd-1ddfeba4e75d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bf9c66d4-3ba1-4583-b8bf-72d8e547ba19 # Company Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b219081-ee6b-4acd-9272-8d881a9c414b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1bd23f4f-e51e-45ac-bc51-aac100d58868
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ab62074-609d-43a4-8d00-4de8995590b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b55fc8f1-9a93-4131-b0a2-36858895ac78
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 8f1af7ce-a429-453c-b927-4159f41894d4 # Label
+            instructions: null
+            label: 'Box Heading'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fdc228df-9400-4f35-96d4-641ba308166c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            instructions: null
+            label: 'Box Copy'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d46ce67-ee79-4e0a-9d8b-147be69b0a72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            instructions: 'e.g. 42%'
+            label: Statistic
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d64783e2-b614-4cc0-a8a4-9621d239c578
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            instructions: null
+            label: 'Statistic Description'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 734bee84-623a-4814-b4c0-528602a33d54
+            userCondition: null
+            warning: null
+            width: 100
+        name: Sidebar
+        uid: fcfa11c3-9dc6-4c9b-ae66-bbf386b225ab
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8d59f16-6a60-4c3f-80fa-932bce81c717
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 58cf46b2-2d69-46e9-a899-3c4d6f942364
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 9c287916-f31a-4c2c-8259-7e157304f979 # Companies
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

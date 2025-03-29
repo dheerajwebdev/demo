@@ -1,0 +1,22 @@
+{% import "_macros/image" as _image %}
+
+<a
+  href="{{ person.url }}"
+  class="flex flex-col group border border-blue-200 hover:bg-blue-500"
+>
+  <div class="aspect-square overflow-hidden">
+    {{ _image.tag(
+      person.profilePhoto.one() ?? null,
+      person.title,
+      { width: 300, height: 300 },
+      "w-full h-full group-hover:scale-105 transition-transform"
+    ) }}
+  </div>
+  <div class="flex-1 flex flex-col justify-between w-full p-[14px] pt-5 text-blue-200 group-hover:text-white group-focus:text-white group-focus:bg-blue-500">
+    <div>
+      <h4 class="t-h3 mb">{{ person.title }}</h4>
+      <p>{{ person.heading }}</p>
+    </div>
+    <p class="mt-6 text-sm uppercase font-semibold">{{ person.team.one.title ?? '' }}</p>
+  </div>
+</a>

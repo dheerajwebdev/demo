@@ -1,0 +1,46 @@
+fieldLayouts:
+  2c7d27ef-cff8-4486-bc31-9342b4176cd4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 46f02521-f12e-4970-ac56-168a216bafcf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dabd1389-fe94-4e43-bcb3-a0f252d5d242
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 270a2002-271e-4b2b-a058-1cd15565944c # Deal Status
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

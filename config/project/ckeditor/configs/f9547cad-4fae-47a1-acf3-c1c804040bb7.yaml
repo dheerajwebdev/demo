@@ -1,0 +1,15 @@
+css: ".ck.ck-content .t-h2 {\r\n  font-size: 1.8em;\r\n}\r\n.ck.ck-content .t-h3 {\r\n  font-size: 1.4em;\r\n}\r\n.ck.ck-content ul,\r\n.ck.ck-content ol {\r\n  padding-left: 1em;\r\n}"
+headingLevels: false
+js: "return {\r\n  heading: {\r\n    options: [\r\n      {\r\n        model: 'heading',\r\n        title: 'Heading',\r\n        view: {\r\n          name: 'h2',\r\n          classes: 't-h2'\r\n        },\r\n        class: 't-h2',\r\n      },\r\n      {\r\n        model: 'subheading',\r\n        title: 'Subheading',\r\n        view: {\r\n          name: 'h3',\r\n          classes: 't-h3'\r\n        },\r\n        class: 't-h3',\r\n      },\r\n      {\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n      },\r\n    ]\r\n  }\r\n}"
+name: Default
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - bulletedList
+  - numberedList
+  - '|'
+  - link
+  - '|'
+  - sourceEditing

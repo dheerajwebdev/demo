@@ -1,0 +1,5 @@
+description: ''
+handle: blockReview
+name: 'Block Review'
+permissions:
+  - 'viewentries:a4be0c9e-09dc-4204-b9cb-8ba708979a24'

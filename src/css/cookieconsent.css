@@ -1,0 +1,21 @@
+#cc-main {
+  /** Change font **/
+  --cc-font-family: 'Open Sans';
+
+  /** Change button primary color to black **/
+  --cc-btn-primary-bg: #000000;
+  --cc-btn-primary-border-color: #000000;
+  --cc-btn-primary-hover-bg: #2C82E9;
+  --cc-btn-primary-hover-border-color: #2C82E9;
+
+  /** Make the buttons a bit rounder **/
+  --cc-btn-border-radius: 9999px;
+}
+
+#cc-main a {
+  @apply bg-none font-normal underline hover:text-blue-500 focus:text-blue-500;
+}
+
+#cc-main .cm--bar.cm--inline .cm__body {
+  @apply max-w-none;
+}

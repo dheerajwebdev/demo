@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: sectors
+name: Sectors
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 808b6065-2cbc-4ecd-a0a9-e2d1229318e8
+type: structure
