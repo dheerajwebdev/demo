@@ -1,2 +1,35 @@
-.env
-src/config/license.key
+# System
+.DS_Store
+
+# Composer
+/vendor
+
+# NPM
+/node_modules
+
+# Env files
+/.env
+/.env.local
+/.env.*.local
+
+# Log files
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Craft
+/web/uploads
+/web/imager
+
+# Webpack build
+#/web/dist
+
+# Extra ddev file for codespaces port forwarding
+/.ddev/docker-compose.codespaces-vite.yaml
