@@ -24,17 +24,6 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
   restrictedLocationSubpath: logo
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Asset
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: false
   showUnpermittedFiles: false

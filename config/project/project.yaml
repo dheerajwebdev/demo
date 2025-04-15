@@ -1,4 +1,4 @@
-dateModified: 1736174291
+dateModified: 1744699311
 elementSources:
   craft\elements\Entry:
     -
@@ -116,7 +116,7 @@ fs:
       optimiseUrlPattern: ''
       projectSlug: ''
       securityKey: ''
-      subfolder: a/staging/images/
+      subfolder: bp-energy/staging/images/
     type: servd\AssetStorage\AssetsPlatform\Fs
     url: 'https://cdn2.assets-servd.host/'
   uploads:
@@ -130,7 +130,7 @@ fs:
       optimiseUrlPattern: ''
       projectSlug: ''
       securityKey: ''
-      subfolder: a/staging/uploads/
+      subfolder: bp-energy/staging/uploads/
     type: servd\AssetStorage\AssetsPlatform\Fs
     url: 'https://cdn2.assets-servd.host/'
 meta:
@@ -197,14 +197,12 @@ meta:
     51709ee8-c90d-4b3d-a2da-ea518e10cb6a: Default # Default
     069416e5-321f-4029-9ef9-a418bcf32c67: Images # Images
     98247db1-d35e-4bd4-83a2-d402d919b73b: Globals # Globals
-    221016c4-c183-4f4b-ada6-31488caee2b0: 'Contact Form' # Contact Form
     642322e6-4229-42d0-9c55-8598340ffa78: Graph # Graph
     677709f9-0b6b-4d19-969c-0495c252dcca: Image # Image
     30943985-9d9d-42f1-8500-ef991ad1ff77: Themes # Themes
     37856688-8093-44ca-ac04-d3704dfb4e0b: Image # Image
     58413647-0403-4d88-8bf2-a21fbef39373: 'Background Image' # Background Image
     87858620-d2d5-4d5e-8be5-4be25b06b61e: News # News
-    a3f7212f-9639-4f1c-bdaa-28569bf24bf5: New # New
     a9a47688-3d84-4f8a-a6e1-59ceef15393f: People # People
     a9b3e5dc-9e7e-480b-a113-3249fa01bddd: 'News Grid' # News Grid
     a53e504a-eefb-4fd7-ab18-74d4edbb639b: 'LinkedIn Profile' # LinkedIn Profile
@@ -263,7 +261,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: H8YG69322HFMPBQH71TRZULM
-    schemaVersion: 2.0.15
+    schemaVersion: 2.0.19
     settings:
       ajaxTimeout: 10
       alertEmails: null
