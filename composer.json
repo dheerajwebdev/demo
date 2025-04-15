@@ -12,7 +12,7 @@
         "php": "^8.0.0",
         "aodihis/video-utils": "^2.0",
         "craftcms/ckeditor": "3.8.0",
-        "craftcms/cms": "4.7.3",
+        "craftcms/cms": "^4.7.3",
         "nystudio107/craft-plugin-vite": "^4.0",
         "nystudio107/craft-retour": "4.1.15",
         "nystudio107/craft-seomatic": "4.0.42",
