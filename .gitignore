@@ -35,4 +35,4 @@ npm-debug.log*
 # /.ddev/docker-compose.codespaces-vite.yaml
 
 # DDev files ignored 
-/.ddev
+.ddev
