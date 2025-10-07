@@ -32,4 +32,7 @@ npm-debug.log*
 #/web/dist
 
 # Extra ddev file for codespaces port forwarding
-/.ddev/docker-compose.codespaces-vite.yaml
+# /.ddev/docker-compose.codespaces-vite.yaml
+
+# DDev files ignored 
+/.ddev
