@@ -65,7 +65,7 @@ fieldLayouts:
         name: Content
         uid: bff3ee18-2613-4581-afb0-2a39873bb2d8
         userCondition: null
-group: 955b2e74-1b28-49e1-b32c-eb2e51b1d613 # Hero
+group: null
 groupChildBlockTypes: true
 handle: videoHero
 icon: null

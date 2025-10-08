@@ -1,29 +1,28 @@
 {# Optional #}
-{% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
+{% import "_macros/image" as _image %}
 {% set heading = block.heading ?? '' %} {# Plain Text #}
-{% set copy = block.copy ?? '' %} {# Plain Text #}
+{% set image = block.image.one() ?? null %}
 
 <section class="bg-blue-200 text-white pt-24">
   <div class="container">
-    {% if eyebrow %}
-      <div class="mb-[18px]">
-        <span class="t-eyebrow">{{ eyebrow }}</span>
-      </div>
-    {% endif %}
-
-    <div class="layout-grid mb-20 gap-y-[18px]">
-      <div class="col-span-full lg:col-span-6">
+    
+    <div class="layout-grid mb-20 gap-8 md:gap-16 items-center">
+      <div class="col-span-full md:col-span-6 lg:col-span-7 md:order-1 order-2">
         <h2 class="t-h2">{{ heading }}</h2>
       </div>
 
-      {% if copy %}
-        <div class="col-span-full lg:col-span-6 text-white text-xl prose max-w-none">
-          {{ copy|nl2br }}
+      {% if image %}
+        <div class="col-span-full md:col-span-6 lg:col-span-5 md:order-2 order-1">
+          {{ _image.tag(
+            image,
+            '',
+            { width: 600, height: 600,quality: 100 },
+            "w-full h-full"
+          ) }}
         </div>
       {% endif %}
     </div>
 
-    {% include _self ~ "/sectors" %}
   </div>
 
   {% include _self ~ "/themes" %}

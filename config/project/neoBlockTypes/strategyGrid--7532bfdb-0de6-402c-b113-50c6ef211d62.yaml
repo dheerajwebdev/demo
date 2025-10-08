@@ -60,7 +60,7 @@ fieldLayouts:
         name: Content
         uid: ebad673d-4035-46cb-995c-3f87ecb5e161
         userCondition: null
-group: eff29af1-aaf3-4256-8e64-0f798c451638 # Relations
+group: null
 groupChildBlockTypes: true
 handle: strategyGrid
 icon: null

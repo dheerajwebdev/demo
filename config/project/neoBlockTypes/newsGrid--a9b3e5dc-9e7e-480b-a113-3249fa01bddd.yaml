@@ -48,7 +48,7 @@ fieldLayouts:
         name: Content
         uid: ae444a21-0fd8-49aa-880c-d4581bb079e7
         userCondition: null
-group: eff29af1-aaf3-4256-8e64-0f798c451638 # Relations
+group: null
 groupChildBlockTypes: true
 handle: newsGrid
 icon: null

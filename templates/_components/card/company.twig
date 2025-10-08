@@ -5,25 +5,27 @@
 {% if company %}
   {% set logo = company.logo[0] ?? company.logo.one() ?? null %}
   <a
-    href="{{ company.url }}"
-    class="group flex flex-col gap-5 h-full justify-between bg-white p-5"
+    href="{{ company.websiteLink }}"
+    class="group flex flex-col gap-5 justify-between bg-white p-5 relative h-64 rounded-md"
+    target="_blank"
   >
-    <div>
-      <div class="h-[78px] w-full mb-5 flex justify-center">
+    <div class="pb-5">
+      <div class="h-[78px] w-full mb-12 flex justify-center">
         {% if logo %}
           {{ _image.tag(
             logo,
             company.title,
-            { height: 78 },
+            { height: 78,quality: 100 },
             "object-contain"
           ) }}
         {% endif %}
       </div>
-      <h4 class="text-xl" id="company-name-{{ company.id }}">{{ company.title }}</h4>
+      <h4 class="text-xl text-center" id="company-name-{{ company.id }}">{{ company.title }}</h4>
     </div>
-    <div class="flex items-center gap-2">
-      <span class="font-bold text-blue-200 group-hover:underline">Read more</span>
-      {{ svg('static/img/icons/chevron.svg')|attr({ class: 'h-3 rotate-180'}) }}
+    <div class="absolute left-0 right-0 -bottom-4">
+      <div class="bg-blue-500 group-hover:bg-blue-300 transition-colors duration-300 flex gap-2 items-center justify-center rounded-full w-9 h-9 mx-auto">
+        {{ svg('static/img/icons/plus.svg')|attr({ class: 'h-6 w-6 fill-white'}) }}
+      </div>
     </div>
   </a>
 {% endif %}

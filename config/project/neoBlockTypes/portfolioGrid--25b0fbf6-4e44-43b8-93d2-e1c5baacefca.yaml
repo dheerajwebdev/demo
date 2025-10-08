@@ -73,7 +73,7 @@ fieldLayouts:
         name: Content
         uid: b577a069-b1e0-46de-a81c-589a755a3017
         userCondition: null
-group: eff29af1-aaf3-4256-8e64-0f798c451638 # Relations
+group: null
 groupChildBlockTypes: true
 handle: portfolioGrid
 icon: null

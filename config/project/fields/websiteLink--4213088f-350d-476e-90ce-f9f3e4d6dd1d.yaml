@@ -1,0 +1,14 @@
+columnSuffix: lhyxokmk
+contentColumnType: string(255)
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: websiteLink
+instructions: null
+name: 'Website Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

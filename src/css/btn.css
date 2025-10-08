@@ -25,3 +25,6 @@ header.dark .btn {
   }
 }
 
+.portfolio-grid  a{
+  @apply w-full max-w-[24rem] justify-between;
+}

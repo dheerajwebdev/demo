@@ -57,6 +57,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 4213088f-350d-476e-90ce-f9f3e4d6dd1d # Website Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c06b72f7-619e-4331-9430-d7f69731c99f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: b5bdc76c-6230-425e-a3e8-ea23e1254b37
             userCondition: null

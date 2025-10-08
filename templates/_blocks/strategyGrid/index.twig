@@ -8,30 +8,13 @@
 
 <section class="py-20">
   <div class="container">
-    {% if eyebrow %}
-      <div class="mb-[18px]">
-        <span class="t-eyebrow">{{ eyebrow }}</span>
-      </div>
-    {% endif %}
+    
 
-    <div class="layout-grid mb-20 gap-y-[18px]">
-      <div class="col-span-full lg:col-span-6">
-        <h2 class="t-h2">{{ heading }}</h2>
+    <div class="layout-grid mb-10 gap-y-[18px]">
+      <div class="col-span-full">
+        <h2 class="t-h2 text-center">{{ heading }}</h2>
       </div>
 
-      <div class="col-span-full lg:col-span-5 lg:col-start-8">
-        {% if copy %}
-          <div class="text-xl prose max-w-none mb-[18px]">{{ copy|nl2br }}</div>
-        {% endif %}
-
-        {% if linkField %}
-          {% include "_components/button" with {
-            href: linkField.url,
-            label: linkField.text,
-            arrow: 'right'
-          } %}
-        {% endif %}
-      </div>
     </div>
 
     <div class="layout-grid gap-y-8 reveal-items-container">
