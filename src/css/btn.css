@@ -26,5 +26,5 @@ header.dark .btn {
 }
 
 .portfolio-grid  a{
-  @apply w-full max-w-[24rem] justify-between;
+  @apply w-full max-w-[20rem] justify-between font-bold;
 }
