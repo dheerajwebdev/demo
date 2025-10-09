@@ -1,4 +1,4 @@
-dateModified: 1759980395
+dateModified: 1760008426
 elementSources:
   craft\elements\Entry:
     -
@@ -87,11 +87,14 @@ elementSources:
       key: 'section:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
       type: native
     -
-      heading: ''
-      type: heading
-    -
-      heading: ''
-      type: heading
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:f2ef577c-521a-4f4e-867e-9edb727d8ab0' # News Categories
+      tableAttributes:
+        - postDate
+      type: native
 email:
   fromEmail: $CRAFT_SYSTEM_EMAIL
   fromName: $CRAFT_SYSTEM_NAME
@@ -156,6 +159,7 @@ meta:
     5e675d35-5cbe-472c-95d9-587691f3dda2: Checklist # Checklist
     6c540daf-4c49-405a-af7f-0005500e6f4c: News # News
     6f1e6e98-d91b-4609-8039-d914efa4f46d: '404' # 404
+    7c62bd61-4de6-4523-a736-1e917d13699e: Categories # Categories
     8bf19d89-4d45-4b34-90f9-c76906e83907: New # New
     8f1af7ce-a429-453c-b927-4159f41894d4: Label # Label
     8f2cdb70-2597-45f1-8c20-f1d1b471e1f6: Common # Common
@@ -236,9 +240,11 @@ meta:
     d6930fa0-ed59-4e9b-b394-c420b2d60f92: Link # Link
     e1dcf5ff-1760-4ad1-895a-61dd38637519: 'Video Hero' # Video Hero
     e8be3e0f-0b95-4872-a895-fb7cbd64503a: Strategy # Strategy
+    ec7c30b5-0eab-4abb-9942-0b1bda47db85: Default # Default
     ed9eb40f-9212-4028-b548-7f60c5b7ed0e: Main # Main
     eee05842-b06c-4dc6-9143-7ec4192debf9: Homepage # Homepage
     eff29af1-aaf3-4256-8e64-0f798c451638: Relations # Relations
+    f2ef577c-521a-4f4e-867e-9edb727d8ab0: 'News Categories' # News Categories
     f3ce1b77-39d1-4d88-8a8f-217f4a5665ac: Body # Body
     f5e30ee2-1a17-4d9f-a868-9539ab3544d0: Portfolio # Portfolio
     f7d50232-1776-417e-989f-c93bb87683d1: Copy # Copy

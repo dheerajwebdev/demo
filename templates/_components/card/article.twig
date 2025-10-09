@@ -1,10 +1,8 @@
 {% set article = article ?? null %}
 
 {% if article %}
-  <a
-    href="{{ article.url }}"
-    class="group flex flex-col gap-4 pt-4 border-t border-black"
-  >
+  <a href="{{ article.url }}" class="group flex flex-col gap-4 pt-4 border-t border-black">
+    {% if article.categories.count() %}<span class="text-gray-200 text-left">{% for category in article.categories.all() %}{{ category.title }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{% endif %}
     <time class="text-blue-500 font-bold" datetime="{{ article.postDate|date('Y-m-d') }}">{{ article.postDate|date('mm j, Y') }}</time>
     <h4 class="text-xl group-hover:underline">{{ article.title }}</h4>
   </a>

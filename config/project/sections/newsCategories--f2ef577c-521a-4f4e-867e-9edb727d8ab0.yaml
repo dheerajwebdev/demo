@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsCategories
+name: 'News Categories'
+propagationMethod: all
+siteSettings:
+  434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: ee1cbb6b-21a2-4074-928d-57d4f4b0d886
+type: structure
