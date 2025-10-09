@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: strategy
-name: Strategy
+name: 'Invesment Themes'
 previewTargets:
   -
     label: 'Primary entry page'

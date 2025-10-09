@@ -53,7 +53,7 @@ permissions:
   - 'deletepeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
   - 'deletepeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
   - 'deletepeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
-  - 'deletepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'deletepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Invesment Themes
   - 'deletepeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'deletepeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'deletepeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
@@ -154,7 +154,7 @@ permissions:
   - 'saveentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
   - 'saveentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
   - 'saveentries:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
-  - 'saveentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'saveentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Invesment Themes
   - 'saveentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'saveentries:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'saveentries:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
@@ -181,7 +181,7 @@ permissions:
   - 'savepeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
   - 'savepeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
   - 'savepeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
-  - 'savepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'savepeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Invesment Themes
   - 'savepeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'savepeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'savepeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
@@ -231,7 +231,7 @@ permissions:
   - 'viewentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
   - 'viewentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
   - 'viewentries:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
-  - 'viewentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'viewentries:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Invesment Themes
   - 'viewentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'viewentries:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'viewentries:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
@@ -258,7 +258,7 @@ permissions:
   - 'viewpeerentrydrafts:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
   - 'viewpeerentrydrafts:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
   - 'viewpeerentrydrafts:b5064781-9bc7-4471-afaa-cb17fd93e45e' # Contact
-  - 'viewpeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Strategy
+  - 'viewpeerentrydrafts:bedeb21b-0ffb-4a50-8e63-d01d50850661' # Invesment Themes
   - 'viewpeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'viewpeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'viewpeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio

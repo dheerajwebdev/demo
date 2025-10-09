@@ -1,4 +1,4 @@
-dateModified: 1760008426
+dateModified: 1760013141
 elementSources:
   craft\elements\Entry:
     -
@@ -224,7 +224,7 @@ meta:
     baec80ef-1241-4c73-8757-9b4c2c3c4ccc: Default # Default
     baf5e3a1-8726-4232-8636-73fee17f5107: Portfolio # Portfolio
     be80e28a-b476-4f91-ba8a-c94c9ccf5c97: Team # Team
-    bedeb21b-0ffb-4a50-8e63-d01d50850661: Strategy # Strategy
+    bedeb21b-0ffb-4a50-8e63-d01d50850661: 'Invesment Themes' # Invesment Themes
     bf9c66d4-3ba1-4583-b8bf-72d8e547ba19: 'Company Information' # Company Information
     c009ff8c-5188-4dc8-a4e1-3d8548fe4c9f: Team # Team
     c1d67c47-3edc-40c8-b912-439b27823a2d: Default # Default
@@ -239,7 +239,7 @@ meta:
     d3f18620-f92e-43ea-8cc5-386497c0031c: Quote # Quote
     d6930fa0-ed59-4e9b-b394-c420b2d60f92: Link # Link
     e1dcf5ff-1760-4ad1-895a-61dd38637519: 'Video Hero' # Video Hero
-    e8be3e0f-0b95-4872-a895-fb7cbd64503a: Strategy # Strategy
+    e8be3e0f-0b95-4872-a895-fb7cbd64503a: 'Invesment Themes' # Invesment Themes
     ec7c30b5-0eab-4abb-9942-0b1bda47db85: Default # Default
     ed9eb40f-9212-4028-b548-7f60c5b7ed0e: Main # Main
     eee05842-b06c-4dc6-9143-7ec4192debf9: Homepage # Homepage

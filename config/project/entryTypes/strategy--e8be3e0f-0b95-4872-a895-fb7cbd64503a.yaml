@@ -66,8 +66,8 @@ fieldLayouts:
         userCondition: null
 handle: strategy
 hasTitleField: false
-name: Strategy
-section: bedeb21b-0ffb-4a50-8e63-d01d50850661 # Strategy
+name: 'Invesment Themes'
+section: bedeb21b-0ffb-4a50-8e63-d01d50850661 # Invesment Themes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
