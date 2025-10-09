@@ -1,9 +1,9 @@
-{% macro tag(image, alt = null, transform = [], classes = '') %}{% apply spaceless %}
+{% macro tag(image, alt = null, transform = [], classes = '', format = 'jpg') %}{% apply spaceless %}
   {% if image %}
     {# Set default transform options #}
     {% set defaultTransform = {
-      quality: 85,
-      format: 'jpg'
+      quality: 85
+      format: format
     } %}
 
     {# Merge supplied transform, including dimensions #}
