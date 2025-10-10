@@ -18,7 +18,7 @@ return [
     'errorEntry' => 'src/main.js',
     'cacheKeySuffix' => '',
     'devServerInternal' => App::env('VITE_DEVSERVER_INTERNAL') ?? 'http://host.docker.internal:3002/',
-    'checkDevServer' => false,
+    'checkDevServer' => App::env('VITE_CHECK_DEVSERVER') ?? false,
     'includeReactRefreshShim' => false,
     'includeModulePreloadShim' => true,
     'criticalPath' => '@webroot/dist/criticalcss',

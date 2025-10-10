@@ -1,13 +1,99 @@
+{# Filters #}
+{% set categories = categories ?? [] %}
+{% set removeCategories = removeCategories ?? '' %}
+
 {# Pagination controls #}
 {% set limit = 48 %}
 {% set page = page ?? 1 %}
 
 {% set entryQuery = craft.entries.section('articles').limit(limit) %}
 
+{% set newsCategories = craft.entries.section('newsCategories').all() %}
+
+{% if removeCategories|length %}
+  {% set categories = categories|filter(i => i != removeCategories) %}
+{% endif %}
+
+{# Build querystring #}
+{% set queryString = [] %}
+{% if categories|length %}
+  {% do entryQuery.categories(categories) %}
+  {% set queryString = queryString|merge(['categories=' ~ categories|join(',')]) %}
+{% endif %}
+
 {% set pageInfo = sprig.paginate(entryQuery, page) %}
 {% set articles = pageInfo.pageResults %}
 
+{% macro filter(label, name, filters, var) %}
+  <div
+    x-data="{ open: false }"
+    class="relative w-full md:w-auto"
+  >
+    <button
+      x-on:click="open = !open"
+      aria-haspopup="true"
+      aria-controls="filter"
+      x-bind:aria-expanded="open ? 'true' : 'false'"
+      class="w-full group/btn py-2.5 px-5 rounded-full inline-flex relative items-center justify-between gap-4 border text-black border-black"
+    >
+      Filter by {{ label }}
+      {{ svg('static/img/icons/chevron-down.svg')|attr({
+        class: 'w-2.5',
+        'x-bind:class': "open && 'rotate-180'"
+      }) }}
+    </button>
+    <div
+      x-cloak
+      x-show="open"
+      x-on:click.away="open = false"
+      x-bind:aria-hidden="open ? 'false' : 'true'"
+      class="absolute mx-auto mt-1 left-0 bg-white p-4 text-blue-200 rounded-lg shadow-lg max-w-none w-full md:w-auto right-auto z-20"
+      style="display:none;"
+    >
+      <ul class="flex flex-col gap-2">
+        {% for item in filters %}
+          <li>
+            <label class="flex gap-2 items-center justify-start font-bold">
+              <input sprig
+                x-on:click="open = false"
+                type="checkbox"
+                value="{{ item.id }}"
+                name="{{ name }}[]"
+                {{ item.id in var ? 'checked' }}
+              >
+              <div class="lg:whitespace-nowrap">{{ item.title }}</div>
+            </label>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endmacro %}
+
 <div class="container pb-20">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
+    <div class="mb-4 w-full flex flex-col md:flex-row justify-start items-stretch md:items-center gap-3">
+      {{ _self.filter('Type', 'categories', newsCategories, categories) }}
+    </div>
+    {% if categories|length %}
+      <button
+        sprig
+        s-val:categories=""
+        class="text-black underline whitespace-nowrap"
+      >
+        Reset filters
+      </button>
+    {% endif %}
+  </div>
+
+  {# Show results and selected filters #}
+  <div class="mb-4 flex flex-wrap gap-4 justify-center md:justify-start items-center">
+    {{ include("_sprig/components/selectedCatFilters", {
+      newsCategories,
+      categories
+    }, with_context = false ) }}
+  </div>
+
   <div id="results" class="layout-grid gap-y-10 lg:gap-y-20 reveal-items-container">
     {% for article in articles %}
       <article class="col-span-full lg:col-span-4 reveal-items-item">

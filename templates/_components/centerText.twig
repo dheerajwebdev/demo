@@ -6,7 +6,7 @@
 {% set copy = copy ?? '' %} {# Plain Text #}
 {% set linkField = linkField ?? null %} {# Hyper #}
 
-<div class="py-14 lg:py-24 flex flex-col items-center gap-[18px]">
+<div class="{{ paddingClass|default('py-14 lg:py-24') }} flex flex-col items-center gap-[18px]">
   {% if eyebrow %}
     <div class="t-eyebrow">{{ eyebrow }}</div>
   {% endif %}

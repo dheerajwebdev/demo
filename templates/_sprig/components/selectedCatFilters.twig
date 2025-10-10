@@ -1,0 +1,11 @@
+{# Show selected filters #}
+{% for item in newsCategories|filter(i => i.id in categories) %}
+    <button
+        sprig
+        s-val:removeCategories="{{ item.id }}"
+        class="border border-white bg-blue-300 hover:bg-blue-500 text-white py-2.5 px-5 rounded-full inline-flex items-center gap-4"
+    >
+        <div>{{ item.title }}</div>
+        <div class="text-xl">&times;</div>
+    </button>
+{% endfor %}
