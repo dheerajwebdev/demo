@@ -1,6 +1,6 @@
 defaultPlacement: end
 fieldLayouts:
-  a5297c6e-e625-4710-a7c5-298ed4c50b0c:
+  e3d42c8c-8cb8-4194-91d1-ff6a70f435a5:
     tabs:
       -
         elementCondition: null
@@ -28,7 +28,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
-            uid: a4f7f52b-6d00-41c0-b9ca-ed3d7d7d4943
+            uid: f244b3f4-23c5-44d6-9c86-13c3059cc349
             userCondition: null
             warning: null
             width: 100
@@ -39,7 +39,7 @@ fieldLayouts:
             required: false
             tip: null
             type: verbb\navigation\fieldlayoutelements\NodeTypeElements
-            uid: b748399d-75eb-4367-aab0-cad67f6f9dcc
+            uid: f6d0fffd-0818-4ad8-86d5-3bdf6271fa9a
             userCondition: null
             warning: null
           -
@@ -55,12 +55,12 @@ fieldLayouts:
             tip: null
             translatable: false
             type: verbb\navigation\fieldlayoutelements\NewWindowField
-            uid: f06a76e0-99cb-4e0a-8fbd-ed1bd7b68646
+            uid: d79bdb01-a327-43c3-ae27-d03832eb2e44
             userCondition: null
             warning: null
             width: 100
         name: Node
-        uid: 8f76ea03-71ee-4fcc-8c00-3e8dda20c0f2
+        uid: f2b6023b-ae9d-4a68-8204-c45586d712ae
         userCondition: null
       -
         elementCondition: null
@@ -94,7 +94,7 @@ fieldLayouts:
             title: null
             translatable: false
             type: verbb\navigation\fieldlayoutelements\UrlSuffixField
-            uid: c5b6fb09-5c22-4ee0-ad24-6bc7972d1337
+            uid: c095ce43-5f07-42bc-a8e9-28aaaf4282a7
             userCondition: null
             warning: null
             width: 100
@@ -127,7 +127,7 @@ fieldLayouts:
             title: null
             translatable: false
             type: verbb\navigation\fieldlayoutelements\ClassesField
-            uid: ec7d4396-9a43-452c-ba21-bc52cf40146f
+            uid: afb013ea-50b2-4b50-9cc8-fb94e4d492c0
             userCondition: null
             warning: null
             width: 100
@@ -144,17 +144,17 @@ fieldLayouts:
             tip: null
             translatable: false
             type: verbb\navigation\fieldlayoutelements\CustomAttributesField
-            uid: c4f9f065-ee4e-4b6c-9876-d463c8e5d9fa
+            uid: d8d9a68c-fe0a-4835-8306-4c8f32446664
             userCondition: null
             warning: null
             width: 100
         name: Advanced
-        uid: 96457da7-b773-403f-bba6-f9f4287cf032
+        uid: de631a63-e81d-41b4-98bc-a4e56d34babd
         userCondition: null
-handle: smallPrint
-instructions: null
-maxNodes: 5
-name: 'Small Print'
+handle: footerC2
+instructions: ''
+maxNodes: null
+name: 'Footer C2'
 permissions:
   craft\elements\Asset:
     enabled: '1'
@@ -176,7 +176,7 @@ propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME
     enabled: true
-sortOrder: 4
+sortOrder: 3
 structure:
   maxLevels: 1
-  uid: d173facc-1d5d-4916-a36d-473ad360448d
+  uid: 68be49db-fa33-496f-a692-9e95794d06d4

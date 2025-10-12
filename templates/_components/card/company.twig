@@ -4,24 +4,31 @@
 
 {% if company %}
   {% set logo = company.logo[0] ?? company.logo.one() ?? null %}
+  {% set dealStatus = company.dealStatus.one() ?? null %}
   <a
     href="{{ company.websiteLink }}"
-    class="group flex flex-col gap-5 justify-between bg-white p-5 relative h-64 rounded-md"
+    class="group flex flex-col gap-5 justify-between bg-white p-5 relative h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' %} border-green-400 border-[5px]{% endif %}"
     target="_blank"
   >
     <div class="pb-5">
-      <div class="h-[78px] w-full mb-12 flex justify-center">
+      <div class="h-[78px] w-full mb-12 justify-center">
+        {% if company.transactionDate %}
+          <h4 class="text-xl text-center pb-3 font-semibold">{{ company.transactionDate|date('F Y') }}</h4>
+        {% endif %}
         {% if logo %}
           {{ _image.tag(
             logo,
             company.title,
             { height: 78, quality: 100 },
-            "object-contain",
+            "object-contain mx-auto",
             logo.extension
           ) }}
         {% endif %}
       </div>
-      <h4 class="text-xl text-center" id="company-name-{{ company.id }}">{{ company.title }}</h4>
+      {% if company.funds.count() %}<h4 class="text-xl text-center font-bold pt-5">{{ company.funds.one().title }}</h4>{% endif %}
+      {% if dealStatus %}
+        <h4 class="text-xl text-center italic">{{ dealStatus.title }}{% if (dealStatus.slug == 'realized' or dealStatus.slug == 'merged') and company.mergedRealizedDate %} {{ company.mergedRealizedDate|date('M Y') }}</h4>{% endif %}
+      {% endif %}
     </div>
     <div class="absolute left-0 right-0 -bottom-4">
       <div class="bg-blue-500 group-hover:bg-blue-300 transition-colors duration-300 flex gap-2 items-center justify-center rounded-full w-9 h-9 mx-auto">

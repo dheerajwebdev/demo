@@ -13,12 +13,6 @@
   } %}
 
   <div class="bg-white">
-    {# Introduction #}
-    {% include "_components/centerText" with {
-      heading: entry.subheading,
-      paddingClass: 'pt-14 lg:pt-24'
-    } %}
-
     {{ sprig('_sprig/news') }}
   </div>
 {% endblock %}

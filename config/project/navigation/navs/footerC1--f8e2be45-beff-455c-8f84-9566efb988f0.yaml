@@ -151,10 +151,10 @@ fieldLayouts:
         name: Advanced
         uid: 98943d0a-f078-45a3-a7b0-5d4db952bd65
         userCondition: null
-handle: footer
-instructions: null
+handle: footerC1
+instructions: ''
 maxNodes: null
-name: Footer
+name: 'Footer C1'
 permissions:
   craft\elements\Asset:
     enabled: '1'

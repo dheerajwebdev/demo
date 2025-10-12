@@ -1,0 +1,26 @@
+{% import "_macros/image" as _image %}
+
+{% set copy = block.copy ?? '' %}
+{% set image = block.image.one() ?? null %}
+
+<section class="text-white pt-[125px] pb-[100px] bg-blue-200">
+  <div class="container">
+    <div class="pb-14 items-baseline">
+      <div class="text-white border border-white text-center border-[2px] p-5">
+        <h1 class="col-span-4 lg:col-span-5 t-h2">
+          {{ copy }}
+        </h1>
+      </div>
+    </div>
+
+    {% if image %}
+      <div class="relative">
+          <div class="w-full">
+            {{ _image.tag( image, null,
+              { width: 1400, height: 550, mode: 'crop' },
+              "w-full h-full" ) }}
+          </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

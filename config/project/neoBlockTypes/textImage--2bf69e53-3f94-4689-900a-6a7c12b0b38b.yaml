@@ -35,6 +35,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 3f9ae8af-2238-4374-85a8-63a6df283d42 # Highlighted Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 636fcdfa-e0ed-418e-9980-355fe6a75852
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
             instructions: null
             label: null

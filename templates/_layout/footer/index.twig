@@ -1,5 +1,9 @@
-{% set footerNav = craft.navigation.nodes()
-  .handle('footer')
+{% set footerNav1 = craft.navigation.nodes()
+  .handle('footerC1')
+  .level(1)
+%}
+{% set footerNav2 = craft.navigation.nodes()
+  .handle('footerC2')
   .level(1)
 %}
 
@@ -58,21 +62,30 @@
           {% endif %}
       </div>
       <ul class="list-none text-xl mb-12 xs:columns-2 xs:gap-4 lg:columns-1 md:col-span-2 lg:col-span-3">
-        {% for item in footerNav.all() %}
+        {% for item in footerNav1.all() %}
           <li class="break-inside-avoid">
             {{ item.link|attr({ class: 'inline-block mb-3 hover:underline focus:underline'}) }}
           </li>
         {% endfor %}
       </ul>
       <div class="hidden lg:flex gap-2 lg:col-span-2">
-        {% if seomatic.site.sameAsLinks['linkedin'] %}
-          <a href="{{ seomatic.site.sameAsLinks['linkedin'].url }}" target="_blank" rel="noopener noreferrer">
-            <span class="sr-only">{{ siteName }} on LinkedIn</span>
-            {{ svg('static/img/icons/linkedin.svg')|attr({
-              class: 'hidden lg:block h-6 text-blue-200 active:text-gray-200 hover:text-gray-200',
-            }) }}
-          </a>
-        {% endif %}
+        <ul class="list-none text-xl mb-12 xs:columns-2 xs:gap-4 lg:columns-1 md:col-span-2 lg:col-span-3">
+          {% for item in footerNav2.all() %}
+            <li class="break-inside-avoid">
+              {{ item.link|attr({ class: 'inline-block mb-3 hover:underline focus:underline'}) }}
+            </li>
+          {% endfor %}
+          {% if seomatic.site.sameAsLinks['linkedin'] %}
+            <li class="break-inside-avoid">
+              <a href="{{ seomatic.site.sameAsLinks['linkedin'].url }}" target="_blank" rel="noopener noreferrer">
+                <span class="sr-only">{{ siteName }} on LinkedIn</span>
+                {{ svg('static/img/icons/linkedin.svg')|attr({
+                  class: 'hidden lg:block h-6 text-blue-200 active:text-gray-200 hover:text-gray-200',
+                }) }}
+              </a>
+            </li>
+          {% endif %}
+        </ul>
       </div>
     </div>
     <ul class="grid gap-y-6 md:grid-cols-4 lg:grid-cols-12 text-sm">

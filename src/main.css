@@ -59,3 +59,11 @@ details[open] summary ~ * {
     opacity: 1!important;
   }
 }
+.text-highlighted{
+   font-size: 29px;
+   line-height: 38px;
+   font-family: Castoro, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+}
+.border-green-400{
+  border-color: oklch(79.2% 0.209 151.711);
+}

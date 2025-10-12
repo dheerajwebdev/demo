@@ -3,6 +3,7 @@
 {# Required #}
 {% set heading = block.heading %} {# Plain Text #}
 {% set copy = block.copy %} {# Plain Text #}
+{% set highlightedCopy = block.highlightedCopy %} {# Plain Text #}
 {% set image = block.image %} {# Assets #}
 
 {# Optional #}
@@ -20,7 +21,9 @@
         {% if heading %}
           <h2 class="t-h2">{{ heading }}</h2>
         {% endif %}
-
+        {% if highlightedCopy %}
+          <div class="text-highlighted pt-0 pb-0 mt-0 mb-0">{{ highlightedCopy|nl2br }}</div>
+        {% endif %}
         {% if copy %}
           <div class="text-xl">{{ copy|nl2br }}</div>
         {% endif %}

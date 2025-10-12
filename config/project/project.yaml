@@ -1,4 +1,4 @@
-dateModified: 1760013141
+dateModified: 1760271875
 elementSources:
   craft\elements\Entry:
     -
@@ -42,7 +42,16 @@ elementSources:
       key: 'section:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+      tableAttributes:
+        - postDate
+        - 'field:8245ebf7-23eb-4db0-8605-e02a4fdffe51' # Deal Status
+        - author
+        - link
       type: native
     -
       key: 'section:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
@@ -148,6 +157,7 @@ meta:
     2ba5d709-2894-4970-9b9f-15c32d972487: 'Simple Link' # Simple Link
     2bf69e53-3f94-4689-900a-6a7c12b0b38b: 'Text + Image' # Text + Image
     3eb14607-1124-49e8-b48d-72e0e0335334: Funds # Funds
+    3f9ae8af-2238-4374-85a8-63a6df283d42: 'Highlighted Copy' # Highlighted Copy
     3fecd575-c059-4136-aa0e-062258f74179: Sectors # Sectors
     4a6ccf0d-3c6f-4845-8311-f049b4c1a304: SEO # SEO
     4d08b07e-5a19-4645-bdcc-5e65ae4f97c1: Teams # Teams
@@ -166,6 +176,7 @@ meta:
     9c53977f-3074-4894-a1d4-8a21d81be9de: Checklist # Checklist
     9c287916-f31a-4c2c-8259-7e157304f979: Companies # Companies
     9d8acc9e-e08b-4850-9a7c-dc53b2e82a94: 'Featured Companies' # Featured Companies
+    9d9a3fef-154c-41ec-aac8-5acdead1cb84: 'Footer C2' # Footer C2
     17e970a9-4801-48b6-9a94-0cc344f04ab2: Contact # Contact
     18ea06e8-7610-41a0-bd20-2b3259cd59f8: Pillar # Pillar
     25b0fbf6-4e44-43b8-93d2-e1c5baacefca: 'Portfolio Grid' # Portfolio Grid
@@ -190,6 +201,7 @@ meta:
     955b2e74-1b28-49e1-b32c-eb2e51b1d613: Hero # Hero
     1698e835-812f-41b2-abcd-3a2f088be344: Default # Default
     4779ed3e-d9d7-444b-85e1-2e9d5630465f: Address # Address
+    4794c4ec-aa9a-4274-b8fc-fb577538fb5a: 'Full Width Image Hero' # Full Width Image Hero
     4964e71e-f35f-41e2-944d-7b7a8b62ee51: 'Transaction Date' # Transaction Date
     7532bfdb-0de6-402c-b113-50c6ef211d62: 'Strategy Grid' # Strategy Grid
     8245ebf7-23eb-4db0-8605-e02a4fdffe51: 'Deal Status' # Deal Status
@@ -204,6 +216,7 @@ meta:
     642322e6-4229-42d0-9c55-8598340ffa78: Graph # Graph
     677709f9-0b6b-4d19-969c-0495c252dcca: Image # Image
     4213088f-350d-476e-90ce-f9f3e4d6dd1d: 'Website Link' # Website Link
+    7523553a-9e5a-450d-8b6c-e73fa976d2f4: 'Merged / Realized Date' # Merged / Realized Date
     30943985-9d9d-42f1-8500-ef991ad1ff77: Themes # Themes
     37856688-8093-44ca-ac04-d3704dfb4e0b: Image # Image
     58413647-0403-4d88-8bf2-a21fbef39373: 'Background Image' # Background Image
@@ -248,7 +261,7 @@ meta:
     f3ce1b77-39d1-4d88-8a8f-217f4a5665ac: Body # Body
     f5e30ee2-1a17-4d9f-a868-9539ab3544d0: Portfolio # Portfolio
     f7d50232-1776-417e-989f-c93bb87683d1: Copy # Copy
-    f8e2be45-beff-455c-8f84-9566efb988f0: Footer # Footer
+    f8e2be45-beff-455c-8f84-9566efb988f0: 'Footer C1' # Footer C1
     f98c72b8-c1fd-47d1-b532-93b73afdfef1: Heading # Heading
     f843f4f4-4cf3-4c19-95bf-b535238a14c5: Simple # Simple
     f904b728-951f-4cbd-bb1a-984f00b2d9ea: Longform # Longform

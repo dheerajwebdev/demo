@@ -68,13 +68,13 @@ permissions:
   - navigation-createnavs
   - 'navigation-deletenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
   - 'navigation-deletenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-deletenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'navigation-deletenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
   - 'navigation-editnav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
   - 'navigation-editnav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-editnav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'navigation-editnav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
   - 'navigation-managenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
   - 'navigation-managenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-managenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer
+  - 'navigation-managenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
   - 'neo-createblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
   - 'neo-createblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
   - 'neo-createblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
