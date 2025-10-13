@@ -1,4 +1,4 @@
-dateModified: 1760271875
+dateModified: 1760336274
 elementSources:
   craft\elements\Entry:
     -
@@ -90,10 +90,24 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:3eb14607-1124-49e8-b48d-72e0e0335334' # Funds
+      tableAttributes:
+        - postDate
+        - author
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+      tableAttributes:
+        - postDate
+        - author
       type: native
     -
       defaultSort:

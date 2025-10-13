@@ -7,7 +7,7 @@
   {% set dealStatus = company.dealStatus.one() ?? null %}
   <a
     href="{{ company.websiteLink }}"
-    class="group flex flex-col gap-5 justify-between bg-white p-5 relative h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' %} border-green-400 border-[5px]{% endif %}"
+    class="group flex flex-col gap-5 justify-between bg-white p-5 relative h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized' %} border-green-400 border-[5px]{% endif %}"
     target="_blank"
   >
     <div class="pb-5">
@@ -27,7 +27,7 @@
       </div>
       {% if company.funds.count() %}<h4 class="text-xl text-center font-bold pt-5">{{ company.funds.one().title }}</h4>{% endif %}
       {% if dealStatus %}
-        <h4 class="text-xl text-center italic">{{ dealStatus.title }}{% if (dealStatus.slug == 'realized' or dealStatus.slug == 'merged') and company.mergedRealizedDate %} {{ company.mergedRealizedDate|date('M Y') }}</h4>{% endif %}
+        <h4 class="text-xl text-center italic">{{ dealStatus.title }}{% if (dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized') and company.mergedRealizedDate %} {{ company.mergedRealizedDate|date('M Y') }}</h4>{% endif %}
       {% endif %}
     </div>
     <div class="absolute left-0 right-0 -bottom-4">
