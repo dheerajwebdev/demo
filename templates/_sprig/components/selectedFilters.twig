@@ -10,7 +10,7 @@
     </button>
 {% endfor %}
 
-{% for item in sectors|filter(i => i.id in sector) %}
+{# {% for item in sectors|filter(i => i.id in sector) %}
     <button
         sprig
         s-val:removeSector="{{ item.id }}"
@@ -19,9 +19,9 @@
         <div>{{ item.title }}</div>
         <div class="text-xl">&times;</div>
     </button>
-{% endfor %}
+{% endfor %} #}
 
-{% for item in themes|filter(i => i.id in theme) %}
+{# {% for item in themes|filter(i => i.id in theme) %}
     <button
         sprig
         s-val:removeTheme="{{ item.id }}"
@@ -30,7 +30,7 @@
         <div>{{ item.title }}</div>
         <div class="text-xl">&times;</div>
     </button>
-{% endfor %}
+{% endfor %} #}
 
 {% for item in funds|filter(i => i.id in fund) %}
     <button

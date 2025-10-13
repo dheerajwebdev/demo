@@ -20,7 +20,7 @@
 
 {# Filters #}
 {% set funds = craft.entries.section('funds').all() %}
-{% set sectors = craft.entries.section('sectors').all() %}
+{# {% set sectors = craft.entries.section('sectors').all() %} #}
 {% set dealStatus = craft.entries.section('dealStatus').all() %}
 {% set themes = craft.entries.section('themes').all() %}
 
@@ -28,9 +28,10 @@
 {% if removeFund|length %}
   {% set fund = fund|filter(i => i != removeFund) %}
 {% endif %}
-{% if removeSector|length %}
+
+{# {% if removeSector|length %}
   {% set sector = sector|filter(i => i != removeSector) %}
-{% endif %}
+{% endif %} #}
 {% if removeStatus|length %}
   {% set status = status|filter(i => i != removeStatus) %}
 {% endif %}
@@ -44,10 +45,10 @@
   {% do entryQuery.dealStatus(status) %}
   {% set queryString = queryString|merge(['status=' ~ status|join(',')]) %}
 {% endif %}
-{% if sector|length %}
+{# {% if sector|length %}
   {% do entryQuery.sectors(sector) %}
   {% set queryString = queryString|merge(['sector=' ~ sector|join(',')]) %}
-{% endif %}
+{% endif %} #}
 {% if theme|length %}
   {% do entryQuery.themes(theme) %}
   {% set queryString = queryString|merge(['theme=' ~ theme|join(',')]) %}
@@ -124,8 +125,8 @@
     <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
       <div class="w-full flex flex-col md:flex-row justify-start items-stretch md:items-center gap-3">
         {{ _self.filter('Status','status', dealStatus, status) }}
-        {{ _self.filter('Sector','sector', sectors, sector) }}
-        {{ _self.filter('Theme','theme', themes, theme) }}
+        {# {{ _self.filter('Sector','sector', sectors, sector) }} 
+        {{ _self.filter('Theme','theme', themes, theme) }} #}
         {{ _self.filter('Fund','fund', funds, fund) }}
       </div>
 
@@ -145,13 +146,19 @@
 
     {# Show results and selected filters #}
     <div class="mt-4 flex flex-wrap gap-4 justify-center md:justify-start items-center">
-      {{ include("_sprig/components/selectedFilters", {
+      {# {{ include("_sprig/components/selectedFilters", {
         dealStatus,
         status,
         sectors: sectors,
         sector: sector,
         themes: themes,
         theme: theme,
+        funds: funds,
+        fund: fund
+      }, with_context = false ) }} #}
+      {{ include("_sprig/components/selectedFilters", {
+        dealStatus,
+        status,
         funds: funds,
         fund: fund
       }, with_context = false ) }}
@@ -171,6 +178,7 @@
           No results, please try broadening your search.
         </p>
       {% endfor %}
+      <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-400">Green</span> borders represent realized investments.</p>
     </div>
 
     {% include "_sprig/components/pagination" with { pageInfo, textColor: 'text-white' } %}

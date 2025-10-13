@@ -75,16 +75,6 @@
               {{ item.link|attr({ class: 'inline-block mb-3 hover:underline focus:underline'}) }}
             </li>
           {% endfor %}
-          {% if seomatic.site.sameAsLinks['linkedin'] %}
-            <li class="break-inside-avoid">
-              <a href="{{ seomatic.site.sameAsLinks['linkedin'].url }}" target="_blank" rel="noopener noreferrer">
-                <span class="sr-only">{{ siteName }} on LinkedIn</span>
-                {{ svg('static/img/icons/linkedin.svg')|attr({
-                  class: 'hidden lg:block h-6 text-blue-200 active:text-gray-200 hover:text-gray-200',
-                }) }}
-              </a>
-            </li>
-          {% endif %}
         </ul>
       </div>
     </div>
@@ -99,6 +89,16 @@
           {% endfor %}
         </ul>
       </li>
+      {% if seomatic.site.sameAsLinks['linkedin'] %}
+        <li class="lg:col-span-2">
+          <a href="{{ seomatic.site.sameAsLinks['linkedin'].url }}" target="_blank" rel="noopener noreferrer">
+            <span class="sr-only">{{ siteName }} on LinkedIn</span>
+            {{ svg('static/img/icons/linkedin.svg')|attr({
+              class: 'hidden lg:block h-6 text-blue-200 active:text-gray-200 hover:text-gray-200',
+            }) }}
+          </a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </footer>

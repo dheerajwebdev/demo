@@ -1,4 +1,4 @@
-dateModified: 1760336274
+dateModified: 1760338301
 elementSources:
   craft\elements\Entry:
     -
@@ -31,7 +31,6 @@ elementSources:
       key: 'section:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
       tableAttributes:
         - postDate
-        - expiryDate
         - author
         - link
       type: native
@@ -39,7 +38,15 @@ elementSources:
       heading: Channels
       type: heading
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+      tableAttributes:
+        - postDate
+        - author
+        - link
       type: native
     -
       defaultSort:
@@ -50,11 +57,20 @@ elementSources:
       tableAttributes:
         - postDate
         - 'field:8245ebf7-23eb-4db0-8605-e02a4fdffe51' # Deal Status
+        - 'field:5c5eecac-3238-4305-ac64-c7a951c9818e' # Funds
         - author
         - link
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+      tableAttributes:
+        - postDate
+        - author
+        - link
       type: native
     -
       heading: ''
@@ -70,12 +86,17 @@ elementSources:
       key: 'section:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
       tableAttributes:
         - postDate
-        - expiryDate
         - author
-        - link
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
       key: 'section:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+      tableAttributes:
+        - postDate
+        - author
       type: native
     -
       defaultSort:
@@ -85,9 +106,7 @@ elementSources:
       key: 'section:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes
       tableAttributes:
         - postDate
-        - expiryDate
         - author
-        - link
       type: native
     -
       defaultSort:
