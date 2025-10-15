@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: strategy
-name: 'Invesment Themes'
+name: 'Investment Themes'
 previewTargets:
   -
     label: 'Primary entry page'
@@ -13,5 +13,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: pages/default
-    uriFormat: invesment-themes
+    uriFormat: investment-themes
 type: single

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
+handle: additionalLogos
+instructions: null
+name: 'Additional Logos'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_additionallogos}}'
+  maxBlocks: 2
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

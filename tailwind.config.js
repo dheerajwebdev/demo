@@ -20,6 +20,9 @@ module.exports = {
         500: '#8e8e8e',
         800: '#F5F5F5',
       },
+      green:{
+        500:'#00ff00',
+      },
     },
     container: {
       center: true,

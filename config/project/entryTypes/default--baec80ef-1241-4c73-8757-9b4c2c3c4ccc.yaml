@@ -45,6 +45,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: f7961df6-d96e-4b26-bb02-f65641c036e1 # Additional Logos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0c3544b-d445-45a1-b038-34e9bed60320
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 4964e71e-f35f-41e2-944d-7b7a8b62ee51 # Transaction Date
             instructions: null
             label: null

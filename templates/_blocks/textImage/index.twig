@@ -26,7 +26,7 @@
           <div class="t-eyebrow">{{ eyebrow }}</div>
         {% endif %}
         {% if heading %}
-          <h2 class="t-h2">{{ heading }}</h2>
+          <h2 class="t-h2 text-4xl">{{ heading }}</h2>
         {% endif %}
         {% if subheadingCopy %}
          <h3 class="t-h3">{{ subheadingCopy }}</h3>
@@ -36,7 +36,7 @@
         {% endif %}
       </div>
       {% if image %}
-        <div class="col-span-full lg:col-span-4 lg:col-start-8 order-1 lg:order-none animate-image-container">
+        <div class="col-span-full lg:col-span-4 lg:col-start-9 order-1 lg:order-none animate-image-container">
           <div class="wrapper aspect-[450/484] overflow-hidden">
             {{ _image.tag( image.one ?? null, null,
               { width: 450, height: 484, mode: 'crop' },

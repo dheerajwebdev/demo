@@ -112,65 +112,13 @@
 
 <div class="bg-blue-200 py-20">
   <div class="container">
-    <div class="text-white flex flex-col items-center md:items-start gap-[18px]">
-      {% if _eyebrow %}
-        <div class="t-eyebrow">{{ _eyebrow }}</div>
-      {% endif %}
-
-      {% if _heading %}
-        <h2 class="t-h2 text-center md:text-left">{{ _heading }}</h2>
-      {% endif %}
-    </div>
-
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-12">
-      <div class="w-full flex flex-col md:flex-row justify-start items-stretch md:items-center gap-3">
-        {{ _self.filter('Status','status', dealStatus, status) }}
-        {# {{ _self.filter('Sector','sector', sectors, sector) }} 
-        {{ _self.filter('Theme','theme', themes, theme) }} #}
-        {{ _self.filter('Fund','fund', funds, fund) }}
-      </div>
-
-    {% if fund|length or sector|length or status|length or theme|length %}
-      <button
-        sprig
-        s-val:fund=""
-        s-val:sector=""
-        s-val:status=""
-        s-val:theme=""
-        class="text-white underline whitespace-nowrap"
-      >
-        Reset filters
-      </button>
-    {% endif %}
-    </div>
-
-    {# Show results and selected filters #}
-    <div class="mt-4 flex flex-wrap gap-4 justify-center md:justify-start items-center">
-      {# {{ include("_sprig/components/selectedFilters", {
-        dealStatus,
-        status,
-        sectors: sectors,
-        sector: sector,
-        themes: themes,
-        theme: theme,
-        funds: funds,
-        fund: fund
-      }, with_context = false ) }} #}
-      {{ include("_sprig/components/selectedFilters", {
-        dealStatus,
-        status,
-        funds: funds,
-        fund: fund
-      }, with_context = false ) }}
-    </div>
-
     <div
       id="results"
       class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 gap-y-9 mt-8
         xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
     >
       {% for company in entries %}
-        <article>
+        <article class="h-full">
           {% include "_components/card/company" with { company } only %}
         </article>
       {% else %}
@@ -178,7 +126,7 @@
           No results, please try broadening your search.
         </p>
       {% endfor %}
-      <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-400">Green</span> borders represent realized investments.</p>
+      <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-500">Green</span> borders represent realized investments.</p>
     </div>
 
     {% include "_sprig/components/pagination" with { pageInfo, textColor: 'text-white' } %}
