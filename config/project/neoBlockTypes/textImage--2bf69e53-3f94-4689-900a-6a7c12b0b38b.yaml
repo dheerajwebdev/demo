@@ -11,6 +11,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 3f9ae8af-2238-4374-85a8-63a6df283d42 # Highlighted Copy
+            instructions: null
+            label: 'Full width Copy'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 636fcdfa-e0ed-418e-9980-355fe6a75852
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
             instructions: null
             label: null
@@ -26,7 +38,7 @@ fieldLayouts:
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 575778ce-5821-4e2f-9728-84ea9f065f38
@@ -35,13 +47,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 3f9ae8af-2238-4374-85a8-63a6df283d42 # Highlighted Copy
+            fieldUid: 8f1af7ce-a429-453c-b927-4159f41894d4 # Label
             instructions: null
-            label: null
+            label: Subheading
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 636fcdfa-e0ed-418e-9980-355fe6a75852
+            uid: c7f09db0-06c7-4e39-b8f5-c7e4adbbe060
             userCondition: null
             warning: null
             width: 100
@@ -78,6 +90,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c5718756-cb04-4a52-a8a2-378a973ee86e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 35e65122-056f-4a98-8b50-7ac4d1fc8e4a # Lightswitch
+            instructions: null
+            label: 'Reduce Top Padding'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a8d7baa-6177-4819-bc21-0427635c6305
             userCondition: null
             warning: null
             width: 100
