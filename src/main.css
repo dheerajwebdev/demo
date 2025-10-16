@@ -60,11 +60,8 @@ details[open] summary ~ * {
   }
 }
 .text-highlighted{
-  font-size: 39px;
-  line-height: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-family: Castoro, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  @apply text-4xl lg:text-[39px] lg:leading-[50px] my-5;
 }
 .border-green-400{
   border-color: oklch(79.2% 0.209 151.711);

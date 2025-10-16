@@ -11,22 +11,22 @@
     target="_blank"
   >
     <div class="pb-5 flex flex-col justify-between h-full">
-      <div>
-        <div class="h-[78px] w-full {% if company.additionalLogos|length %}mb-5{% else %}mb-12{% endif %} justify-center px-5">
-          {% if company.transactionDate %}
-            <h4 class="text-xl text-center pb-3 font-semibold">{{ company.transactionDate|date('F Y') }}</h4>
-          {% endif %}
-          {% if logo %}
-            {{ _image.tag(
-              logo,
-              company.title,
-              { height: 78, quality: 100 },
-              "object-contain mx-auto",
-              logo.extension
-            ) }}
-          {% endif %}
-        </div>
-        <div class="grid grid-cols-{{company.additionalLogos|length}} px-2">
+      <div class="w-full {% if company.additionalLogos|length %}mb-5{% else %}mb-12{% endif %} justify-center px-5">
+        {% if company.transactionDate %}
+          <h4 class="text-xl text-center pb-3 font-semibold">{{ company.transactionDate|date('F Y') }}</h4>
+        {% endif %}
+        {% if logo %}
+          {{ _image.tag(
+            logo,
+            company.title,
+            { height: 78, quality: 100 },
+            "object-contain mx-auto",
+            logo.extension
+          ) }}
+        {% endif %}
+      </div>
+      {% if company.additionalLogos|length %}
+        <div class="grid grid-cols-{{company.additionalLogos|length}} px-2 items-center">
           {% for block in company.additionalLogos.all() %}
             {% if block.type == 'logos' %}
               <div>
@@ -38,7 +38,7 @@
                     block.logo.one(),
                     block.logoText,
                     { height: 78, quality: 100 },
-                    "object-contain mx-auto",
+                    "object-contain mx-auto max-w-40",
                     block.logo.one().extension
                   ) }}
                 {% endif %}
@@ -46,7 +46,7 @@
             {% endif %}
           {% endfor %}
         </div>
-      </div>
+      {% endif %}
       <div>
         {% if company.funds.count() %}<h4 class="text-xl text-center font-bold pt-5">{{ company.funds.one().title }}</h4>{% endif %}
         {% if dealStatus %}
