@@ -28,3 +28,6 @@ header.dark .btn {
 .portfolio-grid  a{
   @apply w-full max-w-[20rem] justify-between font-bold;
 }
+.portfolio-grid  a.btn-large{
+  @apply max-w-[35rem] font-normal;
+}

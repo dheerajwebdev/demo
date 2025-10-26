@@ -8,15 +8,16 @@
     {% include "_components/centerText" with {
         eyebrow: eyebrow,
         heading: heading,
-        linkField: linkField
+        linkField: linkField,
+        paddingClass: 'py-14 lg:pt-24'
     } %}
 
     {% set articles = craft.entries.section('articles')
       .limit(3) %}
 
-    <div class="layout-grid gap-y-8 reveal-items-container">
+    <div class="layout-grid gap-y-8">
       {% for article in articles.all() %}
-        <div class="col-span-full lg:col-span-4 reveal-items-item">
+        <div class="col-span-full lg:col-span-4">
           {% include "_components/card/article" with { article } only %}
         </div>
       {% endfor %}
