@@ -71,7 +71,6 @@ details[open] summary ~ * {
 }
 
 
-/* Responsive - stack flat */
 @media (max-width: 768px) {
   .block-1033 [role="region"] {
     width: 100%;
@@ -82,13 +81,12 @@ details[open] summary ~ * {
 }
 @media (min-width: 1024px){
   .block-1033 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0; /* no gap between rows */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 
-/* Shared region styles */
 .block-1033 [role="region"] {
   position: relative;
   width: 53%;
@@ -98,10 +96,9 @@ details[open] summary ~ * {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0; /* remove spacing from Tailwind’s my-10 */
+  margin: 0;
 }
 
-/* 🔹 Left blocks (arrow pointing right) */
 .block-1033 [role="region"].mr-auto {
   align-self: flex-start;
   clip-path: polygon(
@@ -113,7 +110,6 @@ details[open] summary ~ * {
   );
 }
 
-/* 🔹 Right blocks (arrow pointing left) */
 .block-1033 [role="region"].ml-auto {
   align-self: flex-end;
   clip-path: polygon(
@@ -125,7 +121,6 @@ details[open] summary ~ * {
   );
 }
 
-/* Optional subtle shadow & hover */
 .block-1033 [role="region"]::after {
   content: "";
   position: absolute;
