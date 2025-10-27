@@ -69,3 +69,85 @@ details[open] summary ~ * {
 .text-green-400{
   color: oklch(79.2% 0.209 151.711);
 }
+
+
+/* Responsive - stack flat */
+@media (max-width: 768px) {
+  .block-1033 [role="region"] {
+    width: 100%;
+    clip-path: none;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 1024px){
+  .block-1033 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* no gap between rows */
+}
+
+/* Shared region styles */
+.block-1033 [role="region"] {
+  position: relative;
+  width: 53%;
+  color: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; /* remove spacing from Tailwind’s my-10 */
+}
+
+/* 🔹 Left blocks (arrow pointing right) */
+.block-1033 [role="region"].mr-auto {
+  align-self: flex-start;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 100px) 0,
+    100% 50%,
+    calc(100% - 100px) 100%,
+    0 100%
+  );
+}
+
+/* 🔹 Right blocks (arrow pointing left) */
+.block-1033 [role="region"].ml-auto {
+  align-self: flex-end;
+  clip-path: polygon(
+    100px 0,
+    100% 0,
+    100% 100%,
+    100px 100%,
+    0 50%
+  );
+}
+
+/* Optional subtle shadow & hover */
+.block-1033 [role="region"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.block-1033 [role="region"] > .bg-blue-200 {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.block-1033 [role="region"]:hover > .bg-blue-200 {
+  background-color: rgba(63, 59, 193, 0.85);
+}
+  .block-1033 [role="region"] {
+    height: 230px;
+  }
+  .block-1033 [role="region"].mt-85 {
+    margin-top: -100px; 
+  }
+}
+

@@ -3,7 +3,7 @@
 {% set heading = block.heading ?? '' %} {# Plain Text #}
 {% set image = block.image.one() ?? null %}
 
-<section class="bg-blue-200 text-white pt-24">
+<section class="bg-blue-200 text-white py-24">
   {% if craft.app.request.getSegment(1) is empty %}
     <div class="container">
       

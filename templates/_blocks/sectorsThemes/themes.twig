@@ -9,21 +9,23 @@
   {% for theme in themes %}
     {% set backgroundImage = theme.backgroundImage.one() ?? null %}
     {% set alignment = "mr-auto" %}
+    {% set topspacing = "" %}
     {% if loop.index % 2 == 0 %}
       {% set alignment = "ml-auto" %}
+      {% set topspacing = "-mt-20" %}
     {% endif %}
     <div
       role="region"
-      class="relative group/item bg-cover my-10 md:w-1/2 {{ alignment }}"
+      class="relative group/item bg-cover my-0 md:w-1/2 {{ alignment }} {% if loop.index > 1 %} mt-85 {% endif %}"
       style="{{ _image.background(backgroundImage) }}"
     >
       <div class="bg-blue-200 bg-opacity-90">
         <div
           id="{{ theme.slug }}"
-          class="container"
+          class="container h-full"
         >
           <div
-            class="flex items-center w-full gap-5 text-left justify-between group py-[30px]"
+            class="flex items-center w-full h-full gap-5 text-left justify-between group py-[30px]"
           >
             <div class="flex gap-5 items-center">
               <div class="bg-white w-16 p-0.5 aspect-square rounded-full text-blue-300">
