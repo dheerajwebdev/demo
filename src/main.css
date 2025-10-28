@@ -69,8 +69,31 @@ details[open] summary ~ * {
 .text-green-400{
   color: oklch(79.2% 0.209 151.711);
 }
+main > .hero-image:not(:first-child) .container {
+  @apply flex flex-col justify-center items-center h-full
+}
+main > .hero-image:first-child {
+  @apply h-[300px];
+}
+main > .hero-image:first-child .bg{
+  @apply h-[300px];
+}
 
+main > .hero-image:first-child .content{
+  @apply h-[300px] pt-[100px];
+}
+main > .hero-image:first-child .container{
+  @apply pt-14;
+}
 
+@media (max-width: 575px){
+  .cta-section .btn-large .t-h2{
+    @apply text-lg;
+  }
+  .cta-section .btn-large svg{
+    @apply w-8;
+  }
+}
 @media (max-width: 768px) {
   .block-1033 [role="region"] {
     width: 100%;

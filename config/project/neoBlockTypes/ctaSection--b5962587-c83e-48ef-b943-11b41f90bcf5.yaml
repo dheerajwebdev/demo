@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  af6d46f8-52d3-4b87-bfbc-c12b5e18eeeb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9b976f6-6c5e-453d-9859-f3eb5964a8c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2709cfa-fdf5-476a-9376-2456e2351db8 # CTA Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b08d4ecd-f4b0-4125-a36e-4dee150065c3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 76c48432-92ab-4d39-a2f7-75e93e08119e
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: ctaSection
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'CTA Section'
+topLevel: true

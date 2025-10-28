@@ -1,4 +1,4 @@
-dateModified: 1761630917
+dateModified: 1761639531
 elementSources:
   craft\elements\Entry:
     -
@@ -266,6 +266,7 @@ meta:
     b727d412-f255-4e92-bef2-3529efe9f0d1: Default # Default
     b6137eea-1b1f-4844-bbe2-3c869cf62360: 'Center Text' # Center Text
     b5064781-9bc7-4471-afaa-cb17fd93e45e: Contact # Contact
+    b5962587-c83e-48ef-b943-11b41f90bcf5: 'CTA Section' # CTA Section
     b7198145-bea1-4d9a-b7b8-f18517f0a0f7: 'Map URL' # Map URL
     baec80ef-1241-4c73-8757-9b4c2c3c4ccc: Default # Default
     baf5e3a1-8726-4232-8636-73fee17f5107: Portfolio # Portfolio
@@ -284,6 +285,7 @@ meta:
     cfddf556-8aa4-4367-82a7-486c44e8d462: Contact # Contact
     d2c03548-97ad-4148-b2a0-b45fda2b5d7e: 'Background Color' # Background Color
     d3f18620-f92e-43ea-8cc5-386497c0031c: Quote # Quote
+    d2709cfa-fdf5-476a-9376-2456e2351db8: 'CTA Background' # CTA Background
     d5203bad-2433-4750-a65d-c36258d5f4fe: 'Logo Text' # Logo Text
     d6930fa0-ed59-4e9b-b394-c420b2d60f92: Link # Link
     e1dcf5ff-1760-4ad1-895a-61dd38637519: 'Video Hero' # Video Hero
