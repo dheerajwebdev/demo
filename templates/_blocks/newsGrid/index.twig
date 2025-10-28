@@ -2,6 +2,7 @@
 {% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
 {% set heading = block.heading ?? '' %} {# Plain Text #}
 {% set linkField = block.linkField ?? null %} {# Hyper #}
+{% set eyebrowLinkField = block.eyebrowLink ?? null %} {# Hyper #}
 
 <section class="pb-20">
   <div class="container">
@@ -9,6 +10,7 @@
         eyebrow: eyebrow,
         heading: heading,
         linkField: linkField,
+        eyebrowLink: eyebrowLinkField,
         paddingClass: 'py-14 lg:pt-24'
     } %}
 

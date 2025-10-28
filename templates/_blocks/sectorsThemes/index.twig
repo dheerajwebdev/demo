@@ -3,13 +3,13 @@
 {% set heading = block.heading ?? '' %} {# Plain Text #}
 {% set image = block.image.one() ?? null %}
 
-<section class="bg-blue-200 text-white py-24">
+<section class="{% if craft.app.request.getSegment(1) is empty %}bg-blue-200 {% else %} bg-white {% endif %} text-white pt-24 lg:pt-32 lg:pb-24 pb-16">
   {% if craft.app.request.getSegment(1) is empty %}
     <div class="container">
       
-      <div class="layout-grid mb-20 gap-8 md:gap-16 items-center">
+      <div class="layout-grid gap-8 md:gap-16 items-center pt-16 lg:pt-24 lg:pt-12">
         <div class="col-span-full md:col-span-6 lg:col-span-7 md:order-1 order-2">
-          <h2 class="t-h2">{{ heading }}</h2>
+          <h1 class="t-h2">{{ heading }}</h1>
         </div>
 
         {% if image %}
@@ -18,7 +18,7 @@
               image,
               '',
               { width: 600, height: 600,quality: 100 },
-              "w-full h-full",
+              "w-full h-full max-w-[600px] mx-auto",
               'png'
             ) }}
           </div>

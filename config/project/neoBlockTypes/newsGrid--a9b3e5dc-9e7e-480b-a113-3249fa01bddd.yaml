@@ -23,6 +23,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: c642a32f-3f1f-449e-b03b-9e74aee22c7d # Eyebrow Link
+            instructions: 'Make the Eyebrow text link.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d00533a-879a-40b1-8ab2-1942b7648d82
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
             instructions: null
             label: null

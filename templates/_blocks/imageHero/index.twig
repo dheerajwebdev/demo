@@ -5,15 +5,15 @@
 {% set backgroundImage = block.backgroundImage.one() ?? null %} {# Asset #}
 
 <section
-  class="h-[300px] relative {{ backgroundImage ? 'parallax blue-overlay' : 'bg-blue-200' }}"
+  class="h-60 relative {{ backgroundImage ? 'parallax blue-overlay' : 'bg-blue-200' }}"
 >
-  <div class="bg absolute inset-0 h-[300px] w-full" style="z-index: -1;">
+  <div class="bg absolute inset-0 h-60 w-full" style="z-index: -1;">
     {{ _image.tag( backgroundImage, null,
       { width: 1400, height: 300, mode: 'crop' },
         "w-full h-full object-cover" ) }}
   </div>
-  <div class="content relative h-[300px] w-full pt-[100px]">
-    <div class="container pt-14">
+  <div class="content relative h-full w-full">
+    <div class="container flex flex-col justify-center items-center h-full">
       <h1 class="t-h1 text-white text-center">{{ heading }}</h1>
     </div>
   </div>
