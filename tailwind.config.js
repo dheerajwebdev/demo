@@ -48,6 +48,8 @@ module.exports = {
       },
       screens: {
         'xs': '480px', // Customize the width as needed
+        'xl-down':'1200px',
+        '2xl-down':'1400px',
       },
     },
   },

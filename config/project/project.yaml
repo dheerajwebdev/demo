@@ -1,4 +1,4 @@
-dateModified: 1761639531
+dateModified: 1761733158
 elementSources:
   craft\elements\Entry:
     -
@@ -248,6 +248,7 @@ meta:
     98247db1-d35e-4bd4-83a2-d402d919b73b: Globals # Globals
     642322e6-4229-42d0-9c55-8598340ffa78: Graph # Graph
     677709f9-0b6b-4d19-969c-0495c252dcca: Image # Image
+    832918fb-4e36-49b7-8f8d-c26c3a83a1d0: 'Logo Url' # Logo Url
     4213088f-350d-476e-90ce-f9f3e4d6dd1d: 'Website Link' # Website Link
     7523553a-9e5a-450d-8b6c-e73fa976d2f4: 'Merged / Realized Date' # Merged / Realized Date
     30943985-9d9d-42f1-8500-ef991ad1ff77: Themes # Themes

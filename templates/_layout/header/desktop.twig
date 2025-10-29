@@ -1,11 +1,11 @@
-  <div class="container hidden lg:block">
+  <div class="container hidden xl-down:block">
     <nav class="flex items-center justify-between py-8">
-      <a href="/" class="block h-14" aria-label="{{ siteName }} Homepage">
+      <a href="/" class="block h-10 xl:h-14" aria-label="{{ siteName }} Homepage">
         {{ svg('static/img/branding.svg')|attr({
           class: 'h-full',
         }) }}
       </a>
-      <ul id="main-nav" class="flex gap-12 xl:gap-9 2xl:gap-12 items-center xl:text-lg">
+      <ul id="main-nav" class="flex gap-12 lg:gap-8 xl:gap-6 2xl-down:gap-8 2xl:gap-12 items-center xl:text-lg">
         {% for node in nav %}
           {% set classes = [
             'block font-bold',

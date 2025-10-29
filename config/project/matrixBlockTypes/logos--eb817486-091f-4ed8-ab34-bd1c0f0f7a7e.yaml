@@ -28,11 +28,38 @@ fieldLayouts:
             uid: c9d766ff-1c04-47ca-8871-1bc6e521a490
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 832918fb-4e36-49b7-8f8d-c26c3a83a1d0 # Logo Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48d970bb-282e-42b0-88e2-5f0bb7e5860b
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: d247e945-d9dc-48ce-9f16-04c23643816f
         userCondition: null
 fields:
+  832918fb-4e36-49b7-8f8d-c26c3a83a1d0: # Logo Url
+    columnSuffix: aqpdblyd
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: logoUrl
+    instructions: null
+    name: 'Logo Url'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   d5203bad-2433-4750-a65d-c36258d5f4fe: # Logo Text
     columnSuffix: pbhutsze
     contentColumnType: text

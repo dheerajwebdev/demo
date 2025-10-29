@@ -107,4 +107,14 @@ document.addEventListener("DOMContentLoaded", function() {
       link.rel = 'noopener noreferrer';
     }
   });
+  document.querySelectorAll('.subsidiary-logo').forEach(img => {
+    img.addEventListener('click', (e) => {
+      
+      const url = img.dataset.url;
+      if (url) {
+        e.preventDefault();
+        window.open(url, '_blank');
+      }
+    });
+  });
 });
