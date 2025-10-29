@@ -1,4 +1,4 @@
-dateModified: 1761738621
+dateModified: 1761740587
 elementSources:
   craft\elements\Entry:
     -
@@ -56,6 +56,7 @@ elementSources:
       key: 'section:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
       tableAttributes:
         - postDate
+        - 'field:4964e71e-f35f-41e2-944d-7b7a8b62ee51' # Transaction Date
         - 'field:8245ebf7-23eb-4db0-8605-e02a4fdffe51' # Deal Status
         - 'field:5c5eecac-3238-4305-ac64-c7a951c9818e' # Funds
         - author

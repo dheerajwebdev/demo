@@ -16,7 +16,7 @@
 {% set page = page ?? 1 %}
 
 {# Basic entry query #}
-{% set entryQuery = craft.entries.section('companies').limit(limit).orderBy('transactionDate DESC') %}
+{% set entryQuery = craft.entries.section('companies').limit(limit) %}
 
 {# Filters #}
 {% set funds = craft.entries.section('funds').all() %}
