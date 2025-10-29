@@ -19,5 +19,9 @@
 
   {{ craft.vite.script("src/main.js") }}
   <script type="module" src="/static/js/cookieconsent-config.js"></script>
+  {% css %}
+  .show--consent #cc-main .cc--anim .cm--bar{background-color:#001d3f;}
+  #cc-main .cm__desc{color:#fff;font-family:inherit;}
+  {% endcss %}
 </body>
 </html>
