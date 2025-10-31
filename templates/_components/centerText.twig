@@ -10,7 +10,7 @@
 <div class="{{ paddingClass|default('py-14 lg:py-24') }} flex flex-col items-center gap-[18px]">
   {% if eyebrow and eyebrowLink %}
     <a {% if eyebrowLink.url %}href="{{ eyebrowLink.url }}"{% endif %} class="t-eyebrow">{{ eyebrow }}</a>
-  {% else %}
+  {% elseif eyebrow %}
     <div class="t-eyebrow">{{ eyebrow }}</div>
   {% endif %}
 

@@ -33,9 +33,9 @@
       </div>
     </div>
 
-    <div class="layout-grid gap-y-8 reveal-items-container">
+    <div class="layout-grid gap-y-8">
       {% for theme in craft.entries.section('themes').with('backgroundImage').all() %}
-        <div class="col-span-2 sm:col-span-3 lg:col-span-3 reveal-items-item">
+        <div class="col-span-2 sm:col-span-3 lg:col-span-3">
           {% include "_components/card/theme" with { theme } only %}
         </div>
       {% endfor %}
