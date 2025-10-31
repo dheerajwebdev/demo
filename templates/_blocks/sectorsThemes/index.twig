@@ -3,7 +3,7 @@
 {% set heading = block.heading ?? '' %} {# Plain Text #}
 {% set image = block.image.one() ?? null %}
 
-<section class="{% if craft.app.request.getSegment(1) is empty %}bg-blue-200 {% else %} bg-white {% endif %} text-white pt-18 lg:pt-24 lg:pb-18 pb-12">
+<section class="{% if craft.app.request.getSegment(1) is empty %}bg-blue-200 {% else %} bg-white {% endif %} text-white pt-0 lg:pt-12 lg:pb-14 pb-14">
   {% if craft.app.request.getSegment(1) is empty %}
     <div class="container">
       
