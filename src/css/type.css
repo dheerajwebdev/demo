@@ -39,5 +39,5 @@
 }
 
 .t-eyebrow {
-  @apply bg-blue-500 text-white pt-1 pb-1.5 px-3 text-sm font-semibold rounded-full;
+  @apply bg-blue-500 text-white pt-1 pb-1.5 px-3 text-lg font-semibold rounded-full;
 }

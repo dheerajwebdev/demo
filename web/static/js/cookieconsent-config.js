@@ -13,7 +13,7 @@ CookieConsent.run({
         en: {
             consentModal: {
                 // title: 'We use cookies',
-                description: `This website uses cookies for analytics purposes, to help understand how our visitors interact with the website, and improve the user experience. <a href="/cookie-policy">View our cookie policy.</a>`,
+                description: `By using this website, you agree to our use of optional first-party and third-party cookies to enhance functionality and personalize your experience, perform analytics, and serve you with relevant ads, including on third-party websites.`,
                 acceptAllBtn: 'Allow Cookies',
                 acceptNecessaryBtn: 'Decline',
                 showPreferencesBtn: false

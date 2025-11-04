@@ -1,6 +1,6 @@
 {% set linkField = block.linkField ?? null %} {# Hyper #}
 {% set color = 'black' %}
-<section class="cta-section {% if block.ctaBackground %} bg-white {% else %} bg-gray-800{% endif %} py-20">
+<section class="cta-section{% if block.ctaBackground %} bg-white {% else %} bg-gray-800{% endif %} py-10">
   <div class="container text-center portfolio-grid">
     {% if linkField  %}
       {% include "_components/button" with {

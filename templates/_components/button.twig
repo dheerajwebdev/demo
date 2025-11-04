@@ -9,7 +9,7 @@
 
 {% if href %}
   <a href="{{ href }}"
-    class="group/btn  {% if btnType is defined and btnType == 'large' %}p-5 btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-4 border {{ class }}"
+    class="group/btn  {% if btnType is defined and btnType == 'large' %}p-2 btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-4 border {{ class }}"
     {% if newWindow %}target="_blank"rel="noopener noreferrer" title="{{ label }} (opens in new window)"{% endif %}
   >
   {% if btnType is defined and btnType == 'large' %}
