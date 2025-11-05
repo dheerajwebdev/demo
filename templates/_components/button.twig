@@ -9,16 +9,16 @@
 
 {% if href %}
   <a href="{{ href }}"
-    class="group/btn  {% if btnType is defined and btnType == 'large' %}p-2 btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-4 border {{ class }}"
+    class="group/btn  {% if btnType is defined and btnType == 'large' %}p-2 btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-6 border {{ class }}"
     {% if newWindow %}target="_blank"rel="noopener noreferrer" title="{{ label }} (opens in new window)"{% endif %}
   >
   {% if btnType is defined and btnType == 'large' %}
     {% if arrow == 'left' %}
-      {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] rotate-180 group-hover/btn:fill-blue-500 transition-color #{chrevron}" }) }}
+      {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] rotate-180 fill-blue-500 group-hover/btn:fill-black transition-color #{chrevron}" }) }}
       <span class="pr-2.5 mb-0.5 t-h2 font-normal">{{ label }}</span>
     {% elseif arrow == 'right' %}
       <span class="pl-2.5 mb-0.5 t-h2 font-normal">{{ label }}</span>
-      {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] group-hover/btn:fill-blue-500 transition-color #{chrevron}" }) }}
+      {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] fill-blue-500 group-hover/btn:fill-black transition-color #{chrevron}" }) }}
     {% else %}
       {{ label }}
     {% endif %}

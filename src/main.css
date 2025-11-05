@@ -160,7 +160,7 @@ main > .hero-image:first-child .container{
 }
 
 .block-1033 [role="region"]:hover > .bg-blue-200 {
-  background-color: rgba(63, 59, 193, 0.85);
+  background-color: rgb(44 130 233);
 }
   .block-1033 [role="region"] {
     height: 230px;

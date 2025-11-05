@@ -14,10 +14,10 @@
     <div class="t-eyebrow">{{ eyebrow }}</div>
   {% endif %}
 
-  <h2 class="t-h2 max-w-[736px] mx-auto text-center">{{ heading }}</h2>
+  <h2 class="{{ headingClass|default('max-w-[736px]') }} t-h2 mx-auto text-center">{{ heading }}</h2>
 
   {% if copy %}
-    <div class=" max-w-xl mx-auto text-xl text-center">{{ copy }}</div>
+    <div class="{{ copyClass|default('max-w-xl') }} mx-auto text-xl text-center">{{ copy }}</div>
   {% endif %}
 
   {% if linkField and linkField.url|length %}

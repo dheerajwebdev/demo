@@ -112,13 +112,9 @@
 
 <div class="bg-blue-200 py-16">
   <div class="container">
-    <div
-      id="results"
-      class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 gap-y-9
-        xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
-    >
+    <div id="results" class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 gap-y-9xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-stretch">
       {% for company in entries %}
-        <article class="h-full">
+        <article class="flex flex-col h-full pb-7">
           {% include "_components/card/company" with { company } only %}
         </article>
       {% else %}
@@ -126,8 +122,9 @@
           No results, please try broadening your search.
         </p>
       {% endfor %}
-      <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-500">Green</span> borders represent realized investments.</p>
     </div>
+
+    <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-500">Green</span> borders represent realized investments.</p>
 
     {% include "_sprig/components/pagination" with { pageInfo, textColor: 'text-white' } %}
   </div>

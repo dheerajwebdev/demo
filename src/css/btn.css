@@ -25,9 +25,9 @@ header.dark .btn {
   }
 }
 
-.portfolio-grid  a{
+.portfolio-grid a:not(.btn-large){
   @apply w-full max-w-[20rem] justify-between font-bold;
 }
-.portfolio-grid  a.btn-large{
-  @apply max-w-[35rem] font-normal;
+.portfolio-grid a.btn-large{
+  @apply max-w-[35rem] font-normal bg-blue-200 text-white;
 }
