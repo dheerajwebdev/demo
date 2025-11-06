@@ -3,9 +3,10 @@
 {% set position = postion ?? 0 %}
 
 {% if company %}
+  {% set additionalLogos = company.additionalLogos.count() ? true : false %}
   {% set logo = company.logo[0] ?? company.logo.one() ?? null %}
   {% set dealStatus = company.dealStatus.one() ?? null %}
-  {% if company.additionalLogos.count() %}
+  {% if additionalLogos %}
   <div class="group h-full flex flex-col gap-5 justify-between bg-white py-5 relative min-h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized' %} border-green-500 border-[5px]{% endif %}">
   {% else %}
   <a
@@ -15,24 +16,24 @@
   >
   {% endif %}
     <div class="pb-5 flex flex-col justify-between h-full">
-      <div class="w-full {% if company.additionalLogos|length %}mb-5{% else %}mb-12{% endif %} justify-center px-5">
-        {% if company.transactionDate %}
-          <h4 class="text-xl text-center pb-3 font-semibold">{{ company.transactionDate|date('F Y') }}</h4>
-        {% endif %}
+      {% if company.transactionDate %}
+        <h4 class="text-xl text-center pb-3 font-semibold">{{ company.transactionDate|date('F Y') }}</h4>
+      {% endif %}
+      <div class="flex flex-col justify-between h-full px-5">
         {% if logo %}
-          {% if company.additionalLogos.count() %}<a href="{{ company.websiteLink }}" target="_blank">{% endif %}
+          {% if additionalLogos %}<a href="{{ company.websiteLink }}" target="_blank" class="flex flex-col justify-between h-full">{% endif %}
           {{ _image.tag(
             logo,
             company.title,
             { height: 120, quality: 100 },
-            "object-contain mx-auto",
+            "object-contain m-auto",
             logo.extension
           ) }}
-          {% if company.additionalLogos.count() %}</a>{% endif %}
+          {% if additionalLogos %}</a>{% endif %}
         {% endif %}
       </div>
-      {% if company.additionalLogos.count() %}
-        <div class="grid grid-cols-{{company.additionalLogos|length}} px-2 items-center">
+      {% if additionalLogos %}
+        <div class="grid grid-cols-{{ additionalLogos }} px-2 items-center">
           {% for block in company.additionalLogos.all() %}
             {% if block.type == 'logos' %}
               <div>
@@ -85,5 +86,5 @@
         {{ svg('static/img/icons/plus.svg')|attr({ class: 'h-6 w-6 fill-white'}) }}
       </div>
     </div>
-  {% if company.additionalLogos.count() %}</div>{% else %}</a>{% endif %}
+  {% if additionalLogos %}</div>{% else %}</a>{% endif %}
 {% endif %}
