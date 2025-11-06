@@ -33,7 +33,7 @@
         {% endif %}
       </div>
       {% if additionalLogos %}
-        <div class="grid grid-cols-{{ additionalLogos }} px-2 items-center">
+        <div class="grid grid-cols-{{ company.additionalLogos.count() }} px-2 items-center">
           {% for block in company.additionalLogos.all() %}
             {% if block.type == 'logos' %}
               <div>
