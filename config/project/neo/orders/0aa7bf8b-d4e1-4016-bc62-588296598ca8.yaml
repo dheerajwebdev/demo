@@ -1,19 +1,19 @@
-- 'blockType:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
-- 'blockType:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
-- 'blockType:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
-- 'blockType:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
-- 'blockType:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
-- 'blockType:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
-- 'blockType:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
-- 'blockType:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
-- 'blockType:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
-- 'blockType:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
-- 'blockType:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
-- 'blockType:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
-- 'blockType:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
-- 'blockType:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
-- 'blockType:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
-- 'blockType:4794c4ec-aa9a-4274-b8fc-fb577538fb5a' # Full Width Image Hero
-- 'blockType:b5962587-c83e-48ef-b943-11b41f90bcf5' # CTA Section
-- 'blockTypeGroup:955b2e74-1b28-49e1-b32c-eb2e51b1d613' # Hero
-- 'blockTypeGroup:eff29af1-aaf3-4256-8e64-0f798c451638' # Relations
+- 'blockType:b6137eea-1b1f-4844-bbe2-3c869cf62360'
+- 'blockType:9c53977f-3074-4894-a1d4-8a21d81be9de'
+- 'blockType:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96'
+- 'blockType:409e3d01-7446-44f1-a456-1b63b060ba62'
+- 'blockType:0e339425-a38e-44d5-ba05-22b5e97f112b'
+- 'blockType:18ea06e8-7610-41a0-bd20-2b3259cd59f8'
+- 'blockType:2bf69e53-3f94-4689-900a-6a7c12b0b38b'
+- 'blockType:fe76d340-6952-4b06-a4e6-50b6bd351768'
+- 'blockType:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d'
+- 'blockType:e1dcf5ff-1760-4ad1-895a-61dd38637519'
+- 'blockType:555ae299-5cec-4a80-b74b-b9661f8e168d'
+- 'blockType:7532bfdb-0de6-402c-b113-50c6ef211d62'
+- 'blockType:25b0fbf6-4e44-43b8-93d2-e1c5baacefca'
+- 'blockType:a9b3e5dc-9e7e-480b-a113-3249fa01bddd'
+- 'blockType:cc46ab8b-be79-479a-a69d-4c6eb5432ae9'
+- 'blockType:4794c4ec-aa9a-4274-b8fc-fb577538fb5a'
+- 'blockType:b5962587-c83e-48ef-b943-11b41f90bcf5'
+- 'blockTypeGroup:955b2e74-1b28-49e1-b32c-eb2e51b1d613'
+- 'blockTypeGroup:eff29af1-aaf3-4256-8e64-0f798c451638'

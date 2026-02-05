@@ -1,19 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 17e970a9-4801-48b6-9a94-0cc344f04ab2 # Contact
 handle: contact
+maxAuthors: 1
 name: Contact
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{slug}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{slug}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

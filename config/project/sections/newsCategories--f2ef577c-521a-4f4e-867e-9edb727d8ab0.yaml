@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: ec7c30b5-0eab-4abb-9942-0b1bda47db85 # Default
 handle: newsCategories
+maxAuthors: 1
 name: 'News Categories'
 propagationMethod: all
 siteSettings:

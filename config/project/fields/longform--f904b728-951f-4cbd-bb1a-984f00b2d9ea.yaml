@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
 handle: longform
 instructions: null
 name: Longform
@@ -12,6 +11,7 @@ settings:
   minBlocks: null
   minLevels: null
   minTopBlocks: null
+  newBlockButtonLabel: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

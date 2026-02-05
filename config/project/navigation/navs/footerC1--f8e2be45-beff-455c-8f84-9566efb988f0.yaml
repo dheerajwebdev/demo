@@ -152,7 +152,7 @@ fieldLayouts:
         uid: 98943d0a-f078-45a3-a7b0-5d4db952bd65
         userCondition: null
 handle: footerC1
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Footer C1'
 permissions:

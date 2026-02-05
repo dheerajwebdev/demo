@@ -1,6 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 896da32e-f295-43a6-937c-2642ca6f9f0b # 404
 handle: error
+maxAuthors: 1
 name: '404'
 propagationMethod: all
 siteSettings:

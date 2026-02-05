@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: 51709ee8-c90d-4b3d-a2da-ea518e10cb6a # Default
 handle: sectors
+maxAuthors: 1
 name: Sectors
 propagationMethod: all
 siteSettings:

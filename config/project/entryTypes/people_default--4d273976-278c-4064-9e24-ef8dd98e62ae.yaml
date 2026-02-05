@@ -1,5 +1,5 @@
 fieldLayouts:
-  952f6d13-09e6-4d4b-bb59-e0c4da48a53c:
+  1d975a81-01aa-4850-98cc-705516bc0dc0:
     tabs:
       -
         elementCondition: null
@@ -14,7 +14,7 @@ fieldLayouts:
             id: null
             inputType: null
             instructions: null
-            label: null
+            label: Name
             max: null
             min: null
             name: null
@@ -27,65 +27,94 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 741730c0-b74e-46ff-b643-339d8efa58a3
+            uid: 2ed5588d-90bf-4fb7-bfe6-cb8503ce5218
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
             instructions: null
-            label: null
-            required: false
+            label: Role
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 59fe9802-b173-48d5-a339-f43e91a926a8
+            uid: 83a4c8d1-1759-4f56-a19f-cd1de1684871
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            fieldUid: 00f81757-77f4-4683-ac92-0cb6223b8467 # Team
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 67913d09-f1cf-48b4-adfe-4d3cc883cd49
+            uid: bf9979d2-13d9-4843-b5b8-6cf4013213c9
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b # Icon
+            fieldUid: a53e504a-eefb-4fd7-ab18-74d4edbb639b # LinkedIn Profile
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e1d7ed94-406c-48f2-bd2f-abb97ff16bd3
+            uid: c4ca1fd3-7ca0-4082-b08d-c49f85a71e85
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            fieldUid: b0029eaa-acd8-409d-bcfe-bf589b7dc1e3 # Profile Photo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: af76f48d-511b-4998-9ea5-9841d5e479af
+            uid: 0439f7a4-2c79-4de5-839d-7b09cc775eb5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 430f7f99-e13e-4618-bc6d-e990026c660d # Body Simple
+            instructions: null
+            label: Bio
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1a12e20-a59f-49c7-928c-7f3ea4ebb800
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 194f2cdb-4986-4ef0-a079-379be98b767d
+        uid: c80865f5-0e9a-4258-85f5-13430e64fdd8
         userCondition: null
-handle: default
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2788794e-088a-4f74-bd2a-886001345c46
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: a1e9b85b-d471-4d7e-a902-5ef37e53788e
+        userCondition: null
+handle: people_default
 hasTitleField: true
 name: Default
-section: 3eb14607-1124-49e8-b48d-72e0e0335334 # Funds
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

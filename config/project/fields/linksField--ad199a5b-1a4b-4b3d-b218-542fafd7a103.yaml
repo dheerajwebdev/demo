@@ -1,6 +1,5 @@
 columnSuffix: mjhqdbad
 contentColumnType: text
-fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
 handle: linksField
 instructions: null
 name: Links
@@ -13,25 +12,25 @@ settings:
   linkTypes:
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Asset
-        -
+        1:
           - label
           - Asset
-        -
+        2:
           - handle
           - default-verbb-hyper-links-asset
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 62fa1e79-ef5c-4b41-a6c7-a953d11db276
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -265,30 +264,33 @@ settings:
                               -
                                 - uid
                                 - 27c60ff7-0807-4986-a435-a95e2a00d617
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Category
-        -
+        1:
           - label
           - Category
-        -
+        2:
           - handle
           - default-verbb-hyper-links-category
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 141321c9-4689-4349-bfe8-7d1eca2c372a
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -522,9 +524,12 @@ settings:
                               -
                                 - uid
                                 - f83d1bae-e77e-459f-848d-cc998cf00377
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -1289,25 +1294,25 @@ settings:
                                 - d77411fb-f7b7-4a1d-af32-8419bf643d33
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Entry
-        -
+        1:
           - label
           - Entry
-        -
+        2:
           - handle
           - default-verbb-hyper-links-entry
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 7d85ba11-e3bc-4d7e-9478-59928e28c0a2
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -1541,9 +1546,12 @@ settings:
                               -
                                 - uid
                                 - 8b9628b8-b030-4cbf-84ee-112146960d8c
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -2311,25 +2319,25 @@ settings:
                                 - a2814ed6-5311-449a-a1be-5e0ae60e6c48
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\User
-        -
+        1:
           - label
           - User
-        -
+        2:
           - handle
           - default-verbb-hyper-links-user
-        -
+        3:
           - enabled
           - false
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - fd7907bb-86f9-4d97-b874-2fa9def107c1
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -2563,9 +2571,12 @@ settings:
                               -
                                 - uid
                                 - b2eba44c-5e23-457b-8f5a-87340a3ec49b
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
   maxLinks: null
   minLinks: null
   multipleLinks: true

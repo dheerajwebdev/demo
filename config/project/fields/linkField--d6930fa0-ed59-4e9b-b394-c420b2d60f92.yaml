@@ -1,6 +1,5 @@
 columnSuffix: ouyryymn
 contentColumnType: text
-fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
 handle: linkField
 instructions: null
 name: Link
@@ -13,25 +12,25 @@ settings:
   linkTypes:
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Asset
-        -
+        1:
           - label
           - Asset
-        -
+        2:
           - handle
           - default-verbb-hyper-links-asset
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 14b4ffb1-5fb3-4a47-ba2e-62ad2b9c2135
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -265,32 +264,35 @@ settings:
                               -
                                 - uid
                                 - 0d1a2427-dad1-46ed-9db5-7789f889610e
-        -
+        7:
           - sources
           -
             - 'volume:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
             - 'volume:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Category
-        -
+        1:
           - label
           - Category
-        -
+        2:
           - handle
           - default-verbb-hyper-links-category
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 7c2cdc14-ac03-46ae-a85e-055ad92cb3d4
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -524,9 +526,12 @@ settings:
                               -
                                 - uid
                                 - 59d652f6-24a7-41f1-b3af-ed18fba2bb83
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -1291,25 +1296,25 @@ settings:
                                 - 10ab0e5a-9808-4d52-8703-4caf4c520b7a
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\Entry
-        -
+        1:
           - label
           - Entry
-        -
+        2:
           - handle
           - default-verbb-hyper-links-entry
-        -
+        3:
           - enabled
           - true
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 3ca5ec4b-7864-426d-9a23-0fc254798238
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -1543,9 +1548,12 @@ settings:
                               -
                                 - uid
                                 - 499de57b-cc94-46b0-85b2-5e93e9f16739
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
     -
       __assoc__:
         -
@@ -2313,25 +2321,25 @@ settings:
                                 - c07d108a-f936-43df-a589-8db3db816bda
     -
       __assoc__:
-        -
+        0:
           - type
           - verbb\hyper\links\User
-        -
+        1:
           - label
           - User
-        -
+        2:
           - handle
           - default-verbb-hyper-links-user
-        -
+        3:
           - enabled
           - false
-        -
+        4:
           - isCustom
           - false
-        -
+        5:
           - layoutUid
           - 93a3df55-926b-4c6e-8385-014ca7d7a179
-        -
+        6:
           - layoutConfig
           -
             __assoc__:
@@ -2565,9 +2573,12 @@ settings:
                               -
                                 - uid
                                 - bdcdd55a-f9a0-41cc-939a-3a6cfb7703b3
-        -
+        7:
           - sources
           - '*'
+        9:
+          - showSiteMenu
+          - true
   maxLinks: null
   minLinks: null
   multipleLinks: false

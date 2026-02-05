@@ -75,63 +75,63 @@ permissions:
   - 'navigation-managenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
   - 'navigation-managenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
   - 'navigation-managenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
-  - 'neo-createblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
-  - 'neo-createblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
-  - 'neo-createblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
-  - 'neo-createblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
-  - 'neo-createblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
-  - 'neo-createblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
-  - 'neo-createblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
-  - 'neo-createblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
-  - 'neo-createblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
-  - 'neo-createblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
-  - 'neo-createblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
-  - 'neo-createblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
-  - 'neo-createblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
-  - 'neo-createblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
-  - 'neo-createblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
-  - 'neo-createblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
-  - 'neo-createblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
-  - 'neo-createblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
-  - 'neo-createblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
-  - 'neo-deleteblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
-  - 'neo-deleteblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
-  - 'neo-deleteblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
-  - 'neo-deleteblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
-  - 'neo-deleteblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
-  - 'neo-deleteblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
-  - 'neo-deleteblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
-  - 'neo-deleteblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
-  - 'neo-deleteblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
-  - 'neo-deleteblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
-  - 'neo-deleteblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
-  - 'neo-deleteblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
-  - 'neo-deleteblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
-  - 'neo-deleteblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
-  - 'neo-deleteblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
-  - 'neo-deleteblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
-  - 'neo-deleteblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
-  - 'neo-deleteblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
-  - 'neo-deleteblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
-  - 'neo-editblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
-  - 'neo-editblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
-  - 'neo-editblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
-  - 'neo-editblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b' # Text + Image
-  - 'neo-editblocks:37856688-8093-44ca-ac04-d3704dfb4e0b' # Image
-  - 'neo-editblocks:409e3d01-7446-44f1-a456-1b63b060ba62' # Longform
-  - 'neo-editblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96' # Graph
-  - 'neo-editblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d' # Value Block
-  - 'neo-editblocks:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
-  - 'neo-editblocks:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
-  - 'neo-editblocks:8347c66c-f769-4744-8f04-ce0000d91f25' # Link
-  - 'neo-editblocks:9c53977f-3074-4894-a1d4-8a21d81be9de' # Checklist
-  - 'neo-editblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
-  - 'neo-editblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360' # Center Text
-  - 'neo-editblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
-  - 'neo-editblocks:d3f18620-f92e-43ea-8cc5-386497c0031c' # Quote
-  - 'neo-editblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519' # Video Hero
-  - 'neo-editblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac' # Body
-  - 'neo-editblocks:fe76d340-6952-4b06-a4e6-50b6bd351768' # Values
+  - 'neo-createblocks:0e339425-a38e-44d5-ba05-22b5e97f112b'
+  - 'neo-createblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8'
+  - 'neo-createblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca'
+  - 'neo-createblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b'
+  - 'neo-createblocks:37856688-8093-44ca-ac04-d3704dfb4e0b'
+  - 'neo-createblocks:409e3d01-7446-44f1-a456-1b63b060ba62'
+  - 'neo-createblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96'
+  - 'neo-createblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d'
+  - 'neo-createblocks:555ae299-5cec-4a80-b74b-b9661f8e168d'
+  - 'neo-createblocks:7532bfdb-0de6-402c-b113-50c6ef211d62'
+  - 'neo-createblocks:8347c66c-f769-4744-8f04-ce0000d91f25'
+  - 'neo-createblocks:9c53977f-3074-4894-a1d4-8a21d81be9de'
+  - 'neo-createblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd'
+  - 'neo-createblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360'
+  - 'neo-createblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9'
+  - 'neo-createblocks:d3f18620-f92e-43ea-8cc5-386497c0031c'
+  - 'neo-createblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519'
+  - 'neo-createblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac'
+  - 'neo-createblocks:fe76d340-6952-4b06-a4e6-50b6bd351768'
+  - 'neo-deleteblocks:0e339425-a38e-44d5-ba05-22b5e97f112b'
+  - 'neo-deleteblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8'
+  - 'neo-deleteblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca'
+  - 'neo-deleteblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b'
+  - 'neo-deleteblocks:37856688-8093-44ca-ac04-d3704dfb4e0b'
+  - 'neo-deleteblocks:409e3d01-7446-44f1-a456-1b63b060ba62'
+  - 'neo-deleteblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96'
+  - 'neo-deleteblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d'
+  - 'neo-deleteblocks:555ae299-5cec-4a80-b74b-b9661f8e168d'
+  - 'neo-deleteblocks:7532bfdb-0de6-402c-b113-50c6ef211d62'
+  - 'neo-deleteblocks:8347c66c-f769-4744-8f04-ce0000d91f25'
+  - 'neo-deleteblocks:9c53977f-3074-4894-a1d4-8a21d81be9de'
+  - 'neo-deleteblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd'
+  - 'neo-deleteblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360'
+  - 'neo-deleteblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9'
+  - 'neo-deleteblocks:d3f18620-f92e-43ea-8cc5-386497c0031c'
+  - 'neo-deleteblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519'
+  - 'neo-deleteblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac'
+  - 'neo-deleteblocks:fe76d340-6952-4b06-a4e6-50b6bd351768'
+  - 'neo-editblocks:0e339425-a38e-44d5-ba05-22b5e97f112b'
+  - 'neo-editblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8'
+  - 'neo-editblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca'
+  - 'neo-editblocks:2bf69e53-3f94-4689-900a-6a7c12b0b38b'
+  - 'neo-editblocks:37856688-8093-44ca-ac04-d3704dfb4e0b'
+  - 'neo-editblocks:409e3d01-7446-44f1-a456-1b63b060ba62'
+  - 'neo-editblocks:52dc44dc-1299-45e8-a0f1-c79bd2ad8c96'
+  - 'neo-editblocks:52f67ca1-0fd1-4db6-bc5d-6111b7fae49d'
+  - 'neo-editblocks:555ae299-5cec-4a80-b74b-b9661f8e168d'
+  - 'neo-editblocks:7532bfdb-0de6-402c-b113-50c6ef211d62'
+  - 'neo-editblocks:8347c66c-f769-4744-8f04-ce0000d91f25'
+  - 'neo-editblocks:9c53977f-3074-4894-a1d4-8a21d81be9de'
+  - 'neo-editblocks:a9b3e5dc-9e7e-480b-a113-3249fa01bddd'
+  - 'neo-editblocks:b6137eea-1b1f-4844-bbe2-3c869cf62360'
+  - 'neo-editblocks:cc46ab8b-be79-479a-a69d-4c6eb5432ae9'
+  - 'neo-editblocks:d3f18620-f92e-43ea-8cc5-386497c0031c'
+  - 'neo-editblocks:e1dcf5ff-1760-4ad1-895a-61dd38637519'
+  - 'neo-editblocks:f3ce1b77-39d1-4d88-8a8f-217f4a5665ac'
+  - 'neo-editblocks:fe76d340-6952-4b06-a4e6-50b6bd351768'
   - registerusers
   - 'replacefiles:35279a43-bca0-475d-a8da-25e0ecbccac7' # Images
   - 'replacefiles:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
@@ -262,3 +262,12 @@ permissions:
   - 'viewpeerentrydrafts:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
   - 'viewpeerentrydrafts:eee05842-b06c-4dc6-9143-7ec4192debf9' # Homepage
   - 'viewpeerentrydrafts:f5e30ee2-1a17-4d9f-a868-9539ab3544d0' # Portfolio
+  - viewusers
+  - 'changeauthorforpeerentries:145b009c-c6ab-4927-87ef-382ed4bd78b8' # Articles
+  - 'changeauthorforpeerentries:9c287916-f31a-4c2c-8259-7e157304f979' # Companies
+  - 'changeauthorforpeerentries:270a2002-271e-4b2b-a058-1cd15565944c' # Deal Status
+  - 'changeauthorforpeerentries:44339fe6-1c99-46f8-875d-9fbd1bcf5719' # Pages
+  - 'changeauthorforpeerentries:a9a47688-3d84-4f8a-a6e1-59ceef15393f' # People
+  - 'changeauthorforpeerentries:c5253114-01ce-4026-a1b8-93d94021a482' # Sectors
+  - 'changeauthorforpeerentries:4d08b07e-5a19-4645-bdcc-5e65ae4f97c1' # Teams
+  - 'changeauthorforpeerentries:657a530c-6716-46e3-8822-75eb19c5dea5' # Themes

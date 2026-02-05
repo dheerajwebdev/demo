@@ -1,4 +1,4 @@
-dateModified: 1761740587
+dateModified: 1770284307
 elementSources:
   craft\elements\Entry:
     -
@@ -162,9 +162,9 @@ fs:
       optimiseUrlPattern: ''
       projectSlug: ''
       securityKey: ''
-      subfolder: bp-energy/staging/images/
+      subfolder: staging/images/
     type: servd\AssetStorage\AssetsPlatform\Fs
-    url: 'https://cdn2.assets-servd.host/'
+    url: 'https://bpenergy-partners.files.svdcdn.com'
   uploads:
     hasUrls: false
     name: Uploads
@@ -176,20 +176,18 @@ fs:
       optimiseUrlPattern: ''
       projectSlug: ''
       securityKey: ''
-      subfolder: bp-energy/staging/uploads/
+      subfolder: staging/uploads/
     type: servd\AssetStorage\AssetsPlatform\Fs
-    url: 'https://cdn2.assets-servd.host/'
+    url: 'https://bpenergy-partners.files.svdcdn.com'
 meta:
   __names__:
     0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b: Icon # Icon
     0aa7bf8b-d4e1-4016-bc62-588296598ca8: Blocks # Blocks
     0b096431-4e56-4bb4-a2f2-9a69e020f8aa: Team # Team
-    0e339425-a38e-44d5-ba05-22b5e97f112b: Pyramid # Pyramid
     00f81757-77f4-4683-ac92-0cb6223b8467: Team # Team
     1b9cb464-ca74-486a-89c8-d041559e6a62: 'Small Print' # Small Print
     1c6b1634-363d-4810-92dc-f1352b0f78c5: Default # Default
     2ba5d709-2894-4970-9b9f-15c32d972487: 'Simple Link' # Simple Link
-    2bf69e53-3f94-4689-900a-6a7c12b0b38b: 'Text + Image' # Text + Image
     3eb14607-1124-49e8-b48d-72e0e0335334: Funds # Funds
     3f9ae8af-2238-4374-85a8-63a6df283d42: 'Highlighted Copy' # Highlighted Copy
     3fecd575-c059-4136-aa0e-062258f74179: Sectors # Sectors
@@ -206,58 +204,42 @@ meta:
     7c62bd61-4de6-4523-a736-1e917d13699e: Categories # Categories
     8bf19d89-4d45-4b34-90f9-c76906e83907: New # New
     8f1af7ce-a429-453c-b927-4159f41894d4: Label # Label
-    8f2cdb70-2597-45f1-8c20-f1d1b471e1f6: Common # Common
-    9c53977f-3074-4894-a1d4-8a21d81be9de: Checklist # Checklist
     9c287916-f31a-4c2c-8259-7e157304f979: Companies # Companies
     9d8acc9e-e08b-4850-9a7c-dc53b2e82a94: 'Featured Companies' # Featured Companies
     9d9a3fef-154c-41ec-aac8-5acdead1cb84: 'Footer C2' # Footer C2
     17e970a9-4801-48b6-9a94-0cc344f04ab2: Contact # Contact
-    18ea06e8-7610-41a0-bd20-2b3259cd59f8: Pillar # Pillar
-    25b0fbf6-4e44-43b8-93d2-e1c5baacefca: 'Portfolio Grid' # Portfolio Grid
     26bea155-732e-4f45-b724-032a2330f847: 'Block Review' # Block Review
     35e65122-056f-4a98-8b50-7ac4d1fc8e4a: Lightswitch # Lightswitch
     038da28c-c66f-4434-877a-c9945368a390: 'Video URL' # Video URL
-    52dc44dc-1299-45e8-a0f1-c79bd2ad8c96: Graph # Graph
-    52f67ca1-0fd1-4db6-bc5d-6111b7fae49d: 'Value Block' # Value Block
     64e5f47e-5e44-4bea-849c-7cfe57829aa5: Companies # Companies
     73ee4f96-0cda-4cef-a8d8-12e46ae11933: 'Public Schema' # Public Schema
     145b009c-c6ab-4927-87ef-382ed4bd78b8: Articles # Articles
     270a2002-271e-4b2b-a058-1cd15565944c: 'Deal Status' # Deal Status
-    409e3d01-7446-44f1-a456-1b63b060ba62: Longform # Longform
     430f7f99-e13e-4618-bc6d-e990026c660d: 'Body Simple' # Body Simple
     434e47c7-7222-4db0-a9b4-d7ed1ba78376: $CRAFT_SYSTEM_NAME # $CRAFT_SYSTEM_NAME
-    555ae299-5cec-4a80-b74b-b9661f8e168d: 'Image Hero' # Image Hero
     617ab8ee-5152-44e7-aea7-8a56157be4bf: Subheading # Subheading
     657a530c-6716-46e3-8822-75eb19c5dea5: Themes # Themes
     681d4abc-c9bb-42da-82ac-756d609fe88a: Client # Client
     896da32e-f295-43a6-937c-2642ca6f9f0b: '404' # 404
     907bb579-cb4c-4038-a02f-29e4fef867b3: Default # Default
-    955b2e74-1b28-49e1-b32c-eb2e51b1d613: Hero # Hero
     1698e835-812f-41b2-abcd-3a2f088be344: Default # Default
     4779ed3e-d9d7-444b-85e1-2e9d5630465f: Address # Address
-    4794c4ec-aa9a-4274-b8fc-fb577538fb5a: 'Full Width Image Hero' # Full Width Image Hero
     4964e71e-f35f-41e2-944d-7b7a8b62ee51: 'Transaction Date' # Transaction Date
-    7532bfdb-0de6-402c-b113-50c6ef211d62: 'Strategy Grid' # Strategy Grid
     8245ebf7-23eb-4db0-8605-e02a4fdffe51: 'Deal Status' # Deal Status
-    8347c66c-f769-4744-8f04-ce0000d91f25: Link # Link
     8549b37c-7c07-4e1f-bf72-08efdbe6d220: Default # Default
     32384c26-7ca3-413d-b86b-3a31eff9e0ba: Telephone # Telephone
     35279a43-bca0-475d-a8da-25e0ecbccac7: Images # Images
     44339fe6-1c99-46f8-875d-9fbd1bcf5719: Pages # Pages
     51709ee8-c90d-4b3d-a2da-ea518e10cb6a: Default # Default
     069416e5-321f-4029-9ef9-a418bcf32c67: Images # Images
-    98247db1-d35e-4bd4-83a2-d402d919b73b: Globals # Globals
     642322e6-4229-42d0-9c55-8598340ffa78: Graph # Graph
     677709f9-0b6b-4d19-969c-0495c252dcca: Image # Image
-    832918fb-4e36-49b7-8f8d-c26c3a83a1d0: 'Logo Url' # Logo Url
     4213088f-350d-476e-90ce-f9f3e4d6dd1d: 'Website Link' # Website Link
     7523553a-9e5a-450d-8b6c-e73fa976d2f4: 'Merged / Realized Date' # Merged / Realized Date
     30943985-9d9d-42f1-8500-ef991ad1ff77: Themes # Themes
-    37856688-8093-44ca-ac04-d3704dfb4e0b: Image # Image
     58413647-0403-4d88-8bf2-a21fbef39373: 'Background Image' # Background Image
     87858620-d2d5-4d5e-8be5-4be25b06b61e: News # News
     a9a47688-3d84-4f8a-a6e1-59ceef15393f: People # People
-    a9b3e5dc-9e7e-480b-a113-3249fa01bddd: 'News Grid' # News Grid
     a53e504a-eefb-4fd7-ab18-74d4edbb639b: 'LinkedIn Profile' # LinkedIn Profile
     a390a330-ef76-4270-a373-6902dfd3e342: 'Contact Form' # Contact Form
     a3154d1d-41d0-49f1-b302-14191b00c71a: Uploads # Uploads
@@ -266,40 +248,27 @@ meta:
     b0029eaa-acd8-409d-bcfe-bf589b7dc1e3: 'Profile Photo' # Profile Photo
     b9c272a6-f21f-4cb9-b41c-f5ae57197ea4: Email # Email
     b727d412-f255-4e92-bef2-3529efe9f0d1: Default # Default
-    b6137eea-1b1f-4844-bbe2-3c869cf62360: 'Center Text' # Center Text
     b5064781-9bc7-4471-afaa-cb17fd93e45e: Contact # Contact
-    b5962587-c83e-48ef-b943-11b41f90bcf5: 'CTA Section' # CTA Section
     b7198145-bea1-4d9a-b7b8-f18517f0a0f7: 'Map URL' # Map URL
     baec80ef-1241-4c73-8757-9b4c2c3c4ccc: Default # Default
-    baf5e3a1-8726-4232-8636-73fee17f5107: Portfolio # Portfolio
-    be80e28a-b476-4f91-ba8a-c94c9ccf5c97: Team # Team
     bedeb21b-0ffb-4a50-8e63-d01d50850661: 'Investment Themes' # Investment Themes
     bf9c66d4-3ba1-4583-b8bf-72d8e547ba19: 'Company Information' # Company Information
     c009ff8c-5188-4dc8-a4e1-3d8548fe4c9f: Team # Team
     c1d67c47-3edc-40c8-b912-439b27823a2d: Default # Default
     c50ac359-39cd-423c-8432-33ed3039c777: Logo # Logo
-    c61a27ad-ba5d-41d3-bb47-c73cfd381dbe: SEO # SEO
     c642a32f-3f1f-449e-b03b-9e74aee22c7d: 'Eyebrow Link' # Eyebrow Link
     c5253114-01ce-4026-a1b8-93d94021a482: Sectors # Sectors
-    cc46ab8b-be79-479a-a69d-4c6eb5432ae9: 'Sectors & Themes' # Sectors & Themes
     ce32a7d2-9bc8-4e9c-91d1-2a77a9af66d6: Homepage # Homepage
     cf3a0297-e699-40d4-acc4-c85e6e5c6dd4: $CRAFT_SYSTEM_NAME # $CRAFT_SYSTEM_NAME
     cfddf556-8aa4-4367-82a7-486c44e8d462: Contact # Contact
     d2c03548-97ad-4148-b2a0-b45fda2b5d7e: 'Background Color' # Background Color
-    d3f18620-f92e-43ea-8cc5-386497c0031c: Quote # Quote
     d2709cfa-fdf5-476a-9376-2456e2351db8: 'CTA Background' # CTA Background
-    d5203bad-2433-4750-a65d-c36258d5f4fe: 'Logo Text' # Logo Text
     d6930fa0-ed59-4e9b-b394-c420b2d60f92: Link # Link
-    e1dcf5ff-1760-4ad1-895a-61dd38637519: 'Video Hero' # Video Hero
-    e5d98e50-304d-4dca-8fa0-be1431d687a7: Logo # Logo
     e8be3e0f-0b95-4872-a895-fb7cbd64503a: 'Investment Themes' # Investment Themes
-    eb817486-091f-4ed8-ab34-bd1c0f0f7a7e: Logos # Logos
     ec7c30b5-0eab-4abb-9942-0b1bda47db85: Default # Default
     ed9eb40f-9212-4028-b548-7f60c5b7ed0e: Main # Main
     eee05842-b06c-4dc6-9143-7ec4192debf9: Homepage # Homepage
-    eff29af1-aaf3-4256-8e64-0f798c451638: Relations # Relations
     f2ef577c-521a-4f4e-867e-9edb727d8ab0: 'News Categories' # News Categories
-    f3ce1b77-39d1-4d88-8a8f-217f4a5665ac: Body # Body
     f5e30ee2-1a17-4d9f-a868-9539ab3544d0: Portfolio # Portfolio
     f7d50232-1776-417e-989f-c93bb87683d1: Copy # Copy
     f8e2be45-beff-455c-8f84-9566efb988f0: 'Footer C1' # Footer C1
@@ -309,7 +278,6 @@ meta:
     f7961df6-d96e-4b26-bb02-f65641c036e1: 'Additional Logos' # Additional Logos
     f9547cad-4fae-47a1-acf3-c1c804040bb7: Default # Default
     fdf3a110-c29e-48e8-91cc-736a4d274fc4: 'Body Simple Link' # Body Simple Link
-    fe76d340-6952-4b06-a4e6-50b6bd351768: Values # Values
 plugins:
   ckeditor:
     edition: standard
@@ -327,7 +295,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: H8YG69322HFMPBQH71TRZULM
-    schemaVersion: 2.0.21
+    schemaVersion: 3.4.12
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -564,16 +532,12 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: RZ039AH4JOXIU0A6P43520VR
-    schemaVersion: 2.0.7
+    schemaVersion: 2.1.1
   neo:
     edition: standard
     enabled: true
     licenseKey: Q8V9P0SOYENT2Y90BBNWBBHG
-    schemaVersion: 4.0.0
-  remote:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 5.1.0.1
   retour:
     edition: standard
     enabled: true
@@ -583,7 +547,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: H4BF0U080I2Z4LV93GRLW107
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -596,7 +560,7 @@ plugins:
           __assoc__:
             -
               - policy
-              - '''self'''
+              - "'self'"
       devModeCpTitlePrefix: '&#x1f6a7;⚙ '
       devModeTitlePrefix: '&#x1f6a7; '
       displayAnalysisSidebar: true
@@ -673,5 +637,5 @@ system:
   live: true
   name: $CRAFT_SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 4.15.0.0
+  schemaVersion: 5.9.0.8
   timeZone: America/Los_Angeles

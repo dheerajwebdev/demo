@@ -271,10 +271,9 @@ fieldLayouts:
         name: SEO
         uid: 58cf46b2-2d69-46e9-a899-3c4d6f942364
         userCondition: null
-handle: default
+handle: companies_default
 hasTitleField: true
 name: Default
-section: 9c287916-f31a-4c2c-8259-7e157304f979 # Companies
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

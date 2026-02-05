@@ -1,19 +1,18 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 1c6b1634-363d-4810-92dc-f1352b0f78c5 # Default
+  -
+    uid: 5bdd4522-39ec-4af1-b5ac-b823138c8d2a # Text
 handle: pages
+maxAuthors: 1
 name: Pages
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

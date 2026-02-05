@@ -88,10 +88,9 @@ fieldLayouts:
         name: SEO
         uid: 160009ca-e06a-4886-8f41-be94ee7b0bb4
         userCondition: null
-handle: default
+handle: articles_default
 hasTitleField: true
 name: Default
-section: 145b009c-c6ab-4927-87ef-382ed4bd78b8 # Articles
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

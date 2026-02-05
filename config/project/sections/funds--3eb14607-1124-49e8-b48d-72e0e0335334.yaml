@@ -1,19 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: 1698e835-812f-41b2-abcd-3a2f088be344 # Default
 handle: funds
+maxAuthors: 1
 name: Funds
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

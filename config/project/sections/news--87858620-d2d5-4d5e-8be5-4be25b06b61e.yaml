@@ -1,19 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 6c540daf-4c49-405a-af7f-0005500e6f4c # News
 handle: news
+maxAuthors: 1
 name: News
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

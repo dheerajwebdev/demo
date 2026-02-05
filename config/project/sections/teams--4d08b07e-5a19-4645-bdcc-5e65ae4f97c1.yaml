@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: c1d67c47-3edc-40c8-b912-439b27823a2d # Default
 handle: teams
+maxAuthors: 1
 name: Teams
 propagationMethod: all
 siteSettings:

@@ -125,7 +125,6 @@ fieldLayouts:
 handle: portfolio
 hasTitleField: false
 name: Portfolio
-section: f5e30ee2-1a17-4d9f-a868-9539ab3544d0 # Portfolio
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

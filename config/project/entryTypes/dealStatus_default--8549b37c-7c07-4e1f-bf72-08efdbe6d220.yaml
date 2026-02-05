@@ -34,10 +34,9 @@ fieldLayouts:
         name: Content
         uid: dabd1389-fe94-4e43-bcb3-a0f252d5d242
         userCondition: null
-handle: default
+handle: dealStatus_default
 hasTitleField: true
 name: Default
-section: 270a2002-271e-4b2b-a058-1cd15565944c # Deal Status
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

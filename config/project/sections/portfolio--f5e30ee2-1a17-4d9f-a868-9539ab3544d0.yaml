@@ -1,19 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: a8289625-1dff-47fa-a99a-c236e2106e8d # Portfolio
 handle: portfolio
+maxAuthors: 1
 name: Portfolio
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

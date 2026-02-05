@@ -82,10 +82,9 @@ fieldLayouts:
         name: Content
         uid: 1b89a05f-b7a8-4289-8d3b-729ad99f8ef5
         userCondition: null
-handle: default
+handle: themes_default
 hasTitleField: true
 name: Default
-section: 657a530c-6716-46e3-8822-75eb19c5dea5 # Themes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,5 +1,5 @@
 fieldLayouts:
-  e74d3e3b-e8bb-4768-8599-1bd7dec0c4e1:
+  f111169b-4364-4976-9e53-71f37c19ae6e:
     tabs:
       -
         elementCondition: null
@@ -27,29 +27,16 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 5ca0201c-e6b7-4b72-b36c-4f080c1f20b1
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 0a1bc2bc-dd02-4268-9af1-7d44e27a6f5b # Icon
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ea405f09-fe76-4106-9038-a2de4ecf4d84
+            uid: 84b704e6-76ad-4175-a69e-ed57081de5ea
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: df32f342-2ee2-49db-85d7-2df27cdc7df3
+        uid: 9ca482b9-27d1-4153-8540-95c602ce86d9
         userCondition: null
-handle: default
+handle: newsCategories_default
 hasTitleField: true
 name: Default
-section: c5253114-01ce-4026-a1b8-93d94021a482 # Sectors
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

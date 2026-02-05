@@ -73,7 +73,6 @@ fieldLayouts:
 handle: contact
 hasTitleField: false
 name: Contact
-section: b5064781-9bc7-4471-afaa-cb17fd93e45e # Contact
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

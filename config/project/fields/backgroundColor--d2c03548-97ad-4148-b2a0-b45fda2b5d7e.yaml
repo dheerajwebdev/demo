@@ -1,6 +1,5 @@
 columnSuffix: mmecerrf
 contentColumnType: string(5)
-fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
 handle: backgroundColor
 instructions: null
 name: 'Background Color'

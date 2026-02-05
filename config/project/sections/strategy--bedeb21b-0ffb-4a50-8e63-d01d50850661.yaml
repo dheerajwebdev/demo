@@ -1,6 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: e8be3e0f-0b95-4872-a895-fb7cbd64503a # Investment Themes
 handle: strategy
+maxAuthors: 1
 name: 'Investment Themes'
 previewTargets:
   -

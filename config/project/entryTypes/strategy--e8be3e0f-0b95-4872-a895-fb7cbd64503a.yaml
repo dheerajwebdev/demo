@@ -67,7 +67,6 @@ fieldLayouts:
 handle: strategy
 hasTitleField: false
 name: 'Investment Themes'
-section: bedeb21b-0ffb-4a50-8e63-d01d50850661 # Investment Themes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

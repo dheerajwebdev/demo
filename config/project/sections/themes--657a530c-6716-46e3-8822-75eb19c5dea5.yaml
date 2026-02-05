@@ -1,6 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: b727d412-f255-4e92-bef2-3529efe9f0d1 # Default
 handle: themes
+maxAuthors: 1
 name: Themes
 propagationMethod: all
 siteSettings:

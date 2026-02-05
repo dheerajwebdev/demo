@@ -103,7 +103,6 @@ fieldLayouts:
 handle: team
 hasTitleField: false
 name: Team
-section: 0b096431-4e56-4bb4-a2f2-9a69e020f8aa # Team
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 8f2cdb70-2597-45f1-8c20-f1d1b471e1f6 # Common
 handle: additionalLogos
 instructions: null
 name: 'Additional Logos'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_additionallogos}}'
-  maxBlocks: 2
-  minBlocks: null
+  entryTypes:
+    -
+      uid: eb817486-091f-4ed8-ab34-bd1c0f0f7a7e
+  maxEntries: 2
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

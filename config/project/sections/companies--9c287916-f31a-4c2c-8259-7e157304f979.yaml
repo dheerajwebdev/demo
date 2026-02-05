@@ -1,19 +1,17 @@
 defaultPlacement: beginning
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: baec80ef-1241-4c73-8757-9b4c2c3c4ccc # Default
 handle: companies
+maxAuthors: 1
 name: Companies
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   434e47c7-7222-4db0-a9b4-d7ed1ba78376: # $CRAFT_SYSTEM_NAME

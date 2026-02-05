@@ -73,7 +73,6 @@ fieldLayouts:
 handle: error
 hasTitleField: false
 name: '404'
-section: 6f1e6e98-d91b-4609-8039-d914efa4f46d # 404
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

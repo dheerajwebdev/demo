@@ -1,0 +1,77 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  578a9e90-4e50-42fb-9adc-d757c8eac929:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:c9d766ff-1c04-47ca-8871-1bc6e521a490'
+      - 'layoutElement:48d970bb-282e-42b0-88e2-5f0bb7e5860b'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: e5d98e50-304d-4dca-8fa0-be1431d687a7
+            handle: logo
+            instructions: null
+            label: Logo
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85c80ce1-e6eb-4082-94cf-07809fcd66b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d5203bad-2433-4750-a65d-c36258d5f4fe
+            handle: null
+            instructions: null
+            label: 'Logo Text'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9d766ff-1c04-47ca-8871-1bc6e521a490
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 832918fb-4e36-49b7-8f8d-c26c3a83a1d0
+            handle: null
+            instructions: null
+            label: 'Logo Url'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48d970bb-282e-42b0-88e2-5f0bb7e5860b
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: d247e945-d9dc-48ce-9f16-04c23643816f
+        userCondition: null
+    thumbFieldKey: 'layoutElement:85c80ce1-e6eb-4082-94cf-07809fcd66b3'
+handle: logos
+hasTitleField: false
+icon: null
+name: Logos
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'
