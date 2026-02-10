@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   968f3f44-3344-4ca2-97fc-1d4624d760fa:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: null
             instructions: null
             label: Introduction
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            handle: null
             instructions: null
             label: null
             required: true
@@ -36,6 +47,7 @@ fieldLayouts:
         name: Content
         uid: 1a7a8e15-9e01-4f45-a8d8-16919e146e83
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: fullWidthImageHero

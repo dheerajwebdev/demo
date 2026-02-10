@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   78396c46-61ee-4320-bbcc-f5bd94de56e6:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c642a32f-3f1f-449e-b03b-9e74aee22c7d # Eyebrow Link
+            handle: null
             instructions: null
             label: null
             required: false
@@ -34,8 +45,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: true
@@ -46,8 +61,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            handle: null
             instructions: null
             label: null
             required: false
@@ -58,13 +77,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: dc4dd7b7-06e2-4498-aa46-0b0e88bbe654
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 642322e6-4229-42d0-9c55-8598340ffa78 # Graph
+            handle: null
             instructions: null
             label: null
             required: false
@@ -77,6 +101,7 @@ fieldLayouts:
         name: Content
         uid: 2c28e6a0-c282-4a61-bcb0-06636977a434
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: graph

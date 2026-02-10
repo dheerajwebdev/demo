@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   b6d42ec3-ca8e-4621-b452-e447b4f9ca37:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: false
@@ -34,8 +45,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -46,8 +61,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5e675d35-5cbe-472c-95d9-587691f3dda2 # Checklist
+            handle: null
             instructions: null
             label: null
             required: false
@@ -58,8 +77,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 35e65122-056f-4a98-8b50-7ac4d1fc8e4a # Lightswitch
+            handle: null
             instructions: null
             label: null
             required: false
@@ -72,6 +95,7 @@ fieldLayouts:
         name: Content
         uid: 9cca5c99-c3fe-4795-9764-98058b1129dc
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: checklist

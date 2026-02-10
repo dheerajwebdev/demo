@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   17cbe387-094d-45bc-9ac3-535e3543f426:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f904b728-951f-4cbd-bb1a-984f00b2d9ea # Longform
+            handle: null
             instructions: null
             label: null
             required: false
@@ -24,6 +31,7 @@ fieldLayouts:
         name: Content
         uid: 9e4621c8-b7ab-45ae-9744-971aef9233c5
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: longform

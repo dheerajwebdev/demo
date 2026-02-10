@@ -1,18 +1,25 @@
 childBlocks:
   - pillar
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   076ef3c2-713b-4fef-b74e-9e21bf00153c:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: false
@@ -23,6 +30,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: benf\neo\fieldlayoutelements\ChildBlocksUiElement
             uid: 29637f6a-ee72-4a99-ae22-b515a9abfb17
@@ -30,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: da5a4137-db15-434b-994a-23756542c6ec
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: pyramid

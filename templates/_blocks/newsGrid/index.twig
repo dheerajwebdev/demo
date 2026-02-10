@@ -6,12 +6,13 @@
 
 <section class="pb-20">
   <div class="container">
+    {% if block.copy %}<p class="pt-14 lg:pt-24 text-center d-block pb-6 t-h3 w-3/4 m-auto">{{ block.copy|nl2br }}</p>{% endif %}
     {% include "_components/centerText" with {
         eyebrow: eyebrow,
         heading: heading,
         linkField: linkField,
         eyebrowLink: eyebrowLinkField,
-        paddingClass: 'py-14 lg:pt-24'
+        paddingClass: 'pt-0'
     } %}
 
     {% set articles = craft.entries.section('articles')

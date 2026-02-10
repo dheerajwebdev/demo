@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   450eb005-302e-4237-9ae6-71a2e5e70297:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 3f9ae8af-2238-4374-85a8-63a6df283d42 # Highlighted Copy
+            handle: null
             instructions: null
             label: 'Full width Copy'
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -34,8 +45,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: false
@@ -46,8 +61,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8f1af7ce-a429-453c-b927-4159f41894d4 # Label
+            handle: null
             instructions: null
             label: Subheading
             required: false
@@ -58,8 +77,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: null
             instructions: null
             label: null
             required: true
@@ -70,8 +93,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            handle: null
             instructions: null
             label: null
             required: true
@@ -82,8 +109,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            handle: null
             instructions: null
             label: 'Image Caption'
             required: false
@@ -94,8 +125,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 35e65122-056f-4a98-8b50-7ac4d1fc8e4a # Lightswitch
+            handle: null
             instructions: null
             label: 'Reduce Top Padding'
             required: false
@@ -108,6 +143,7 @@ fieldLayouts:
         name: Content
         uid: b604307e-44fd-456f-9f8a-0ce260ab87da
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: textImage

@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   64cfe97a-0327-4c3e-8ba5-b5f7fcabf519:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: false
@@ -34,8 +45,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            handle: null
             instructions: null
             label: null
             required: false
@@ -46,11 +61,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 40216c19-2e03-4f70-bef3-0c4615a613cd
             userCondition: null
           -
+            dateAdded: null
             dismissible: false
             elementCondition: null
             style: tip
@@ -59,8 +76,12 @@ fieldLayouts:
             uid: 032a2955-fcf3-4720-87fd-ab85765ee047
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 64e5f47e-5e44-4bea-849c-7cfe57829aa5 # Companies
+            handle: null
             instructions: null
             label: null
             required: false
@@ -73,6 +94,7 @@ fieldLayouts:
         name: Content
         uid: b577a069-b1e0-46de-a81c-589a755a3017
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: portfolioGrid

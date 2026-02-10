@@ -1,17 +1,24 @@
 childBlocks: null
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   af6d46f8-52d3-4b87-bfbc-c12b5e18eeeb:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            handle: null
             instructions: null
             label: null
             required: false
@@ -22,8 +29,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d2709cfa-fdf5-476a-9376-2456e2351db8 # CTA Background
+            handle: null
             instructions: null
             label: null
             required: false
@@ -36,6 +47,7 @@ fieldLayouts:
         name: Content
         uid: 76c48432-92ab-4d39-a2f7-75e93e08119e
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: ctaSection

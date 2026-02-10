@@ -1,18 +1,25 @@
 childBlocks:
   - valueBlock
+color: null
 conditions: null
 description: ''
 enabled: true
+entryType: null
 field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
 fieldLayouts:
   0d02689b-3253-4c55-9b74-d2cf2deb72d3:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -23,8 +30,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
             required: true
@@ -35,6 +46,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: benf\neo\fieldlayoutelements\ChildBlocksUiElement
             uid: 749d8041-7953-4fed-9f72-cfcb4180bc3e
@@ -42,6 +54,7 @@ fieldLayouts:
         name: Content
         uid: 7e5a3b6d-024d-42a1-822a-8098f9d5bc4b
         userCondition: null
+    thumbFieldKey: null
 group: null
 groupChildBlockTypes: true
 handle: values
