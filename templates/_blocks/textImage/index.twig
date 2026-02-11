@@ -32,7 +32,7 @@
          <h3 class="t-h3">{{ subheadingCopy }}</h3>
         {% endif %}
         {% if copy %}
-          <div class="text-xl">{{ copy|nl2br }}</div>
+          <div class="text-xl">{{ copy|raw|nl2br }}</div>
         {% endif %}
       </div>
       {% if image %}
