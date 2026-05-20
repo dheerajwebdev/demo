@@ -6,6 +6,7 @@ entryTypes:
     uid: 4d273976-278c-4064-9e24-ef8dd98e62ae # Default
 handle: people
 maxAuthors: 1
+minAuthors: 1
 name: People
 previewTargets:
   -

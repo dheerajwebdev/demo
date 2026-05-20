@@ -1,4 +1,4 @@
-dateModified: 1770789733
+dateModified: 1779277379
 elementSources:
   craft\elements\Entry:
     -
@@ -188,7 +188,6 @@ meta:
     00f81757-77f4-4683-ac92-0cb6223b8467: Team # Team
     1b9cb464-ca74-486a-89c8-d041559e6a62: 'Small Print' # Small Print
     1c6b1634-363d-4810-92dc-f1352b0f78c5: Default # Default
-    2ba5d709-2894-4970-9b9f-15c32d972487: 'Simple Link' # Simple Link
     2bf69e53-3f94-4689-900a-6a7c12b0b38b: 'Text + Image' # Text + Image
     3eb14607-1124-49e8-b48d-72e0e0335334: Funds # Funds
     3f9ae8af-2238-4374-85a8-63a6df283d42: 'Highlighted Copy' # Highlighted Copy
@@ -289,17 +288,15 @@ meta:
     f7d50232-1776-417e-989f-c93bb87683d1: Copy # Copy
     f8e2be45-beff-455c-8f84-9566efb988f0: 'Footer C1' # Footer C1
     f98c72b8-c1fd-47d1-b532-93b73afdfef1: Heading # Heading
-    f843f4f4-4cf3-4c19-95bf-b535238a14c5: Simple # Simple
     f904b728-951f-4cbd-bb1a-984f00b2d9ea: Longform # Longform
     f7961df6-d96e-4b26-bb02-f65641c036e1: 'Additional Logos' # Additional Logos
-    f9547cad-4fae-47a1-acf3-c1c804040bb7: Default # Default
     fdf3a110-c29e-48e8-91cc-736a4d274fc4: 'Body Simple Link' # Body Simple Link
     fe76d340-6952-4b06-a4e6-50b6bd351768: Values # Values
 plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   cookies:
     edition: standard
     enabled: false
@@ -654,5 +651,5 @@ system:
   live: true
   name: $CRAFT_SYSTEM_NAME
   retryDuration: null
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.10.0.0
   timeZone: America/Los_Angeles

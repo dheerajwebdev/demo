@@ -5,6 +5,7 @@ entryTypes:
     uid: 6c540daf-4c49-405a-af7f-0005500e6f4c # News
 handle: news
 maxAuthors: 1
+minAuthors: 1
 name: News
 previewTargets:
   -

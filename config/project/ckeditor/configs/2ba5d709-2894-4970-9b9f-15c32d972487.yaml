@@ -1,7 +1,0 @@
-headingLevels: false
-listPlugin: List
-name: 'Simple Link'
-toolbar:
-  - bold
-  - italic
-  - link

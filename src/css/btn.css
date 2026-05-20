@@ -31,3 +31,7 @@ header.dark .btn {
 .portfolio-grid a.btn-large{
   @apply max-w-[35rem] font-normal bg-blue-200 text-white;
 }
+.cta-section a.btn-large{
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  gap: 40px;
+}

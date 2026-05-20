@@ -5,6 +5,7 @@ entryTypes:
     uid: a8289625-1dff-47fa-a99a-c236e2106e8d # Portfolio
 handle: portfolio
 maxAuthors: 1
+minAuthors: 1
 name: Portfolio
 previewTargets:
   -

@@ -5,6 +5,7 @@ entryTypes:
     uid: 17e970a9-4801-48b6-9a94-0cc344f04ab2 # Contact
 handle: contact
 maxAuthors: 1
+minAuthors: 1
 name: Contact
 previewTargets:
   -

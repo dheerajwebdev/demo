@@ -6,6 +6,7 @@ entryTypes:
     uid: 8549b37c-7c07-4e1f-bf72-08efdbe6d220 # Default
 handle: dealStatus
 maxAuthors: 1
+minAuthors: 1
 name: 'Deal Status'
 propagationMethod: all
 siteSettings:

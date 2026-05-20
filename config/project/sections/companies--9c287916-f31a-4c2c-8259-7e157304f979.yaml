@@ -6,6 +6,7 @@ entryTypes:
     uid: baec80ef-1241-4c73-8757-9b4c2c3c4ccc # Default
 handle: companies
 maxAuthors: 1
+minAuthors: 1
 name: Companies
 previewTargets:
   -

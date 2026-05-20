@@ -7,6 +7,7 @@ entryTypes:
     uid: 5bdd4522-39ec-4af1-b5ac-b823138c8d2a # Text
 handle: pages
 maxAuthors: 1
+minAuthors: 1
 name: Pages
 previewTargets:
   -

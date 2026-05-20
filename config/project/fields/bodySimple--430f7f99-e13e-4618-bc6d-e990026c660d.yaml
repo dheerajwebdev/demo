@@ -7,15 +7,24 @@ searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: ''
-  ckeConfig: f843f4f4-4cf3-4c19-95bf-b535238a14c5 # Simple
   columnType: text
+  css: null
+  cssFile: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels: false
+  js: null
+  jsFile: null
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: false
+  toolbar:
+    - bold
+    - italic
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

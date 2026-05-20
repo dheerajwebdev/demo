@@ -7,15 +7,32 @@ searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: ''
-  ckeConfig: f9547cad-4fae-47a1-acf3-c1c804040bb7 # Default
   columnType: text
+  css: ".ck.ck-content .t-h2 {\r\n  font-size: 1.8em;\r\n}\r\n.ck.ck-content .t-h3 {\r\n  font-size: 1.4em;\r\n}\r\n.ck.ck-content ul,\r\n.ck.ck-content ol {\r\n  padding-left: 1em;\r\n}"
+  cssFile: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels: false
+  js: "return {\r\n  heading: {\r\n    options: [\r\n      {\r\n        model: 'heading',\r\n        title: 'Heading',\r\n        view: {\r\n          name: 'h2',\r\n          classes: 't-h2'\r\n        },\r\n        class: 't-h2',\r\n      },\r\n      {\r\n        model: 'subheading',\r\n        title: 'Subheading',\r\n        view: {\r\n          name: 'h3',\r\n          classes: 't-h3'\r\n        },\r\n        class: 't-h3',\r\n      },\r\n      {\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n      },\r\n    ]\r\n  }\r\n}"
+  jsFile: null
+  options: null
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: false
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - bulletedList
+    - numberedList
+    - '|'
+    - link
+    - '|'
+    - sourceEditing
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

@@ -6,6 +6,7 @@ entryTypes:
     uid: 907bb579-cb4c-4038-a02f-29e4fef867b3 # Default
 handle: articles
 maxAuthors: 1
+minAuthors: 1
 name: Articles
 previewTargets:
   -

@@ -6,6 +6,7 @@ entryTypes:
     uid: 1698e835-812f-41b2-abcd-3a2f088be344 # Default
 handle: funds
 maxAuthors: 1
+minAuthors: 1
 name: Funds
 previewTargets:
   -
