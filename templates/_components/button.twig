@@ -15,9 +15,9 @@
   {% if btnType is defined and btnType == 'large' %}
     {% if arrow == 'left' %}
       {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] rotate-180 fill-blue-500 group-hover/btn:fill-black transition-color #{chrevron}" }) }}
-      <span class="pr-2.5 mb-0.5 t-h2 font-normal">{{ label }}</span>
+      <span class="pr-2.5 t-h2 font-normal">{{ label }}</span>
     {% elseif arrow == 'right' %}
-      <span class="pl-2.5 mb-0.5 t-h2 font-normal">{{ label }}</span>
+      <span class="pl-2.5 t-h2 font-normal">{{ label }}</span>
       {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[50px] fill-blue-500 group-hover/btn:fill-black transition-color #{chrevron}" }) }}
     {% else %}
       {{ label }}
@@ -25,9 +25,9 @@
   {% else %}
     {% if arrow == 'left' %}
       {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[28px] rotate-180 group-hover/btn:fill-blue-500 transition-color #{chrevron}" }) }}
-      <span class="pr-2.5 mb-0.5">{{ label }}</span>
+      <span class="pr-2.5">{{ label }}</span>
     {% elseif arrow == 'right' %}
-      <span class="pl-2.5 mb-0.5">{{ label }}</span>
+      <span class="pl-2.5">{{ label }}</span>
       {{ svg('static/img/icons/chevron-round.svg')|attr({ class:"w-[28px] group-hover/btn:fill-blue-500 transition-color #{chrevron}" }) }}
     {% else %}
       {{ label }}
