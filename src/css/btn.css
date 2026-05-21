@@ -34,4 +34,8 @@ header.dark .btn {
 .cta-section a.btn-large{
   padding: 0.5rem 0.5rem 0.5rem 2.5rem;
   gap: 40px;
+  span{
+    font-size: 2rem;
+    line-height: 1.6;
+  }
 }
