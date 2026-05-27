@@ -1,4 +1,4 @@
-dateModified: 1779277379
+dateModified: 1779885489
 elementSources:
   craft\elements\Entry:
     -
@@ -313,6 +313,7 @@ plugins:
     settings:
       ajaxTimeout: 10
       alertEmails: null
+      allowPublicVolumes: true
       captchas:
         __assoc__:
           -
@@ -332,34 +333,34 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - recaptcha
-                      1:
+                      -
                         - secretKey
                         - $RECAPTCHA_SECRET_KEY
-                      2:
+                      -
                         - siteKey
                         - $RECAPTCHA_SITE_KEY
-                      3:
+                      -
                         - type
                         - v3
-                      4:
+                      -
                         - size
                         - normal
-                      5:
+                      -
                         - theme
                         - light
-                      6:
+                      -
                         - badge
                         - bottomright
-                      7:
+                      -
                         - language
                         - en
-                      8:
+                      -
                         - minScore
                         - 0.5
-                      10:
+                      -
                         - scriptLoadingMethod
                         - asyncDefer
           -
@@ -379,22 +380,22 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - hcaptcha
-                      3:
+                      -
                         - size
                         - normal
-                      4:
+                      -
                         - theme
                         - light
-                      5:
+                      -
                         - language
                         - en
-                      6:
+                      -
                         - minScore
                         - 0.5
-                      7:
+                      -
                         - scriptLoadingMethod
                         - asyncDefer
           -
@@ -414,10 +415,10 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - friendlyCaptcha
-                      3:
+                      -
                         - language
                         - en
           -
@@ -437,10 +438,10 @@ plugins:
                   - settings
                   -
                     __assoc__:
-                      0:
+                      -
                         - handle
                         - turnstile
-                      3:
+                      -
                         - scriptLoadingMethod
                         - asyncDefer
           -
@@ -507,6 +508,7 @@ plugins:
       defaultDateTime: null
       defaultDateValueOption: ''
       defaultEmailTemplate: ''
+      defaultExportFolder: '@storage/formie-export'
       defaultFileUploadVolume: ''
       defaultFormTemplate: ''
       defaultInstructionsPosition: verbb\formie\positions\AboveInput
@@ -517,10 +519,12 @@ plugins:
       enableCsrfValidationForGuests: true
       enableLargeFieldStorage: false
       enableUnloadWarning: true
+      filterIntegrationMapping: true
       includeDraftElementUsage: false
       includeRevisionElementUsage: false
       maxIncompleteSubmissionAge: 30
       maxSentNotificationsAge: 30
+      outputConsoleMessages: true
       pdfPaperOrientation: portrait
       pdfPaperSize: letter
       pluginName: Formie
@@ -534,8 +538,11 @@ plugins:
       spamEmailNotifications: false
       spamKeywords: ''
       spamLimit: 500
+      submissionSidebarFormOrder: dateCreatedDesc
+      submissionsBehaviour: all
+      useCssLayers: false
       useQueueForIntegrations: true
-      useQueueForNotifications: true
+      useQueueForNotifications: false
       validateCustomTemplates: true
   hyper:
     edition: standard
