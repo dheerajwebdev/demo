@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad52674bdbcc0c44bd397addefb25dd4",
+    "content-hash": "fa7f31457619cecb924ef8dbe505a61a",
     "packages": [
         {
             "name": "aodihis/video-utils",
@@ -10224,11 +10224,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "3.1.40",
+            "version": "3.1.41",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/7339255ee1c2d1806ec3bc3314b0563b999cf23a",
-                "reference": "7339255ee1c2d1806ec3bc3314b0563b999cf23a",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/5d1c3414796d37f1acd97c346e031945be3ca285",
+                "reference": "5d1c3414796d37f1acd97c346e031945be3ca285",
                 "shasum": ""
             },
             "require": {
@@ -10246,7 +10246,7 @@
                 "stripe/stripe-php": "^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0 || ^14.0 || ^15.0 || ^16.0",
                 "symfony/expression-language": "^5.0 || ^6.0 || ^7.0",
                 "theiconic/name-parser": "^1.0",
-                "verbb/auth": "^2.0.44",
+                "verbb/auth": "^2.0.46",
                 "verbb/base": "^3.0.15"
             },
             "type": "craft-plugin",
@@ -10285,7 +10285,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2026-09-14T10:30:59+00:00"
+            "time": "2026-09-22T10:35:06+00:00"
         },
         {
             "name": "verbb/hyper",
