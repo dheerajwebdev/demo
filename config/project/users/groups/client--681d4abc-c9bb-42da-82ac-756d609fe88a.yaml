@@ -65,16 +65,16 @@ permissions:
   - 'editpeerimages:a3154d1d-41d0-49f1-b302-14191b00c71a' # Uploads
   - editusers
   - moderateusers
-  - navigation-createnavs
-  - 'navigation-deletenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
-  - 'navigation-deletenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-deletenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
-  - 'navigation-editnav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
-  - 'navigation-editnav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-editnav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
-  - 'navigation-managenav:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
-  - 'navigation-managenav:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
-  - 'navigation-managenav:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
+  - navigation-createmenus
+  - 'navigation-deletemenu:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-deletemenu:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-deletemenu:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
+  - 'navigation-editmenu:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-editmenu:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-editmenu:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
+  - 'navigation-managemenu:1b9cb464-ca74-486a-89c8-d041559e6a62' # Small Print
+  - 'navigation-managemenu:ed9eb40f-9212-4028-b548-7f60c5b7ed0e' # Main
+  - 'navigation-managemenu:f8e2be45-beff-455c-8f84-9566efb988f0' # Footer C1
   - 'neo-createblocks:0e339425-a38e-44d5-ba05-22b5e97f112b' # Pyramid
   - 'neo-createblocks:18ea06e8-7610-41a0-bd20-2b3259cd59f8' # Pillar
   - 'neo-createblocks:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
