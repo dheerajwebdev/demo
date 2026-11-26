@@ -11,9 +11,11 @@
 - 'blockType:555ae299-5cec-4a80-b74b-b9661f8e168d' # Image Hero
 - 'blockType:7532bfdb-0de6-402c-b113-50c6ef211d62' # Strategy Grid
 - 'blockType:25b0fbf6-4e44-43b8-93d2-e1c5baacefca' # Portfolio Grid
+- 'blockType:c743030b-977e-4f62-bd46-107f311131a2' # Portfolio Logos
 - 'blockType:a9b3e5dc-9e7e-480b-a113-3249fa01bddd' # News Grid
 - 'blockType:cc46ab8b-be79-479a-a69d-4c6eb5432ae9' # Sectors & Themes
 - 'blockType:4794c4ec-aa9a-4274-b8fc-fb577538fb5a' # Full Width Image Hero
+- 'blockType:dfba301a-98be-4354-881c-76104359b393' # Image Grid & Categories
 - 'blockType:b5962587-c83e-48ef-b943-11b41f90bcf5' # CTA Section
 - 'blockTypeGroup:955b2e74-1b28-49e1-b32c-eb2e51b1d613'
 - 'blockTypeGroup:eff29af1-aaf3-4256-8e64-0f798c451638'

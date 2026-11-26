@@ -13,7 +13,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -21,6 +21,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -29,7 +30,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -37,6 +38,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -45,7 +47,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -53,6 +55,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -61,13 +64,13 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 40216c19-2e03-4f70-bef3-0c4615a613cd
             userCondition: null
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             dismissible: false
             elementCondition: null
             style: tip
@@ -76,7 +79,7 @@ fieldLayouts:
             uid: 032a2955-fcf3-4720-87fd-ab85765ee047
             userCondition: null
           -
-            dateAdded: null
+            dateAdded: '2026-11-26T10:16:25+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -84,6 +87,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

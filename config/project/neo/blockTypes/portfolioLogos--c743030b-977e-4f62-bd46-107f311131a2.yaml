@@ -1,0 +1,75 @@
+childBlocks: null
+color: null
+conditions: null
+description: 'Rotating bar of every company logo from the Companies section'
+enabled: true
+entryType: null
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  2d7595a4-7a4d-4848-8844-b5d58e64c4e7:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-11-26T10:16:20+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
+            instructions: 'Defaults to "Portfolio" when left empty'
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65372613-05be-4597-ae3f-de569fb0721c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T10:16:20+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d6930fa0-ed59-4e9b-b394-c420b2d60f92 # Link
+            handle: null
+            instructions: 'Optional. If set, the heading links here (e.g. the Portfolio page)'
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c56da60a-a716-471e-8e86-0719b23eae7e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T10:16:20+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Logos are pulled automatically from the Logo field of every entry in the Companies section.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 91eb6bc3-b1a2-4983-9f6f-63d5878eea60
+            userCondition: null
+        name: Content
+        uid: 0d491b36-97b4-4063-8e13-1be27c9b3b7d
+        userCondition: null
+    thumbFieldKey: null
+group: null
+groupChildBlockTypes: true
+handle: portfolioLogos
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Portfolio Logos'
+topLevel: true

@@ -24,6 +24,8 @@ return GeneralConfig::create()
     ->devMode($isDev)
     ->disallowRobots(!$isProd)
     ->errorTemplatePrefix('_errors/')
+    // Max asset upload size. PHP's upload_max_filesize and post_max_size must be at least this.
+    ->maxUploadFileSize(App::env('MAX_UPLOAD_FILE_SIZE') ?: '256M')
     ->omitScriptNameInUrls(true)
     ->privateTemplateTrigger('')
     ->sendPoweredByHeader(false)

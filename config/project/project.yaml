@@ -1,4 +1,4 @@
-dateModified: 1790073498
+dateModified: 1795692008
 elementSources:
   craft\elements\Entry:
     -
@@ -242,9 +242,11 @@ meta:
     44339fe6-1c99-46f8-875d-9fbd1bcf5719: Pages # Pages
     51709ee8-c90d-4b3d-a2da-ea518e10cb6a: Default # Default
     069416e5-321f-4029-9ef9-a418bcf32c67: Images # Images
+    551918ab-71cc-4cb9-81f5-5bd0ec5fad6b: Video # Video
     642322e6-4229-42d0-9c55-8598340ffa78: Graph # Graph
     677709f9-0b6b-4d19-969c-0495c252dcca: Image # Image
     4213088f-350d-476e-90ce-f9f3e4d6dd1d: 'Website Link' # Website Link
+    4527495e-e837-4254-99c2-ae90d1765daa: 'Video Header' # Video Header
     7523553a-9e5a-450d-8b6c-e73fa976d2f4: 'Merged / Realized Date' # Merged / Realized Date
     30943985-9d9d-42f1-8500-ef991ad1ff77: Themes # Themes
     58413647-0403-4d88-8bf2-a21fbef39373: 'Background Image' # Background Image
@@ -270,6 +272,7 @@ meta:
     c1d67c47-3edc-40c8-b912-439b27823a2d: Default # Default
     c50ac359-39cd-423c-8432-33ed3039c777: Logo # Logo
     c642a32f-3f1f-449e-b03b-9e74aee22c7d: 'Eyebrow Link' # Eyebrow Link
+    c743030b-977e-4f62-bd46-107f311131a2: 'Portfolio Logos' # Portfolio Logos
     c5253114-01ce-4026-a1b8-93d94021a482: Sectors # Sectors
     cc46ab8b-be79-479a-a69d-4c6eb5432ae9: 'Sectors & Themes' # Sectors & Themes
     ce32a7d2-9bc8-4e9c-91d1-2a77a9af66d6: Homepage # Homepage
@@ -278,6 +281,7 @@ meta:
     d2c03548-97ad-4148-b2a0-b45fda2b5d7e: 'Background Color' # Background Color
     d2709cfa-fdf5-476a-9376-2456e2351db8: 'CTA Background' # CTA Background
     d6930fa0-ed59-4e9b-b394-c420b2d60f92: Link # Link
+    dfba301a-98be-4354-881c-76104359b393: 'Image Grid & Categories' # Image Grid & Categories
     e1dcf5ff-1760-4ad1-895a-61dd38637519: 'Video Hero' # Video Hero
     e8be3e0f-0b95-4872-a895-fb7cbd64503a: 'Investment Themes' # Investment Themes
     ec7c30b5-0eab-4abb-9942-0b1bda47db85: Default # Default

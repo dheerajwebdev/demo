@@ -1,9 +1,11 @@
 {# Required #}
 {% set heading = block.heading %} {# Plain Text #}
+{% set text = block.body %} {# Plain Text #}
 
 {# Optional #}
 {% set eyebrow = block.eyebrow ?? '' %} {# Plain Text #}
 {% set linkField = block.linkField ?? null %} {# Hyper #}
+{% set linkField2 = block.linkField2 ?? null %} {# Hyper #}
 {% set graph = block.graph ?? [] %} {# Table #}
 {% set eyebrowLink = block.eyebrowLink ?? null %} {# Hyper #}
 
@@ -26,19 +28,13 @@
       <div class="col-span-full lg:col-span-5 flex flex-col items-start gap-[18px]">
         {% if eyebrow and eyebrowLink %}
           <a {% if eyebrowLink.url %}href="{{ eyebrowLink.url }}"{% endif %} class="t-eyebrow">{{ eyebrow }}</a>
-        {% else %}
+        {% elseif eyebrow %}
           <div class="t-eyebrow">{{ eyebrow }}</div>
         {% endif %}
-
-        <h2 class="t-h2">{{ heading }}</h2>
-
-        {% if linkField %}
-          {% include "_components/button" with {
-            href: linkField.url,
-            label: linkField.text,
-            arrow: 'right',
-          } %}
+        {% if heading %}
+          <h2 class="t-h2">{{ heading }}</h2>
         {% endif %}
+        {{ text }}
       </div>
 
       <div class="col-span-full lg:col-start-7 lg:col-span-6 flex items-end justify-end">
@@ -52,6 +48,23 @@
           {{ _self.bar('298px', 'bg-blue-700', 'text-blue-200', 'pb-8 lg:pb-20 pt-8', graph[2].number, graph[2].detail) }}
         {% endif %}
       </div>
+    </div>
+    <div class="block items-center mt-6 text-center">
+      {% if linkField %}
+        {% include "_components/button" with {
+          href: linkField.url,
+          label: linkField.text,
+          arrow: 'right',
+        } %}
+      {% endif %}
+      {% if linkField2 %}
+        {% include "_components/button" with {
+          href: linkField2.url,
+          label: linkField2.text,
+          arrow: 'right',
+          adClass: 'bg-gray-800'
+        } %}
+      {% endif %}
     </div>
   </div>
 </section>

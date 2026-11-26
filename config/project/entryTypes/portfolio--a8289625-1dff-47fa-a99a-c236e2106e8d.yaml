@@ -1,41 +1,23 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   3245c549-3d81-42f3-a9d0-9c30de6b53f8:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 451e6227-091f-4f0a-9f93-8dfee4ff40e5
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +26,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 58413647-0403-4d88-8bf2-a21fbef39373 # Background Image
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,15 +43,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: bcdc3a33-b0f0-4b7b-b619-1770e7d56573
             userCondition: null
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 9d8acc9e-e08b-4850-9a7c-dc53b2e82a94 # Featured Companies
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -73,15 +66,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: b766e994-3b1b-4d4d-b477-32f47ade2dd3
             userCondition: null
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5daca263-757f-4613-bf47-9152f741e09d # Eyebrow
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -90,10 +89,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            handle: null
             instructions: null
             label: 'Grid Heading'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -108,10 +112,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-11-26T11:16:10+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -122,13 +131,16 @@ fieldLayouts:
         name: SEO
         uid: e9027688-3792-4a0a-aed3-d62265069858
         userCondition: null
+    thumbFieldKey: null
 handle: portfolio
 hasTitleField: false
+icon: null
 name: Portfolio
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

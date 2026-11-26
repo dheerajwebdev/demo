@@ -1,0 +1,117 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: null
+field: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+fieldLayouts:
+  9fd3c6de-741a-46cb-8019-186de40232d0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-11-26T10:25:35+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: Introduction
+            instructions: null
+            label: Introduction
+            oldFieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e50fcfc-b70b-4b16-aa16-0bd2cfcaa28f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T11:09:12+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07e38f44-4c2c-4d91-8721-c12ef9f67921
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T10:25:35+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 069416e5-321f-4029-9ef9-a418bcf32c67 # Images
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7281dcae-9fbd-484f-ae66-d773205e5ffe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T10:49:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: categoriesHeading
+            instructions: null
+            label: 'Categories Heading'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 087f162c-4ecd-4f5d-b944-8f646edc473b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T10:51:33+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 5e675d35-5cbe-472c-95d9-587691f3dda2 # Checklist
+            handle: categories
+            instructions: null
+            label: Categories
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ade23b02-4a7e-4a85-8d7a-02a0a2aea588
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c0a789cf-dec7-4a69-a8c3-ee9a551e5ed9
+        userCondition: null
+    thumbFieldKey: null
+group: null
+groupChildBlockTypes: true
+handle: imageGridCategories
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Image Grid & Categories'
+topLevel: true

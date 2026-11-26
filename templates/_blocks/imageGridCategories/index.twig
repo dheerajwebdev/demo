@@ -1,0 +1,180 @@
+{#
+  Image Grid & Categories (Neo block: imageGridCategories)
+  Used on the Investment Themes page.
+
+    Everything sits inside the site container:
+    1. Introduction       : intro text (Introduction field), centered
+    2. Heading            : centered title with a rule either side, above the photos
+    3. Photos             : first 4 images from the Images field, 4 equal boxes
+    4. Categories Heading : centered title with a rule either side (defaults to "Investment Criteria")
+    5. Categories         : Categories table, shown as a navy panel of label / value pairs
+#}
+{% set introduction = (block.Introduction ?? '')|trim ?: null %}
+{% set heading = (block.heading ?? '')|trim ?: null %}
+{% set images = block.images.limit(4).all() %}
+
+{# 4. Categories (Investment Criteria)
+   Categories Heading field -> section title (defaults to "Investment Criteria")
+   Categories table (column "detail"): one row per category, written as
+     "Label - Value"  or  "Label: Value"   e.g. "EBITDA Range - $5mm - $30mm+"
+   Only the first separator splits, so dashes inside the value are kept.
+   If the table is empty, the default criteria below are shown. #}
+{% set criteriaHeading = (block.categoriesHeading ?? '')|trim ?: 'Investment Criteria' %}
+
+{% set criteria = [] %}
+{% for row in (block.categories ?? []) %}
+  {% set detail = (row.detail ?? '')|trim %}
+  {% if detail %}
+    {# use whichever separator appears earliest in the row #}
+    {% set sep = null %}
+    {% set sepPos = detail|length %}
+    {% for candidate in [':', ' – ', ' — ', ' - '] %}
+      {% if candidate in detail %}
+        {% set pos = (detail|split(candidate)|first)|length %}
+        {% if pos < sepPos %}{% set sep = candidate %}{% set sepPos = pos %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if sep %}
+      {% set parts = detail|split(sep, 2) %}
+      {% set criteria = criteria|merge([{ label: parts[0]|trim, value: parts[1]|trim }]) %}
+    {% else %}
+      {% set criteria = criteria|merge([{ label: '', value: detail }]) %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if criteria is empty %}
+  {% set criteria = [
+    { label: 'Geography',     value: 'North America' },
+    { label: 'EBITDA Range',  value: '$5mm – $30mm+' },
+    { label: 'Equity Check',  value: '$25mm – $150mm+' },
+    { label: 'Ownership',     value: 'Controlling Interest' },
+  ] %}
+{% endif %}
+
+{% css %}
+  .igc { padding: 50px 0 72px; }
+  .igc-intro { max-width: 60rem; margin: 0 auto; padding-bottom: 28px; color: #001D3F; }
+  @media (min-width: 1024px) { .igc-intro { padding-bottom: 40px; } }
+  @media (min-width: 1024px) { .igc { padding: 50px 0 96px; } }
+
+  /* Categories heading: centered title with a rule either side */
+  .igc-head { display: flex; align-items: center; gap: 24px; margin: 8px 0 28px; }
+  @media (min-width: 1024px) { .igc-head { margin: 16px 0 36px; } }
+  .igc-head__rule { flex: 1; height: 1px; background: #001D3F; opacity: .35; }
+  .igc-head__title {
+    margin: 0; text-align: center; white-space: nowrap;
+    font-family: Castoro, ui-serif, Georgia, serif; color: #001D3F;
+    font-size: 1.75rem; line-height: 1.15;
+  }
+  @media (min-width: 1024px) { .igc-head__title { font-size: 2.25rem; } }
+
+  /* Photos: 4 equal boxes (2x2 on small screens) */
+  .igc-photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  @media (min-width: 768px)  { .igc-photos { grid-template-columns: repeat(4, 1fr); gap: 12px; } }
+  .igc-photos__item {
+    position: relative; aspect-ratio: 4 / 3; overflow: hidden;
+    background: #d3dde3; border-radius: 10px;
+  }
+  .igc-photos__item img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform .6s ease;
+  }
+  .igc-photos__item:hover img { transform: scale(1.04); }
+
+  /* Categories panel */
+  .igc-criteria {
+    display: grid; grid-template-columns: 1fr; margin: 0;
+    background: #001D3F; color: #fff; border-radius: 10px; overflow: hidden;
+  }
+  /* space before the Categories heading when it follows the photos */
+  .igc-photos + .igc-head { margin-top: 56px; }
+  @media (min-width: 1024px) { .igc-photos + .igc-head { margin-top: 72px; } }
+  @media (min-width: 640px)  { .igc-criteria { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .igc-criteria { grid-template-columns: repeat(4, 1fr); } }
+  .igc-criteria__item {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    padding: 28px 24px 32px; border-top: 1px solid rgb(255 255 255 / .15);
+  }
+  .igc-criteria__item:first-child { border-top: 0; }
+  @media (min-width: 640px) {
+    .igc-criteria__item { border-top: 0; }
+    .igc-criteria__item:nth-child(n+3) { border-top: 1px solid rgb(255 255 255 / .15); }
+    .igc-criteria__item:nth-child(even) { border-left: 1px solid rgb(255 255 255 / .15); }
+  }
+  @media (min-width: 1024px) {
+    .igc-criteria__item { padding: 36px 24px 40px; }
+    .igc-criteria__item:nth-child(n+3) { border-top: 0; }
+    .igc-criteria__item + .igc-criteria__item { border-left: 1px solid rgb(255 255 255 / .15); }
+  }
+  .igc-criteria__label {
+    margin: 0 0 10px; color: #8fc3ee;
+    text-transform: uppercase; letter-spacing: .08em; font-size: .8125rem; line-height: 1.4;
+  }
+  .igc-criteria__value {
+    margin: 0; font-family: Castoro, ui-serif, Georgia, serif;
+    font-size: 1.5rem; line-height: 1.2;
+  }
+  @media (min-width: 1024px) { .igc-criteria__value { font-size: 1.75rem; } }
+{% endcss %}
+
+<section class="igc bg-white">
+  <div class="container">
+
+    {# 1. Introduction #}
+    {% if introduction %}
+      <div class="igc-intro text-highlighted text-center">
+        <p class="t-h2">{{ introduction|nl2br }}</p>
+      </div>
+    {% endif %}
+
+    {# 2. Heading (above the photos) #}
+    {% if heading %}
+      <div class="igc-head">
+        <span class="igc-head__rule" aria-hidden="true"></span>
+        <h2 class="igc-head__title">{{ heading }}</h2>
+        <span class="igc-head__rule" aria-hidden="true"></span>
+      </div>
+    {% endif %}
+
+    {# 3. Photos #}
+    {% if images|length %}
+      <div class="igc-photos" role="group" aria-label="{{ heading ?? 'Portfolio company photos' }}">
+        {% for image in images %}
+          <div class="igc-photos__item">
+            <img
+              src="{{ image.getUrl({ width: 800, height: 600, mode: 'crop', quality: 85 }) }}"
+              srcset="{{ image.getUrl({ width: 480, height: 360, mode: 'crop', quality: 85 }) }} 480w,
+                      {{ image.getUrl({ width: 800, height: 600, mode: 'crop', quality: 85 }) }} 800w"
+              sizes="(min-width: 1400px) 330px, (min-width: 768px) 25vw, 50vw"
+              alt="{{ image.alt ?? image.title }}"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {# 4. Categories heading #}
+    {% if criteria|length and criteriaHeading %}
+      <div class="igc-head">
+        <span class="igc-head__rule" aria-hidden="true"></span>
+        <h2 class="igc-head__title">{{ criteriaHeading }}</h2>
+        <span class="igc-head__rule" aria-hidden="true"></span>
+      </div>
+    {% endif %}
+
+    {# 5. Categories #}
+    {% if criteria|length %}
+      <dl class="igc-criteria">
+        {% for item in criteria %}
+          <div class="igc-criteria__item">
+            {% if item.label %}<dt class="igc-criteria__label">{{ item.label }}</dt>{% endif %}
+            <dd class="igc-criteria__value">{{ item.value }}</dd>
+          </div>
+        {% endfor %}
+      </dl>
+    {% endif %}
+
+  </div>
+</section>

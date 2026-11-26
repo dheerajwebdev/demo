@@ -3,13 +3,14 @@
 {% set arrow = arrow ?? null %}
 {% set color = color ?? 'black' %}
 {% set newWindow = newWindow ?? false %}
+{% set adClass = adClass ?? null %}
 
 {% set class = color == 'black' ? 'text-black border-black' : 'text-white border-white' %}
 {% set chrevron = color == 'black' ? 'text-white fill-black' : 'text-black fill-white group-hover/btn:text-white' %}
 
 {% if href %}
   <a href="{{ href }}"
-    class="group/btn  {% if btnType is defined and btnType == 'large' %}btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-6 border {{ class }}"
+    class="group/btn  {% if btnType is defined and btnType == 'large' %}btn-large{% else %}p-2{% endif %} rounded-full inline-flex items-center gap-6 border {{ class }}{% if adClass %} {{ adClass }}{% endif %}"
     {% if newWindow %}target="_blank"rel="noopener noreferrer" title="{{ label }} (opens in new window)"{% endif %}
   >
   {% if btnType is defined and btnType == 'large' %}

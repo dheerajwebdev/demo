@@ -1,41 +1,46 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   c0b400ad-c7d8-4710-8701-04d453936a81:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2026-11-24T11:03:16+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
-            inputType: null
+            elementEditCondition: null
+            fieldUid: 4527495e-e837-4254-99c2-ae90d1765daa # Video Header
+            handle: null
             instructions: null
             label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
+            oldFieldUid: null
+            required: false
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: dea7916e-9838-46d4-bb3c-f8fc69e2748b
+            type: craft\fieldlayoutelements\CustomField
+            uid: 122e640c-372b-4f3d-be45-295a7c8cbf2b
             userCondition: null
             warning: null
             width: 100
+        name: Header
+        uid: 468284e3-f782-48c8-9ad5-de793a82b253
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
+            dateAdded: '2026-11-24T11:01:54+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0aa7bf8b-d4e1-4016-bc62-588296598ca8 # Blocks
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -50,10 +55,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-11-24T11:01:54+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -64,13 +74,16 @@ fieldLayouts:
         name: SEO
         uid: 74e26dde-5fdb-46f1-8808-4f9825ee996c
         userCondition: null
+    thumbFieldKey: null
 handle: homepage
 hasTitleField: false
+icon: null
 name: Homepage
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

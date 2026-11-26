@@ -1,0 +1,163 @@
+{#
+  Portfolio Logos (Neo block: portfolioLogos)
+  Rotating grey bar with the Logo of every entry in the Companies section.
+
+  Block fields:
+    - heading   (Plain Text, optional) : defaults to "Portfolio"
+    - linkField (Hyper, optional)      : if set, the heading links to it
+#}
+{% set heading = (block.heading ?? '')|trim ?: 'Portfolio' %}
+{% set headingUrl = block.linkField.url ?? null %}
+
+{% set companies = craft.entries
+  .section('companies')
+  .with(['logo'])
+  .all()
+  |filter(c => (c.logo[0] ?? null)) %}
+
+{% if companies|length %}
+  {# Repeat short lists so the loop always fills a wide screen #}
+  {% set reps = companies|length < 10 ? (10 / companies|length)|round(0, 'ceil') : 1 %}
+  {% set uid = 'portfolio-logos-' ~ (block.id ?? random()) %}
+
+  {% css %}
+    .portfolio-logos { padding: 64px 0; background: #fff; }
+    @media (min-width: 1024px) { .portfolio-logos { padding: 80px 0; } }
+    .portfolio-logos__head { display: flex; align-items: center; gap: 24px; margin-bottom: 20px; }
+    .portfolio-logos__title {
+      font-family: Castoro, ui-serif, Georgia, serif; color: #001D3F;
+      font-size: 2rem; line-height: 1.1; white-space: nowrap;
+    }
+    @media (min-width: 1024px) { .portfolio-logos__title { font-size: 2.5rem; } }
+    .portfolio-logos__title a { color: inherit; text-decoration: none; }
+    .portfolio-logos__title a:hover { color: #425c8f; }
+    .portfolio-logos__rule { flex: 1; height: 2px; background: #001D3F; opacity: .85; }
+
+    .portfolio-logos__strip {
+      position: relative; display: flex; align-items: center;
+      background: #eef0f3; border-radius: 10px; padding: 0 8px;
+    }
+    .portfolio-logos__viewport {
+      position: relative; flex: 1; overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
+              mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
+    }
+    .portfolio-logos__track { display: flex; width: max-content; will-change: transform; }
+    .portfolio-logos__list { display: flex; margin: 0; padding: 0; list-style: none; }
+    .portfolio-logos__item {
+      flex: 0 0 auto; width: 150px; height: 88px; padding: 0 18px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    @media (min-width: 1024px) { .portfolio-logos__item { width: 190px; height: 104px; padding: 0 24px; } }
+    .portfolio-logos__item a, .portfolio-logos__item span {
+      display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+    }
+    .portfolio-logos__item img {
+      max-width: 100%; max-height: 44px; width: auto; height: auto; object-fit: contain;
+      mix-blend-mode: multiply; /* hides white boxes on JPG logos against the grey bar */
+      transition: transform .25s ease;
+    }
+    @media (min-width: 1024px) { .portfolio-logos__item img { max-height: 52px; } }
+    .portfolio-logos__item a:hover img, .portfolio-logos__item a:focus-visible img { transform: scale(1.06); }
+
+    .portfolio-logos__arrow {
+      flex: 0 0 auto; width: 36px; height: 36px; border-radius: 9999px; border: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: #6b7280; background: transparent; cursor: pointer;
+      transition: color .2s ease, background-color .2s ease;
+    }
+    .portfolio-logos__arrow:hover, .portfolio-logos__arrow:focus-visible { color: #001D3F; background: rgb(0 29 63 / .06); }
+    .portfolio-logos__arrow svg { width: 18px; height: 18px; }
+  {% endcss %}
+
+  {% js at head %}
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('logoMarquee', () => ({
+        x: 0, half: 0, boost: 0, paused: false, last: 0,
+        speed: 40, // px per second
+        init() {
+          this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          const measure = () => { this.half = this.$refs.track.scrollWidth / 2; };
+          measure();
+          window.addEventListener('resize', measure);
+          this.$refs.track.querySelectorAll('img').forEach(img => img.addEventListener('load', measure, { once: true }));
+          requestAnimationFrame(t => this.tick(t));
+        },
+        nudge(dir) {
+          const item = this.$refs.track.querySelector('li');
+          this.boost += dir * (item ? item.offsetWidth * 2 : 300);
+        },
+        tick(t) {
+          const dt = this.last ? Math.min((t - this.last) / 1000, 0.05) : 0;
+          this.last = t;
+          let move = (this.paused || this.reduced) ? 0 : this.speed * dt;
+          if (Math.abs(this.boost) > 0.5) { const step = this.boost * 0.12; this.boost -= step; move += step; }
+          else { this.boost = 0; }
+          if (this.half > 0) {
+            this.x -= move;
+            if (this.x <= -this.half) this.x += this.half;
+            if (this.x > 0) this.x -= this.half;
+            this.$refs.track.style.transform = `translate3d(${this.x}px,0,0)`;
+          }
+          requestAnimationFrame(nt => this.tick(nt));
+        },
+      }));
+    });
+  {% endjs %}
+
+  <section class="portfolio-logos" aria-labelledby="{{ uid }}">
+    <div class="container">
+      <div class="portfolio-logos__head">
+        <h2 id="{{ uid }}" class="portfolio-logos__title">
+          {% if headingUrl %}<a href="{{ headingUrl }}">{{ heading }}</a>{% else %}{{ heading }}{% endif %}
+        </h2>
+        <span class="portfolio-logos__rule" aria-hidden="true"></span>
+      </div>
+
+      <div
+        class="portfolio-logos__strip"
+        x-data="logoMarquee"
+        x-on:mouseenter="paused = true"
+        x-on:mouseleave="paused = false"
+        x-on:focusin="paused = true"
+        x-on:focusout="paused = false"
+      >
+        <button type="button" class="portfolio-logos__arrow" x-on:click="nudge(-1)" aria-label="Previous companies">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="portfolio-logos__viewport">
+          <div class="portfolio-logos__track" x-ref="track">
+            {% for copy in 1..2 %}
+              <ul class="portfolio-logos__list" {% if copy == 2 %}aria-hidden="true"{% endif %}>
+                {% for rep in 1..reps %}
+                  {% for company in companies %}
+                    {% set logo = company.logo[0] %}
+                    {% set logoUrl = logo.extension == 'svg' ? logo.url : logo.getUrl({ height: 104, quality: 90 }) %}
+                    {% set hidden = copy == 2 or rep > 1 %}
+                    <li class="portfolio-logos__item">
+                      {% if company.websiteLink ?? null %}
+                        <a href="{{ company.websiteLink }}" target="_blank" rel="noopener" title="{{ company.title }}"
+                          {% if hidden %}tabindex="-1" aria-hidden="true"{% endif %}>
+                          <img src="{{ logoUrl }}" alt="{{ hidden ? '' : company.title }}" loading="lazy">
+                        </a>
+                      {% else %}
+                        <span title="{{ company.title }}">
+                          <img src="{{ logoUrl }}" alt="{{ hidden ? '' : company.title }}" loading="lazy">
+                        </span>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
+        </div>
+
+        <button type="button" class="portfolio-logos__arrow" x-on:click="nudge(1)" aria-label="Next companies">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+{% endif %}

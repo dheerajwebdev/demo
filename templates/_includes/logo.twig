@@ -1,0 +1,20 @@
+{#
+  BP Capital logo
+  web/static/img/bp-capital-logo.png is a transparent cut-out used as a CSS mask,
+  so the logo is drawn in the current text colour (like the old branding.svg):
+    - add a text colour class to change it, e.g. 'text-white', 'text-blue-200'
+    - set the height with a class, e.g. 'h-10'; width follows the logo's proportions
+  Usage: {% include '_includes/logo' with { class: 'h-10 text-blue-200' } %}
+#}
+{% set class = class ?? '' %}
+
+{% css %}
+  .bp-logo {
+    display: block; height: 100%; width: auto; aspect-ratio: 878 / 240;
+    background-color: currentColor;
+    -webkit-mask: url('{{ url('static/img/bp-capital-logo.png') }}') no-repeat center / contain;
+            mask: url('{{ url('static/img/bp-capital-logo.png') }}') no-repeat center / contain;
+  }
+{% endcss %}
+
+<span class="bp-logo {{ class }}" role="img" aria-label="{{ siteName }}"></span>

@@ -3,7 +3,23 @@
 
 {% import "_macros/image" as _image %}
 
-{% set people = craft.entries.section('people').all() %}
+{# People (People structure order), grouped by their Team (Teams structure order) #}
+{% set people = craft.entries.section('people').with(['team']).all() %}
+{% set teams = craft.entries.section('teams').all() %}
+
+{% set groups = [] %}
+{% for team in teams %}
+  {% set members = people|filter(p => (p.team[0].id ?? null) == team.id) %}
+  {% if members|length %}
+    {% set groups = groups|merge([{ title: team.title, slug: team.slug, people: members }]) %}
+  {% endif %}
+{% endfor %}
+
+{# Anyone without a team is still shown, in a final group with no heading #}
+{% set unassigned = people|filter(p => not (p.team[0] ?? null)) %}
+{% if unassigned|length %}
+  {% set groups = groups|merge([{ title: null, slug: 'other', people: unassigned }]) %}
+{% endif %}
 
 {% block content %}
   {# Heading with background #}
@@ -23,12 +39,34 @@
       copyClass: 'max-w-[706px]'
     } %}
 
+    {% css %}
+      .team-group + .team-group { margin-top: 72px; }
+      @media (min-width: 1024px) { .team-group + .team-group { margin-top: 96px; } }
+      .team-group__head { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+      .team-group__title {
+        margin: 0; white-space: nowrap; color: #001D3F;
+        font-family: Castoro, ui-serif, Georgia, serif; font-size: 2rem; line-height: 1.1;
+      }
+      @media (min-width: 1024px) { .team-group__title { font-size: 2.5rem; } }
+      .team-group__rule { flex: 1; height: 2px; background: #001D3F; opacity: .85; }
+    {% endcss %}
+
     <div class="container pb-16">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-20">
-        {% for person in people %}
-          {% include "_components/card/person" with { person } only %}
-        {% endfor %}
-      </div>
+      {% for group in groups %}
+        <section class="team-group" id="{{ group.slug }}" {% if group.title %}aria-labelledby="team-{{ group.slug }}"{% endif %}>
+          {% if group.title %}
+            <div class="team-group__head">
+              <h2 id="team-{{ group.slug }}" class="team-group__title">{{ group.title }}</h2>
+              <span class="team-group__rule" aria-hidden="true"></span>
+            </div>
+          {% endif %}
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-20">
+            {% for person in group.people %}
+              {% include "_components/card/person" with { person } only %}
+            {% endfor %}
+          </div>
+        </section>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}

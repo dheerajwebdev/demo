@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   b21b0385-2635-4760-b0f3-5e3e6740f332:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2026-11-26T11:18:22+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,10 +37,32 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:20:08+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
+            fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: introduction
+            instructions: null
+            label: Introduction
+            oldFieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8095ceff-ec02-4692-985c-139cef3906f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: c50ac359-39cd-423c-8432-33ed3039c777 # Logo
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +71,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f7961df6-d96e-4b26-bb02-f65641c036e1 # Additional Logos
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +88,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4964e71e-f35f-41e2-944d-7b7a8b62ee51 # Transaction Date
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -68,10 +105,15 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7523553a-9e5a-450d-8b6c-e73fa976d2f4 # Merged / Realized Date
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -80,10 +122,15 @@ fieldLayouts:
             warning: null
             width: 50
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4213088f-350d-476e-90ce-f9f3e4d6dd1d # Website Link
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -92,15 +139,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: b5bdc76c-6230-425e-a3e8-ea23e1254b37
             userCondition: null
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 3fecd575-c059-4136-aa0e-062258f74179 # Sectors
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -109,10 +162,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 30943985-9d9d-42f1-8500-ef991ad1ff77 # Themes
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -121,10 +179,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5c5eecac-3238-4305-ac64-c7a951c9818e # Funds
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -133,15 +196,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 31fabf56-092d-4e39-970b-20a5bbb82310
             userCondition: null
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8245ebf7-23eb-4db0-8605-e02a4fdffe51 # Deal Status
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -156,10 +225,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: fdf3a110-c29e-48e8-91cc-736a4d274fc4 # Body Simple Link
+            handle: null
             instructions: null
             label: Overview
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -168,10 +242,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: bf9c66d4-3ba1-4583-b8bf-72d8e547ba19 # Company Information
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -186,10 +265,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -198,15 +282,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: b55fc8f1-9a93-4131-b0a2-36858895ac78
             userCondition: null
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8f1af7ce-a429-453c-b927-4159f41894d4 # Label
+            handle: null
             instructions: null
             label: 'Box Heading'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -215,10 +305,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f7d50232-1776-417e-989f-c93bb87683d1 # Copy
+            handle: null
             instructions: null
             label: 'Box Copy'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -227,10 +322,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f98c72b8-c1fd-47d1-b532-93b73afdfef1 # Heading
+            handle: null
             instructions: 'e.g. 42%'
             label: Statistic
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -239,10 +339,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 617ab8ee-5152-44e7-aea7-8a56157be4bf # Subheading
+            handle: null
             instructions: null
             label: 'Statistic Description'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -257,10 +362,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-11-26T11:18:22+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4a6ccf0d-3c6f-4845-8311-f049b4c1a304 # SEO
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -271,13 +381,16 @@ fieldLayouts:
         name: SEO
         uid: 58cf46b2-2d69-46e9-a899-3c4d6f942364
         userCondition: null
+    thumbFieldKey: null
 handle: companies_default
 hasTitleField: true
+icon: null
 name: Default
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

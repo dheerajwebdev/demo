@@ -1,0 +1,111 @@
+columnSuffix: null
+handle: videoHeader
+instructions: null
+name: 'Video Header'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 9db35d94-b8a3-45b2-a847-b02c5a3ff67d
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 93504f9b-4558-4ad8-b651-a660e4b0aba3
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - headerContent
+                            2:
+                              - oldFieldUid
+                              - 4f730229-a801-4d1d-9868-4169e2da650e # Body
+                            3:
+                              - label
+                              - 'Header Content'
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 100
+                            9:
+                              - dateAdded
+                              - '2026-11-24T10:56:40+00:00'
+                            10:
+                              - uid
+                              - 0cacd162-cfd3-4833-beb0-10f4589f463e
+                            13:
+                              - fieldUid
+                              - 4f730229-a801-4d1d-9868-4169e2da650e # Body
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 50
+                            9:
+                              - dateAdded
+                              - '2026-11-24T10:59:15+00:00'
+                            10:
+                              - uid
+                              - 9694e97c-24cf-45ff-9ac3-fba2dc5c2a8c
+                            13:
+                              - fieldUid
+                              - 551918ab-71cc-4cb9-81f5-5bd0ec5fad6b # Video
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - posterImage
+                            2:
+                              - oldFieldUid
+                              - 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+                            3:
+                              - label
+                              - 'Poster Image'
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 50
+                            9:
+                              - dateAdded
+                              - '2026-11-24T10:59:15+00:00'
+                            10:
+                              - uid
+                              - 31100d5b-4502-495c-899a-80b13bb5a0a2
+                            13:
+                              - fieldUid
+                              - 677709f9-0b6b-4d19-969c-0495c252dcca # Image
+            4:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

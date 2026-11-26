@@ -3,6 +3,10 @@
 
 {% block content %}
 
+  {% if entry.videoHeader is defined %}
+    {% include "_components/videoHeader" %}
+  {% endif %}
+
   {% include "_blocks" %}
 
 {% endblock %}
