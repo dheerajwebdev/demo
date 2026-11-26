@@ -42,13 +42,22 @@
     {% css %}
       .team-group + .team-group { margin-top: 72px; }
       @media (min-width: 1024px) { .team-group + .team-group { margin-top: 96px; } }
+
+      /* Centered team title with a rule either side */
       .team-group__head { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+      .team-group__rule { flex: 1; height: 1px; background: #001D3F; opacity: .35; }
       .team-group__title {
-        margin: 0; white-space: nowrap; color: #001D3F;
+        margin: 0; text-align: center; color: #001D3F;
         font-family: Castoro, ui-serif, Georgia, serif; font-size: 2rem; line-height: 1.1;
       }
+      @media (min-width: 640px)  { .team-group__title { white-space: nowrap; } }
       @media (min-width: 1024px) { .team-group__title { font-size: 2.5rem; } }
-      .team-group__rule { flex: 1; height: 2px; background: #001D3F; opacity: .85; }
+
+      /* People: centered rows (same 2 / 3 / 4 columns as before) */
+      .team-group__grid { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 24px; row-gap: 80px; }
+      .team-group__grid > * { width: calc((100% - 24px) / 2); text-align: center; }
+      @media (min-width: 768px)  { .team-group__grid > * { width: calc((100% - 48px) / 3); } }
+      @media (min-width: 1024px) { .team-group__grid > * { width: calc((100% - 72px) / 4); } }
     {% endcss %}
 
     <div class="container pb-16">
@@ -56,11 +65,12 @@
         <section class="team-group" id="{{ group.slug }}" {% if group.title %}aria-labelledby="team-{{ group.slug }}"{% endif %}>
           {% if group.title %}
             <div class="team-group__head">
+              <span class="team-group__rule" aria-hidden="true"></span>
               <h2 id="team-{{ group.slug }}" class="team-group__title">{{ group.title }}</h2>
               <span class="team-group__rule" aria-hidden="true"></span>
             </div>
           {% endif %}
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gap-y-20">
+          <div class="team-group__grid">
             {% for person in group.people %}
               {% include "_components/card/person" with { person } only %}
             {% endfor %}
