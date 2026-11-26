@@ -49,22 +49,44 @@
         {% endif %}
       </div>
     </div>
-    <div class="block items-center mt-6 text-center">
-      {% if linkField %}
-        {% include "_components/button" with {
-          href: linkField.url,
-          label: linkField.text,
-          arrow: 'right',
-        } %}
-      {% endif %}
-      {% if linkField2 %}
-        {% include "_components/button" with {
-          href: linkField2.url,
-          label: linkField2.text,
-          arrow: 'right',
-          adClass: 'bg-gray-800'
-        } %}
-      {% endif %}
-    </div>
+    {% if linkField or linkField2 %}
+      {% css %}
+        .graph-buttons {
+          display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+          gap: 16px 24px; margin-top: 40px;
+        }
+        @media (min-width: 1024px) { .graph-buttons { gap: 16px 32px; margin-top: 48px; } }
+
+        /* Second button: theme blue */
+        .graph-buttons .btn-theme {
+          background-color: #2C82E9; border-color: #2C82E9; color: #fff;
+          transition: background-color .2s ease, border-color .2s ease;
+        }
+        .graph-buttons .btn-theme svg { fill: #fff; color: #2C82E9; }
+        .graph-buttons .btn-theme:hover,
+        .graph-buttons .btn-theme:focus-visible { background-color: #001D3F; border-color: #001D3F; }
+        .graph-buttons .btn-theme:hover svg,
+        .graph-buttons .btn-theme:focus-visible svg { fill: #fff; color: #001D3F; }
+      {% endcss %}
+
+      <div class="graph-buttons">
+        {% if linkField %}
+          {% include "_components/button" with {
+            href: linkField.url,
+            label: linkField.text,
+            arrow: 'right',
+          } %}
+        {% endif %}
+        {% if linkField2 %}
+          {% include "_components/button" with {
+            href: linkField2.url,
+            label: linkField2.text,
+            arrow: 'right',
+            color: 'white',
+            adClass: 'btn-theme'
+          } %}
+        {% endif %}
+      </div>
+    {% endif %}
   </div>
 </section>
