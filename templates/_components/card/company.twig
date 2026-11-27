@@ -15,7 +15,7 @@
         position: absolute; inset: 0; z-index: 10;
         display: flex; flex-direction: column; gap: 8px;
         padding: 14px 16px; border-radius: inherit;
-        background: rgb(0 29 63 / .97); color: #fff; text-align: center;
+        background: #001D3F; color: #fff; text-align: center;
         overflow-y: auto; overscroll-behavior: contain;
         scrollbar-width: thin; scrollbar-color: rgb(255 255 255 / .35) transparent;
         opacity: 0; visibility: hidden; transform: translateY(6px);
@@ -43,6 +43,12 @@
       .company-card > .absolute.-bottom-4 { transition: opacity .2s ease; }
       .company-card.has-intro:hover > .absolute.-bottom-4,
       .company-card.has-intro:focus-within > .absolute.-bottom-4 { opacity: 0; }
+
+      /* Touch screens have no hover: keep a tap opening the website straight away */
+      @media (hover: none) {
+        .company-card__intro { display: none; }
+        .company-card.has-intro:hover > .absolute.-bottom-4 { opacity: 1; }
+      }
     {% endcss %}
   {% if additionalLogos %}
   <div class="company-card{{ introduction ? ' has-intro' }} group h-full flex flex-col gap-5 justify-between bg-white py-5 relative min-h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized' %} border-green-500 border-[5px]{% endif %}">

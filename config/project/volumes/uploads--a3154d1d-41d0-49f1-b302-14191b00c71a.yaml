@@ -37,6 +37,7 @@ fieldLayouts:
 fs: uploads
 handle: uploads
 name: Uploads
+propagationMethod: custom
 sortOrder: 3
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -63,10 +63,11 @@
   @media (min-width: 1024px) { .igc-head { margin: 16px 0 36px; } }
   .igc-head__rule { flex: 1; height: 1px; background: #001D3F; opacity: .35; }
   .igc-head__title {
-    margin: 0; text-align: center; white-space: nowrap;
+    margin: 0; text-align: center;
     font-family: Castoro, ui-serif, Georgia, serif; color: #001D3F;
     font-size: 1.75rem; line-height: 1.15;
   }
+  @media (min-width: 640px)  { .igc-head__title { white-space: nowrap; } }
   @media (min-width: 1024px) { .igc-head__title { font-size: 2.25rem; } }
 
   /* Photos: 4 equal boxes (2x2 on small screens) */
@@ -94,11 +95,11 @@
   @media (min-width: 1024px) { .igc-criteria { grid-template-columns: repeat(4, 1fr); } }
   .igc-criteria__item {
     display: flex; flex-direction: column; align-items: center; text-align: center;
-    padding: 28px 24px 32px; border-top: 1px solid rgb(255 255 255 / .15);
+    padding: 20px 20px 24px; border-top: 1px solid rgb(255 255 255 / .15);
   }
   .igc-criteria__item:first-child { border-top: 0; }
   @media (min-width: 640px) {
-    .igc-criteria__item { border-top: 0; }
+    .igc-criteria__item { border-top: 0; padding: 28px 24px 32px; }
     .igc-criteria__item:nth-child(n+3) { border-top: 1px solid rgb(255 255 255 / .15); }
     .igc-criteria__item:nth-child(even) { border-left: 1px solid rgb(255 255 255 / .15); }
   }

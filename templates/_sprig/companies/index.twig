@@ -110,9 +110,13 @@
   </div>
 {% endmacro %}
 
+{% css %}
+  /* 2 columns between 480px and 767px (works without rebuilding Tailwind) */
+  @media (min-width: 480px) and (max-width: 767px) { #results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+{% endcss %}
 <div class="bg-blue-200 py-16">
   <div class="container">
-    <div id="results" class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 gap-y-9xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr">
+    <div id="results" class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr">
       {% for company in entries %}
         <article class="flex flex-col h-full pb-7">
           {% include "_components/card/company" with { company } only %}

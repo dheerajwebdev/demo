@@ -40,7 +40,7 @@
     } %}
 
     {% css %}
-      .team-group + .team-group { margin-top: 72px; }
+      .team-group + .team-group { margin-top: 56px; }
       @media (min-width: 1024px) { .team-group + .team-group { margin-top: 96px; } }
 
       /* Centered team title with a rule either side */
@@ -54,8 +54,10 @@
       @media (min-width: 1024px) { .team-group__title { font-size: 2.5rem; } }
 
       /* People: centered rows (same 2 / 3 / 4 columns as before) */
-      .team-group__grid { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 24px; row-gap: 80px; }
-      .team-group__grid > * { width: calc((100% - 24px) / 2); text-align: center; }
+      .team-group__grid { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 16px; row-gap: 32px; }
+      @media (min-width: 768px)  { .team-group__grid { column-gap: 24px; row-gap: 48px; } }
+      @media (min-width: 1024px) { .team-group__grid { row-gap: 80px; } }
+      .team-group__grid > * { width: calc((100% - 16px) / 2); text-align: center; }
       @media (min-width: 768px)  { .team-group__grid > * { width: calc((100% - 48px) / 3); } }
       @media (min-width: 1024px) { .team-group__grid > * { width: calc((100% - 72px) / 4); } }
     {% endcss %}

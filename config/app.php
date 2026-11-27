@@ -44,7 +44,10 @@ return [
     ],
     'components' => [
       'deprecator' => [
-          'throwExceptions' => YII_DEBUG,
+          // Log deprecations (Utilities > Deprecation Warnings) instead of throwing.
+          // Throwing in dev mode breaks the CP whenever a plugin still uses an
+          // older API, e.g. Hyper 2.x with verbb/base 3.0.22.
+          'throwExceptions' => false,
       ],
     ],
     'bootstrap' => [],

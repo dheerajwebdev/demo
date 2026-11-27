@@ -49,7 +49,14 @@
     .video-header__copy p:not(:last-child) { margin-bottom: 1rem; }
     .video-header__copy a { text-decoration: underline; }
     .video-header__copy strong { font-weight: 700; }
+    @media (max-width: 639px) {
+      .video-header__copy h1, .video-header__copy h2, .video-header__copy h3 { font-size: 2.125rem; margin-bottom: 1.25rem; }
+    }
     @media (min-width: 1024px) {
+      .video-header__copy { font-size: 1.25rem; line-height: 1.5; }
+      .video-header__copy h1, .video-header__copy h2, .video-header__copy h3 { font-size: 2.75rem; }
+    }
+    @media (min-width: 1280px) {
       .video-header__copy { font-size: 1.5rem; line-height: 1.45; }
       .video-header__copy h1, .video-header__copy h2, .video-header__copy h3 { font-size: 3.375rem; }
     }
