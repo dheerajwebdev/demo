@@ -8,13 +8,5 @@
 #}
 {% set class = class ?? '' %}
 
-{% css %}
-  .bp-logo {
-    display: block; height: 100%; width: auto; aspect-ratio: 878 / 240;
-    background-color: currentColor;
-    -webkit-mask: url('{{ url('static/img/bp-capital-logo.png') }}') no-repeat center / contain;
-            mask: url('{{ url('static/img/bp-capital-logo.png') }}') no-repeat center / contain;
-  }
-{% endcss %}
 
 <span class="bp-logo {{ class }}" role="img" aria-label="{{ siteName }}"></span>

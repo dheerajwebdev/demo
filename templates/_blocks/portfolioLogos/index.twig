@@ -20,58 +20,6 @@
   {% set reps = companies|length < 10 ? (10 / companies|length)|round(0, 'ceil') : 1 %}
   {% set uid = 'portfolio-logos-' ~ (block.id ?? random()) %}
 
-  {% css %}
-    .portfolio-logos { padding: 48px 0; background: #fff; }
-    @media (min-width: 768px) { .portfolio-logos { padding: 64px 0; } }
-    @media (min-width: 1024px) { .portfolio-logos { padding: 80px 0; } }
-    .portfolio-logos__head { display: flex; align-items: center; gap: 24px; margin-bottom: 20px; }
-    .portfolio-logos__title {
-      font-family: Castoro, ui-serif, Georgia, serif; color: #001D3F;
-      font-size: 2rem; line-height: 1.1;
-    }
-    @media (min-width: 640px) { .portfolio-logos__title { white-space: nowrap; } }
-    @media (min-width: 1024px) { .portfolio-logos__title { font-size: 2.5rem; } }
-    .portfolio-logos__title a { color: inherit; text-decoration: none; }
-    .portfolio-logos__title a:hover { color: #425c8f; }
-    .portfolio-logos__rule { flex: 1; height: 2px; background: #001D3F; opacity: .85; }
-
-    .portfolio-logos__strip {
-      position: relative; display: flex; align-items: center;
-      background: #eef0f3; border-radius: 10px; padding: 0 8px;
-    }
-    .portfolio-logos__viewport {
-      position: relative; flex: 1; overflow: hidden;
-      -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
-              mask-image: linear-gradient(90deg, transparent 0, #000 40px, #000 calc(100% - 40px), transparent 100%);
-    }
-    .portfolio-logos__track { display: flex; width: max-content; will-change: transform; }
-    .portfolio-logos__list { display: flex; margin: 0; padding: 0; list-style: none; }
-    .portfolio-logos__item {
-      flex: 0 0 auto; width: 124px; height: 80px; padding: 0 14px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    @media (min-width: 768px)  { .portfolio-logos__item { width: 160px; height: 96px; padding: 0 20px; } }
-    @media (min-width: 1024px) { .portfolio-logos__item { width: 190px; height: 104px; padding: 0 24px; } }
-    .portfolio-logos__item a, .portfolio-logos__item span {
-      display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
-    }
-    .portfolio-logos__item img {
-      max-width: 100%; max-height: 44px; width: auto; height: auto; object-fit: contain;
-      mix-blend-mode: multiply; /* hides white boxes on JPG logos against the grey bar */
-      transition: transform .25s ease;
-    }
-    @media (min-width: 1024px) { .portfolio-logos__item img { max-height: 52px; } }
-    .portfolio-logos__item a:hover img, .portfolio-logos__item a:focus-visible img { transform: scale(1.06); }
-
-    .portfolio-logos__arrow {
-      flex: 0 0 auto; width: 36px; height: 36px; border-radius: 9999px; border: 0;
-      display: flex; align-items: center; justify-content: center;
-      color: #6b7280; background: transparent; cursor: pointer;
-      transition: color .2s ease, background-color .2s ease;
-    }
-    .portfolio-logos__arrow:hover, .portfolio-logos__arrow:focus-visible { color: #001D3F; background: rgb(0 29 63 / .06); }
-    .portfolio-logos__arrow svg { width: 18px; height: 18px; }
-  {% endcss %}
 
   {% js at head %}
     document.addEventListener('alpine:init', () => {

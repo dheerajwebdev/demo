@@ -49,27 +49,6 @@
         {% endif %}
       </div>
     </div>
-    {% css %}
-        /* very narrow phones: keep long values like "$1.1bn" inside their bar */
-        @media (max-width: 400px) { .graph-bar__num { font-size: 1.625rem; } }
-
-        .graph-buttons {
-          display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
-          gap: 16px 24px; margin-top: 40px;
-        }
-        @media (min-width: 1024px) { .graph-buttons { gap: 16px 32px; margin-top: 48px; } }
-
-        /* Second button: theme blue */
-        .graph-buttons .btn-theme {
-          background-color: #2C82E9; border-color: #2C82E9; color: #fff;
-          transition: background-color .2s ease, border-color .2s ease;
-        }
-        .graph-buttons .btn-theme svg { fill: #fff; color: #2C82E9; }
-        .graph-buttons .btn-theme:hover,
-        .graph-buttons .btn-theme:focus-visible { background-color: #001D3F; border-color: #001D3F; }
-        .graph-buttons .btn-theme:hover svg,
-        .graph-buttons .btn-theme:focus-visible svg { fill: #fff; color: #001D3F; }
-      {% endcss %}
     {% if linkField or linkField2 %}
 
       <div class="graph-buttons">

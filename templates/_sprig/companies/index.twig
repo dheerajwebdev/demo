@@ -64,6 +64,43 @@
 {% set pageInfo = sprig.paginate(entryQuery, page) %}
 {% set entries = pageInfo.pageResults %}
 
+{# Group the companies by Deal Status (in the Deal Status structure's order).
+   Realized, Merged and Partially Realized are shown together as one "Realized" group,
+   placed where the first of those statuses sits in the order. #}
+{% set realizedSlugs = ['realized', 'merged', 'partially-realized'] %}
+
+{% set groupOrder = [] %}
+{% set groupTitles = {} %}
+{% set groupKeyByStatus = {} %}
+{% for statusEntry in dealStatus %}
+  {% set key = statusEntry.slug in realizedSlugs ? 'realized' : statusEntry.slug %}
+  {% if key not in groupOrder %}
+    {% set groupOrder = groupOrder|merge([key]) %}
+    {% set groupTitles = groupTitles|merge({ (key): (key == 'realized' ? 'Realized' : statusEntry.title) }) %}
+  {% endif %}
+  {% set groupKeyByStatus = groupKeyByStatus|merge({ ('s' ~ statusEntry.id): key }) %}
+{% endfor %}
+
+{# Which group each company on this page belongs to ('' = no deal status) #}
+{% set groupByCompany = {} %}
+{% for company in entries %}
+  {% set statusId = company.dealStatus.one().id ?? null %}
+  {% set groupByCompany = groupByCompany|merge({ ('c' ~ company.id): (statusId ? (groupKeyByStatus['s' ~ statusId] ?? '') : '') }) %}
+{% endfor %}
+
+{% set groups = [] %}
+{% for key in groupOrder %}
+  {% set members = entries|filter(c => groupByCompany['c' ~ c.id] == key) %}
+  {% if members|length %}
+    {% set groups = groups|merge([{ title: groupTitles[key], slug: key, companies: members }]) %}
+  {% endif %}
+{% endfor %}
+{# Companies without a deal status are still shown, last, without a heading #}
+{% set unassigned = entries|filter(c => groupByCompany['c' ~ c.id] == '') %}
+{% if unassigned|length %}
+  {% set groups = groups|merge([{ title: null, slug: 'other', companies: unassigned }]) %}
+{% endif %}
+
 {% macro filter(label, name, filters, var) %}
   <div
     x-data="{ open: false }"
@@ -110,25 +147,52 @@
   </div>
 {% endmacro %}
 
-{% css %}
-  /* 2 columns between 480px and 767px (works without rebuilding Tailwind) */
-  @media (min-width: 480px) and (max-width: 767px) { #results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-{% endcss %}
+
+{% js %}
+  /* Give every company card the height of the tallest one (as the old single grid did) */
+  (function () {
+    function equalise() {
+      var items = document.querySelectorAll('.companies-group__grid > article');
+      if (!items.length) return;
+      var max = 0;
+      items.forEach(function (el) { el.style.minHeight = ''; });
+      items.forEach(function (el) { max = Math.max(max, el.offsetHeight); });
+      items.forEach(function (el) { el.style.minHeight = max + 'px'; });
+    }
+    var t; function later() { clearTimeout(t); t = setTimeout(equalise, 100); }
+    equalise();
+    window.addEventListener('load', equalise);
+    window.addEventListener('resize', later);
+    document.addEventListener('load', function (e) { if (e.target.tagName === 'IMG') later(); }, true); /* lazy logos */
+    document.addEventListener('htmx:afterSettle', later); /* Sprig filtering / pagination */
+  })();
+{% endjs %}
 <div class="bg-blue-200 py-16">
   <div class="container">
-    <div id="results" class="mx-auto max-w-[225px] xs:max-w-none grid grid-cols-1 gap-x-6 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr">
-      {% for company in entries %}
-        <article class="flex flex-col h-full pb-7">
-          {% include "_components/card/company" with { company } only %}
-        </article>
+    <div id="results">
+      {% for group in groups %}
+        <section class="companies-group" id="{{ group.slug }}" {% if group.title %}aria-labelledby="status-{{ group.slug }}"{% endif %}>
+          {% if group.title %}
+            <div class="companies-group__head">
+              <span class="companies-group__rule" aria-hidden="true"></span>
+              <h2 id="status-{{ group.slug }}" class="companies-group__title">{{ group.title }}</h2>
+              <span class="companies-group__rule" aria-hidden="true"></span>
+            </div>
+          {% endif %}
+          <div class="companies-group__grid">
+            {% for company in group.companies %}
+              <article class="flex flex-col pb-7">
+                {% include "_components/card/company" with { company } only %}
+              </article>
+            {% endfor %}
+          </div>
+        </section>
       {% else %}
-        <p class="text-xl italic col-span-full text-white">
+        <p class="text-xl italic text-white">
           No results, please try broadening your search.
         </p>
       {% endfor %}
     </div>
-
-    <p class="text-xl italic col-span-full text-white text-center">Note: <span class="text-green-500">Green</span> borders represent realized investments.</p>
 
     {% include "_sprig/components/pagination" with { pageInfo, textColor: 'text-white' } %}
   </div>

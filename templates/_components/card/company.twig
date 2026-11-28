@@ -8,54 +8,12 @@
   {% set dealStatus = company.dealStatus.one() ?? null %}
   {% set introduction = (company.introduction ?? '')|trim %}
 
-  {# Hover overlay showing the company Introduction. pointer-events:none keeps clicks going to the card links. #}
-    {% css %}
-      .company-card__intro {
-        /* stays inside the card: same size as the card, never taller */
-        position: absolute; inset: 0; z-index: 10;
-        display: flex; flex-direction: column; gap: 8px;
-        padding: 14px 16px; border-radius: inherit;
-        background: #001D3F; color: #fff; text-align: center;
-        overflow-y: auto; overscroll-behavior: contain;
-        scrollbar-width: thin; scrollbar-color: rgb(255 255 255 / .35) transparent;
-        opacity: 0; visibility: hidden; transform: translateY(6px);
-        transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
-        pointer-events: none; /* group cards keep their individual logo links clickable */
-      }
-      /* centre short text vertically; long text starts at the top (safe centering) */
-      .company-card__intro > :first-child { margin-top: auto; }
-      .company-card__intro > :last-child  { margin-bottom: auto; }
-      /* single-link cards: the panel is part of the link, so clicking it still opens the website
-         and very long text can be scrolled with the mouse wheel */
-      a.company-card .company-card__intro { pointer-events: auto; }
-
-      .company-card:hover .company-card__intro,
-      .company-card:focus-within .company-card__intro,
-      .company-card:focus-visible .company-card__intro {
-        opacity: 1; visibility: visible; transform: none;
-        transition: opacity .3s ease, transform .3s ease, visibility 0s;
-      }
-      .company-card__intro-title { font-family: Castoro, ui-serif, Georgia, serif; font-size: 1.125rem; line-height: 1.2; }
-      .company-card__intro-text { margin: 0; font-size: .875rem; line-height: 1.45; }
-      .company-card__intro-cta { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: #8fc3ee; }
-
-      /* the round + button would sit on top of the text, so hide it while the panel is open */
-      .company-card > .absolute.-bottom-4 { transition: opacity .2s ease; }
-      .company-card.has-intro:hover > .absolute.-bottom-4,
-      .company-card.has-intro:focus-within > .absolute.-bottom-4 { opacity: 0; }
-
-      /* Touch screens have no hover: keep a tap opening the website straight away */
-      @media (hover: none) {
-        .company-card__intro { display: none; }
-        .company-card.has-intro:hover > .absolute.-bottom-4 { opacity: 1; }
-      }
-    {% endcss %}
   {% if additionalLogos %}
   <div class="company-card{{ introduction ? ' has-intro' }} group h-full flex flex-col gap-5 justify-between bg-white py-5 relative min-h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized' %} border-green-500 border-[5px]{% endif %}">
   {% else %}
   <a
     href="{{ company.websiteLink }}"
-    class="company-card{{ introduction ? ' has-intro' }} group h-full flex flex-col gap-5 justify-between bg-white py-5 relative min-h-64 rounded-md{% if dealStatus.slug == 'realized' or dealStatus.slug == 'merged' or dealStatus.slug == 'partially-realized' %} border-green-500 border-[5px]{% endif %}"
+    class="company-card{{ introduction ? ' has-intro' }} group h-full flex flex-col gap-5 justify-between bg-white py-5 relative min-h-64 rounded-md"
     target="_blank"
   >
   {% endif %}
